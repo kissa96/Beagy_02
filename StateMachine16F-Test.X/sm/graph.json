@@ -1,0 +1,124 @@
+{
+	"graph":{
+		"name": "StateMachine",
+		"size":{
+			"width": 1478.0,
+			"height": 516.0
+		}
+	},
+	"states": [
+	{
+		"state": "root_InitialPseudostate0",
+		"type":"initial",
+		"properties":{
+			"name":"InitialPseudostate0",
+			"size": {
+	            "width": 20,
+	            "height": 20
+	        },
+	        "position":{
+				"x": 78.5,
+				"y": 170.09375
+	        }
+		}
+	}
+	,{
+		"state": "State1",
+		"type":"state",
+		"properties":{
+			"name":"State1",
+			"position": {
+				"x": 108.5,
+				"y": 200.09375
+			},
+			"size":{
+				"width": 178.0,
+				"height": 102.0
+			},
+			"events": [ "entry/LED1_Off()\nLED2_Off()\nLED3_On()"]
+		}
+	}
+	,{
+		"state": "State2",
+		"type":"state",
+		"properties":{
+			"name":"State2",
+			"position": {
+				"x": 471.0,
+				"y": 200.09375
+			},
+			"size":{
+				"width": 178.0,
+				"height": 102.0
+			},
+			"events": [ "entry/LED1_Off()\nLED2_On()\nLED3_On()"]
+		}
+	}
+	,{
+		"state": "State3",
+		"type":"state",
+		"properties":{
+			"name":"State3",
+			"position": {
+				"x": 816.7777777777777,
+				"y": 205.90277777777777
+			},
+			"size":{
+				"width": 170.0,
+				"height": 90.0
+			},
+			"events": [ "entry/LED1_On()\nLED2_Off()\nLED3_Off()"]
+		}
+	}
+	,{
+		"state": "State4",
+		"type":"state",
+		"properties":{
+			"name":"State4",
+			"position": {
+				"x": 1202.7777777777778,
+				"y": 177.90277777777777
+			},
+			"size":{
+				"width": 250.0,
+				"height": 146.0
+			},
+			"events": [ "entry/LED1_Off()\nLED2_On()\nLED3_Off()"]
+		}
+	}
+	],
+	"tree":[
+	],
+	"transitions":[
+		{
+            "source": "State1",
+            "target": "State2",
+            "event": "evS1Pressed",
+            "label": "evS1Pressed"
+        }
+		,{
+            "source": "root_InitialPseudostate0",
+            "target": "State1",
+            "event": "",
+            "label": ""
+        }
+		,{
+            "source": "State2",
+            "target": "State3",
+            "event": "evS1Pressed",
+            "label": "evS1Pressed"
+        }
+		,{
+            "source": "State3",
+            "target": "State4",
+            "event": "evS1Pressed",
+            "label": "evS1Pressed"
+        }
+		,{
+            "source": "State4",
+            "target": "State1",
+            "event": "evS1Pressed",
+            "label": "evS1Pressed"
+        }
+	]
+}
