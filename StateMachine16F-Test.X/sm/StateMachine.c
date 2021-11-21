@@ -8,7 +8,7 @@
 
 
 /* Definitions imports from model */
-uint16_t vUserVaraible;
+uint8_t UserVariable;
 
 /* Built-in variables */
 #ifdef _USE_ADC
@@ -49,10 +49,7 @@ void StateMachine_SM(event_t event){
 		break;
 		case State1:
 			if(evTick==event){ 
-				vStateMachine = State2; // set new state
-				LED1_Off();	// entry action of State2
-				LED2_On();	// entry action of State2
-				LED3_On();	// entry action of State2
+				vStateMachine = Pseudo; // set new state
 			}
 			break;
 		case State2:
@@ -77,6 +74,25 @@ void StateMachine_SM(event_t event){
 				LED1_Off();	// entry action of State1
 				LED2_Off();	// entry action of State1
 				LED3_On();	// entry action of State1
+			}
+			break;
+		case StatePot:
+			if(evS1Pressed==event){ 
+				vStateMachine = State2; // set new state
+				LED1_Off();	// entry action of State2
+				LED2_On();	// entry action of State2
+				LED3_On();	// entry action of State2
+			}
+			break;
+		case Pseudo:
+			if((vPotmeter>=50) && true){ 
+				vStateMachine = State2; // set new state
+				LED1_Off();	// entry action of State2
+				LED2_On();	// entry action of State2
+				LED3_On();	// entry action of State2
+			}
+			if((vPotmeter<50) && true){ 
+				vStateMachine = StatePot; // set new state
 			}
 			break;
 		default:

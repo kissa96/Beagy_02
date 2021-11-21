@@ -12,7 +12,7 @@
 #define _USE_ADC
 #define _USE_TIMERTICK
 /*User defined variables*/
-extern uint16_t vUserVaraible;
+extern uint8_t UserVariable;
 
 /* Built-in variables */
 #ifdef _USE_ADC
@@ -28,6 +28,8 @@ typedef enum {
 	,State2
 	,State3
 	,State4
+	,StatePot
+	,Pseudo
 }state_t;
 
 /* trace state names */
@@ -39,6 +41,8 @@ const char* const trace_state_labels [] = {
 	,"State2"
 	,"State3"
 	,"State4"
+	,"StatePot"
+	,"Pseudo"
 };
 
 

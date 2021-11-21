@@ -20145,7 +20145,7 @@ void LED4_Off();
 
 
 
-extern uint16_t vUserVaraible;
+extern uint8_t UserVariable;
 
 
 
@@ -20161,6 +20161,8 @@ typedef enum {
  ,State2
  ,State3
  ,State4
+ ,StatePot
+ ,Pseudo
 }state_t;
 
 
@@ -20172,6 +20174,8 @@ const char* const trace_state_labels [] = {
  ,"State2"
  ,"State3"
  ,"State4"
+ ,"StatePot"
+ ,"Pseudo"
 };
 
 

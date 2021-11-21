@@ -315,7 +315,7 @@ void LED4_Off();
 
 
 
-extern uint16_t vUserVaraible;
+extern uint8_t UserVariable;
 
 
 
@@ -331,6 +331,8 @@ typedef enum {
  ,State2
  ,State3
  ,State4
+ ,StatePot
+ ,Pseudo
 }state_t;
 
 
@@ -342,6 +344,8 @@ const char* const trace_state_labels [] = {
  ,"State2"
  ,"State3"
  ,"State4"
+ ,"StatePot"
+ ,"Pseudo"
 };
 
 
@@ -352,7 +356,7 @@ void StateMachine_SM (event_t event);
 
 
 
-uint16_t vUserVaraible;
+uint8_t UserVariable;
 
 
 
@@ -393,10 +397,7 @@ void StateMachine_SM(event_t event){
   break;
   case State1:
    if(evTick==event){
-    vStateMachine = State2;
-    LED1_Off();
-    LED2_On();
-    LED3_On();
+    vStateMachine = Pseudo;
    }
    break;
   case State2:
@@ -421,6 +422,25 @@ void StateMachine_SM(event_t event){
     LED1_Off();
     LED2_Off();
     LED3_On();
+   }
+   break;
+  case StatePot:
+   if(evS1Pressed==event){
+    vStateMachine = State2;
+    LED1_Off();
+    LED2_On();
+    LED3_On();
+   }
+   break;
+  case Pseudo:
+   if((vPotmeter>=50) && 1){
+    vStateMachine = State2;
+    LED1_Off();
+    LED2_On();
+    LED3_On();
+   }
+   if((vPotmeter<50) && 1){
+    vStateMachine = StatePot;
    }
    break;
   default:

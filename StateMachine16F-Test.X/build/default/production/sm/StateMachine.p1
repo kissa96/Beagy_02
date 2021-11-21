@@ -3,8 +3,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;sm/StateMachine.c: 21: static void _trace(event_t event, state_t state){
 [c E355 0 1 2 3 4 .. ]
 [n E355 . evNone evTick evS1Pressed evS2Pressed evTimeout  ]
-[c E378 0 1 2 3 4 .. ]
-[n E378 . _init State1 State2 State3 State4  ]
+[c E378 0 1 2 3 4 5 6 .. ]
+[n E378 . _init State1 State2 State3 State4 StatePot Pseudo  ]
 "111 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
 [v _printf `(i ~T0 @X0 0 ev`*Cuc ]
 "11 sm/actions.h
@@ -16,15 +16,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 "16
 [; ;sm/actions.h: 16: void LED3_On();
 [v _LED3_On `(v ~T0 @X0 0 e? ]
-"13
-[; ;sm/actions.h: 13: void LED2_On();
-[v _LED2_On `(v ~T0 @X0 0 e? ]
 "10
 [; ;sm/actions.h: 10: void LED1_On();
 [v _LED1_On `(v ~T0 @X0 0 e? ]
 "17
 [; ;sm/actions.h: 17: void LED3_Off();
 [v _LED3_Off `(v ~T0 @X0 0 e? ]
+"13
+[; ;sm/actions.h: 13: void LED2_On();
+[v _LED2_On `(v ~T0 @X0 0 e? ]
 [v F364 `*Cuc ~T0 @X0 1 t ]
 "14 sm/events.h
 [; ;sm/events.h: 14: const char* const trace_event_labels [] = {
@@ -38,10 +38,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 :s 5C
 ..
 ]
-[v F387 `*Cuc ~T0 @X0 1 t ]
-"34 sm/StateMachine.h
-[; ;sm/StateMachine.h: 34: const char* const trace_state_labels [] = {
-[v _trace_state_labels `C*Cuc ~T0 @X0 -> 5 `i e ]
+[v F389 `*Cuc ~T0 @X0 1 t ]
+"36 sm/StateMachine.h
+[; ;sm/StateMachine.h: 36: const char* const trace_state_labels [] = {
+[v _trace_state_labels `C*Cuc ~T0 @X0 -> 7 `i e ]
 [i _trace_state_labels
 :U ..
 :s 6C
@@ -49,11 +49,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 :s 8C
 :s 9C
 :s 10C
+:s 11C
+:s 12C
 ..
 ]
 "11 sm/StateMachine.c
-[; ;sm/StateMachine.c: 11: uint16_t vUserVaraible;
-[v _vUserVaraible `us ~T0 @X0 1 e ]
+[; ;sm/StateMachine.c: 11: uint8_t UserVariable;
+[v _UserVariable `uc ~T0 @X0 1 e ]
 "15
 [; ;sm/StateMachine.c: 15: uint8_t vPotmeter;
 [v _vPotmeter `uc ~T0 @X0 1 e ]
@@ -67,37 +69,37 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "22
 [; ;sm/StateMachine.c: 22:  static event_t e = evNone;
-[v F395 `E355 ~T0 @X0 1 s e ]
-[i F395
+[v F397 `E355 ~T0 @X0 1 s e ]
+[i F397
 . `E355 0
 ]
 "23
 [; ;sm/StateMachine.c: 23:  static state_t s = _init;
-[v F396 `E378 ~T0 @X0 1 s s ]
-[i F396
+[v F398 `E378 ~T0 @X0 1 s s ]
+[i F398
 . `E378 0
 ]
 "24
 [; ;sm/StateMachine.c: 24:  if(event != e || state != s){
-[e $ ! || != -> _event `ui -> F395 `ui != -> _state `ui -> F396 `ui 4  ]
+[e $ ! || != -> _event `ui -> F397 `ui != -> _state `ui -> F398 `ui 4  ]
 {
 "26
 [; ;sm/StateMachine.c: 26:         if(!(event==evNone && state == s)){
-[e $ ! ! && == -> _event `ui -> . `E355 0 `ui == -> _state `ui -> F396 `ui 5  ]
+[e $ ! ! && == -> _event `ui -> . `E355 0 `ui == -> _state `ui -> F398 `ui 5  ]
 {
 "27
 [; ;sm/StateMachine.c: 27:          printf("$e:%s,s:%s\n", (event == evNone) ? "" : trace_event_labels[event], trace_state_labels[state]);
-[e ( _printf , , (. :s 11C ? == -> _event `ui -> . `E355 0 `ui : :s 12C *U + &U _trace_event_labels * -> _event `ux -> -> # *U &U _trace_event_labels `ui `ux *U + &U _trace_state_labels * -> _state `ux -> -> # *U &U _trace_state_labels `ui `ux ]
+[e ( _printf , , (. :s 13C ? == -> _event `ui -> . `E355 0 `ui : :s 14C *U + &U _trace_event_labels * -> _event `ux -> -> # *U &U _trace_event_labels `ui `ux *U + &U _trace_state_labels * -> _state `ux -> -> # *U &U _trace_state_labels `ui `ux ]
 "28
 [; ;sm/StateMachine.c: 28:   }
 }
 [e :U 5 ]
 "29
 [; ;sm/StateMachine.c: 29:   s = state;
-[e = F396 _state ]
+[e = F398 _state ]
 "30
 [; ;sm/StateMachine.c: 30:   e = event;
-[e = F395 _event ]
+[e = F397 _event ]
 "31
 [; ;sm/StateMachine.c: 31:  }
 }
@@ -149,110 +151,164 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! == -> . `E355 1 `ui -> _event `ui 11  ]
 {
 "52
-[; ;sm/StateMachine.c: 52:     vStateMachine = State2;
-[e = _vStateMachine . `E378 2 ]
+[; ;sm/StateMachine.c: 52:     vStateMachine = Pseudo;
+[e = _vStateMachine . `E378 6 ]
 "53
-[; ;sm/StateMachine.c: 53:     LED1_Off();
-[e ( _LED1_Off ..  ]
-"54
-[; ;sm/StateMachine.c: 54:     LED2_On();
-[e ( _LED2_On ..  ]
-"55
-[; ;sm/StateMachine.c: 55:     LED3_On();
-[e ( _LED3_On ..  ]
-"56
-[; ;sm/StateMachine.c: 56:    }
+[; ;sm/StateMachine.c: 53:    }
 }
 [e :U 11 ]
-"57
-[; ;sm/StateMachine.c: 57:    break;
+"54
+[; ;sm/StateMachine.c: 54:    break;
 [e $U 7  ]
-"58
-[; ;sm/StateMachine.c: 58:   case State2:
+"55
+[; ;sm/StateMachine.c: 55:   case State2:
 [e :U 12 ]
-"59
-[; ;sm/StateMachine.c: 59:    if(evTick==event){
+"56
+[; ;sm/StateMachine.c: 56:    if(evTick==event){
 [e $ ! == -> . `E355 1 `ui -> _event `ui 13  ]
 {
-"60
-[; ;sm/StateMachine.c: 60:     vStateMachine = State3;
+"57
+[; ;sm/StateMachine.c: 57:     vStateMachine = State3;
 [e = _vStateMachine . `E378 3 ]
-"61
-[; ;sm/StateMachine.c: 61:     LED1_On();
+"58
+[; ;sm/StateMachine.c: 58:     LED1_On();
 [e ( _LED1_On ..  ]
-"62
-[; ;sm/StateMachine.c: 62:     LED2_Off();
+"59
+[; ;sm/StateMachine.c: 59:     LED2_Off();
 [e ( _LED2_Off ..  ]
-"63
-[; ;sm/StateMachine.c: 63:     LED3_Off();
+"60
+[; ;sm/StateMachine.c: 60:     LED3_Off();
 [e ( _LED3_Off ..  ]
-"64
-[; ;sm/StateMachine.c: 64:    }
+"61
+[; ;sm/StateMachine.c: 61:    }
 }
 [e :U 13 ]
-"65
-[; ;sm/StateMachine.c: 65:    break;
+"62
+[; ;sm/StateMachine.c: 62:    break;
 [e $U 7  ]
-"66
-[; ;sm/StateMachine.c: 66:   case State3:
+"63
+[; ;sm/StateMachine.c: 63:   case State3:
 [e :U 14 ]
-"67
-[; ;sm/StateMachine.c: 67:    if(evTick==event){
+"64
+[; ;sm/StateMachine.c: 64:    if(evTick==event){
 [e $ ! == -> . `E355 1 `ui -> _event `ui 15  ]
 {
-"68
-[; ;sm/StateMachine.c: 68:     vStateMachine = State4;
+"65
+[; ;sm/StateMachine.c: 65:     vStateMachine = State4;
 [e = _vStateMachine . `E378 4 ]
-"69
-[; ;sm/StateMachine.c: 69:     LED1_Off();
+"66
+[; ;sm/StateMachine.c: 66:     LED1_Off();
 [e ( _LED1_Off ..  ]
-"70
-[; ;sm/StateMachine.c: 70:     LED2_On();
+"67
+[; ;sm/StateMachine.c: 67:     LED2_On();
 [e ( _LED2_On ..  ]
-"71
-[; ;sm/StateMachine.c: 71:     LED3_Off();
+"68
+[; ;sm/StateMachine.c: 68:     LED3_Off();
 [e ( _LED3_Off ..  ]
-"72
-[; ;sm/StateMachine.c: 72:    }
+"69
+[; ;sm/StateMachine.c: 69:    }
 }
 [e :U 15 ]
-"73
-[; ;sm/StateMachine.c: 73:    break;
+"70
+[; ;sm/StateMachine.c: 70:    break;
 [e $U 7  ]
-"74
-[; ;sm/StateMachine.c: 74:   case State4:
+"71
+[; ;sm/StateMachine.c: 71:   case State4:
 [e :U 16 ]
-"75
-[; ;sm/StateMachine.c: 75:    if(evTick==event){
+"72
+[; ;sm/StateMachine.c: 72:    if(evTick==event){
 [e $ ! == -> . `E355 1 `ui -> _event `ui 17  ]
 {
-"76
-[; ;sm/StateMachine.c: 76:     vStateMachine = State1;
+"73
+[; ;sm/StateMachine.c: 73:     vStateMachine = State1;
 [e = _vStateMachine . `E378 1 ]
-"77
-[; ;sm/StateMachine.c: 77:     LED1_Off();
+"74
+[; ;sm/StateMachine.c: 74:     LED1_Off();
 [e ( _LED1_Off ..  ]
-"78
-[; ;sm/StateMachine.c: 78:     LED2_Off();
+"75
+[; ;sm/StateMachine.c: 75:     LED2_Off();
 [e ( _LED2_Off ..  ]
-"79
-[; ;sm/StateMachine.c: 79:     LED3_On();
+"76
+[; ;sm/StateMachine.c: 76:     LED3_On();
 [e ( _LED3_On ..  ]
-"80
-[; ;sm/StateMachine.c: 80:    }
+"77
+[; ;sm/StateMachine.c: 77:    }
 }
 [e :U 17 ]
-"81
-[; ;sm/StateMachine.c: 81:    break;
+"78
+[; ;sm/StateMachine.c: 78:    break;
 [e $U 7  ]
-"82
-[; ;sm/StateMachine.c: 82:   default:
+"79
+[; ;sm/StateMachine.c: 79:   case StatePot:
 [e :U 18 ]
+"80
+[; ;sm/StateMachine.c: 80:    if(evS1Pressed==event){
+[e $ ! == -> . `E355 2 `ui -> _event `ui 19  ]
+{
+"81
+[; ;sm/StateMachine.c: 81:     vStateMachine = State2;
+[e = _vStateMachine . `E378 2 ]
+"82
+[; ;sm/StateMachine.c: 82:     LED1_Off();
+[e ( _LED1_Off ..  ]
 "83
-[; ;sm/StateMachine.c: 83:    break;
-[e $U 7  ]
+[; ;sm/StateMachine.c: 83:     LED2_On();
+[e ( _LED2_On ..  ]
 "84
-[; ;sm/StateMachine.c: 84:  }
+[; ;sm/StateMachine.c: 84:     LED3_On();
+[e ( _LED3_On ..  ]
+"85
+[; ;sm/StateMachine.c: 85:    }
+}
+[e :U 19 ]
+"86
+[; ;sm/StateMachine.c: 86:    break;
+[e $U 7  ]
+"87
+[; ;sm/StateMachine.c: 87:   case Pseudo:
+[e :U 20 ]
+"88
+[; ;sm/StateMachine.c: 88:    if((vPotmeter>=50) && 1){
+[e $ ! && >= -> _vPotmeter `i -> 50 `i != -> 1 `i -> 0 `i 21  ]
+{
+"89
+[; ;sm/StateMachine.c: 89:     vStateMachine = State2;
+[e = _vStateMachine . `E378 2 ]
+"90
+[; ;sm/StateMachine.c: 90:     LED1_Off();
+[e ( _LED1_Off ..  ]
+"91
+[; ;sm/StateMachine.c: 91:     LED2_On();
+[e ( _LED2_On ..  ]
+"92
+[; ;sm/StateMachine.c: 92:     LED3_On();
+[e ( _LED3_On ..  ]
+"93
+[; ;sm/StateMachine.c: 93:    }
+}
+[e :U 21 ]
+"94
+[; ;sm/StateMachine.c: 94:    if((vPotmeter<50) && 1){
+[e $ ! && < -> _vPotmeter `i -> 50 `i != -> 1 `i -> 0 `i 22  ]
+{
+"95
+[; ;sm/StateMachine.c: 95:     vStateMachine = StatePot;
+[e = _vStateMachine . `E378 5 ]
+"96
+[; ;sm/StateMachine.c: 96:    }
+}
+[e :U 22 ]
+"97
+[; ;sm/StateMachine.c: 97:    break;
+[e $U 7  ]
+"98
+[; ;sm/StateMachine.c: 98:   default:
+[e :U 23 ]
+"99
+[; ;sm/StateMachine.c: 99:    break;
+[e $U 7  ]
+"100
+[; ;sm/StateMachine.c: 100:  }
 }
 [e $U 7  ]
 [e :U 8 ]
@@ -261,18 +317,22 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> . `E378 2 `ui 12
  , $ -> . `E378 3 `ui 14
  , $ -> . `E378 4 `ui 16
- 18 ]
+ , $ -> . `E378 5 `ui 18
+ , $ -> . `E378 6 `ui 20
+ 23 ]
 [e :U 7 ]
-"87
-[; ;sm/StateMachine.c: 87:  _trace(event, vStateMachine);
+"103
+[; ;sm/StateMachine.c: 103:  _trace(event, vStateMachine);
 [e ( __trace (2 , _event _vStateMachine ]
-"89
-[; ;sm/StateMachine.c: 89: }
+"105
+[; ;sm/StateMachine.c: 105: }
 [e :UE 6 ]
 }
 [p f _printf 8650752 ]
 [a 5C 101 118 84 105 109 101 111 117 116 0 ]
+[a 11C 83 116 97 116 101 80 111 116 0 ]
 [a 6C 95 105 110 105 116 0 ]
+[a 12C 80 115 101 117 100 111 0 ]
 [a 2C 101 118 84 105 99 107 0 ]
 [a 1C 101 118 78 111 110 101 0 ]
 [a 4C 101 118 83 50 80 114 101 115 115 101 100 0 ]
@@ -281,5 +341,5 @@ Version 4.0 HI-TECH Software Intermediate Code
 [a 9C 83 116 97 116 101 51 0 ]
 [a 8C 83 116 97 116 101 50 0 ]
 [a 7C 83 116 97 116 101 49 0 ]
-[a 11C 36 101 58 37 115 44 115 58 37 115 10 0 ]
-[a 12C 0 ]
+[a 13C 36 101 58 37 115 44 115 58 37 115 10 0 ]
+[a 14C 0 ]

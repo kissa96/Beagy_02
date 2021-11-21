@@ -18,17 +18,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "310 ./mcc_generated_files/tmr0.h
 [; ;./mcc_generated_files/tmr0.h: 310:  void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _TMR0_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F11714 ]
-[v F12131 `(v ~T0 @X0 0 tf ]
+[v F12133 `(v ~T0 @X0 0 tf ]
 [v F11642 `(v ~T0 @X0 0 tf ]
 "374 ./mcc_generated_files/pin_manager.h
 [; ;./mcc_generated_files/pin_manager.h: 374: void IOCAF7_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _IOCAF7_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F11642 ]
-[v F12133 `(v ~T0 @X0 0 tf ]
+[v F12135 `(v ~T0 @X0 0 tf ]
 [v F11634 `(v ~T0 @X0 0 tf ]
 "290
 [; ;./mcc_generated_files/pin_manager.h: 290: void IOCAF6_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _IOCAF6_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F11634 ]
-[v F12135 `(v ~T0 @X0 0 tf ]
+[v F12137 `(v ~T0 @X0 0 tf ]
 "364 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f18857.h
 [; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f18857.h: 364:     struct {
 [s S31 :1 `uc 1 :5 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -46,8 +46,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "19 ./sm/StateMachine.h
 [; ;./sm/StateMachine.h: 19: extern uint8_t vPotmeter;
 [v _vPotmeter `uc ~T0 @X0 0 e ]
-"47
-[; ;./sm/StateMachine.h: 47: void StateMachine_SM (event_t event);
+"51
+[; ;./sm/StateMachine.h: 51: void StateMachine_SM (event_t event);
 [v _StateMachine_SM `(v ~T0 @X0 0 ef1`E12087 ]
 "55 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f18857.h
 [; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f18857.h: 55: __asm("INDF0 equ 00h");
@@ -1613,10 +1613,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 :s 5C
 ..
 ]
-[v F12119 `*Cuc ~T0 @X0 1 t ]
-"34 ./sm/StateMachine.h
-[; ;./sm/StateMachine.h: 34: const char* const trace_state_labels [] = {
-[v _trace_state_labels `C*Cuc ~T0 @X0 -> 5 `i e ]
+[v F12121 `*Cuc ~T0 @X0 1 t ]
+"36 ./sm/StateMachine.h
+[; ;./sm/StateMachine.h: 36: const char* const trace_state_labels [] = {
+[v _trace_state_labels `C*Cuc ~T0 @X0 -> 7 `i e ]
 [i _trace_state_labels
 :U ..
 :s 6C
@@ -1624,6 +1624,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 :s 8C
 :s 9C
 :s 10C
+:s 11C
+:s 12C
 ..
 ]
 "55 main.c
@@ -1651,17 +1653,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ++ _Timer -> -> -> 1 `i `l `ul ]
 "67
 [; ;main.c: 67:     static uint32_t sec = 0;
-[v F12125 `ul ~T0 @X0 1 s sec ]
-[i F12125
+[v F12127 `ul ~T0 @X0 1 s sec ]
+[i F12127
 -> -> -> 0 `i `l `ul
 ]
 "68
 [; ;main.c: 68:     if(Timer-sec > 1000){
-[e $ ! > - _Timer F12125 -> -> -> 1000 `i `l `ul 1562  ]
+[e $ ! > - _Timer F12127 -> -> -> 1000 `i `l `ul 1562  ]
 {
 "69
 [; ;main.c: 69:         sec = Timer;
-[e = F12125 _Timer ]
+[e = F12127 _Timer ]
 "70
 [; ;main.c: 70:         Event = evTick;
 [e = _Event . `E12087 1 ]
@@ -1683,19 +1685,19 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "79
 [; ;main.c: 79:     static uint32_t t = 0;
-[v F12127 `ul ~T0 @X0 1 s t ]
-[i F12127
+[v F12129 `ul ~T0 @X0 1 s t ]
+[i F12129
 -> -> -> 0 `i `l `ul
 ]
 "80
 [; ;main.c: 80:     if(Timer - t > 150)
-[e $ ! > - _Timer F12127 -> -> -> 150 `i `l `ul 1564  ]
+[e $ ! > - _Timer F12129 -> -> -> 150 `i `l `ul 1564  ]
 "81
 [; ;main.c: 81:     {
 {
 "82
 [; ;main.c: 82:         t = Timer;
-[e = F12127 _Timer ]
+[e = F12129 _Timer ]
 "83
 [; ;main.c: 83:         Event = evS1Pressed;
 [e = _Event . `E12087 2 ]
@@ -1747,13 +1749,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _SYSTEM_Initialize ..  ]
 "115
 [; ;main.c: 115:     TMR0_SetInterruptHandler(timerCallback);
-[e ( _TMR0_SetInterruptHandler (1 -> &U _timerCallback `*F12131 ]
+[e ( _TMR0_SetInterruptHandler (1 -> &U _timerCallback `*F12133 ]
 "116
 [; ;main.c: 116:     IOCAF7_SetInterruptHandler(S1EventCallback);
-[e ( _IOCAF7_SetInterruptHandler (1 -> &U _S1EventCallback `*F12133 ]
+[e ( _IOCAF7_SetInterruptHandler (1 -> &U _S1EventCallback `*F12135 ]
 "117
 [; ;main.c: 117:     IOCAF6_SetInterruptHandler(S2EventCallback);
-[e ( _IOCAF6_SetInterruptHandler (1 -> &U _S2EventCallback `*F12135 ]
+[e ( _IOCAF6_SetInterruptHandler (1 -> &U _S2EventCallback `*F12137 ]
 "120
 [; ;main.c: 120:     (INTCONbits.GIE = 1);
 [e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
@@ -1762,10 +1764,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _INTCONbits 0 2 -> -> 1 `i `uc ]
 "133
 [; ;main.c: 133:     puts("$");
-[e ( _puts (1 :s 11C ]
+[e ( _puts (1 :s 13C ]
 "135
 [; ;main.c: 135:     puts("$init");
-[e ( _puts (1 :s 12C ]
+[e ( _puts (1 :s 14C ]
 "138
 [; ;main.c: 138:     event_t e = evNone;
 [v _e `E12087 ~T0 @X0 1 a ]
@@ -1802,8 +1804,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 1567 ]
 }
 [a 5C 101 118 84 105 109 101 111 117 116 0 ]
+[a 11C 83 116 97 116 101 80 111 116 0 ]
 [a 6C 95 105 110 105 116 0 ]
-[a 12C 36 105 110 105 116 0 ]
+[a 14C 36 105 110 105 116 0 ]
+[a 12C 80 115 101 117 100 111 0 ]
 [a 2C 101 118 84 105 99 107 0 ]
 [a 1C 101 118 78 111 110 101 0 ]
 [a 4C 101 118 83 50 80 114 101 115 115 101 100 0 ]
@@ -1812,4 +1816,4 @@ Version 4.0 HI-TECH Software Intermediate Code
 [a 9C 83 116 97 116 101 51 0 ]
 [a 8C 83 116 97 116 101 50 0 ]
 [a 7C 83 116 97 116 101 49 0 ]
-[a 11C 36 0 ]
+[a 13C 36 0 ]
