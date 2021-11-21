@@ -48,7 +48,7 @@ void StateMachine_SM(event_t event){
 			LED3_On();	// initial entry action
 		break;
 		case State1:
-			if(evS1Pressed==event){ 
+			if(evTick==event){ 
 				vStateMachine = State2; // set new state
 				LED1_Off();	// entry action of State2
 				LED2_On();	// entry action of State2
@@ -56,7 +56,7 @@ void StateMachine_SM(event_t event){
 			}
 			break;
 		case State2:
-			if(evS1Pressed==event){ 
+			if(evTick==event){ 
 				vStateMachine = State3; // set new state
 				LED1_On();	// entry action of State3
 				LED2_Off();	// entry action of State3
@@ -64,7 +64,7 @@ void StateMachine_SM(event_t event){
 			}
 			break;
 		case State3:
-			if(evS1Pressed==event){ 
+			if(evTick==event){ 
 				vStateMachine = State4; // set new state
 				LED1_Off();	// entry action of State4
 				LED2_On();	// entry action of State4
@@ -72,7 +72,7 @@ void StateMachine_SM(event_t event){
 			}
 			break;
 		case State4:
-			if(evS1Pressed==event){ 
+			if(evTick==event){ 
 				vStateMachine = State1; // set new state
 				LED1_Off();	// entry action of State1
 				LED2_Off();	// entry action of State1

@@ -18,17 +18,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "310 ./mcc_generated_files/tmr0.h
 [; ;./mcc_generated_files/tmr0.h: 310:  void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _TMR0_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F11714 ]
-[v F12130 `(v ~T0 @X0 0 tf ]
+[v F12131 `(v ~T0 @X0 0 tf ]
 [v F11642 `(v ~T0 @X0 0 tf ]
 "374 ./mcc_generated_files/pin_manager.h
 [; ;./mcc_generated_files/pin_manager.h: 374: void IOCAF7_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _IOCAF7_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F11642 ]
-[v F12132 `(v ~T0 @X0 0 tf ]
+[v F12133 `(v ~T0 @X0 0 tf ]
 [v F11634 `(v ~T0 @X0 0 tf ]
 "290
 [; ;./mcc_generated_files/pin_manager.h: 290: void IOCAF6_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _IOCAF6_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F11634 ]
-[v F12134 `(v ~T0 @X0 0 tf ]
+[v F12135 `(v ~T0 @X0 0 tf ]
 "364 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f18857.h
 [; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f18857.h: 364:     struct {
 [s S31 :1 `uc 1 :5 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -1649,6 +1649,26 @@ Version 4.0 HI-TECH Software Intermediate Code
 "64
 [; ;main.c: 64:     Timer++;
 [e ++ _Timer -> -> -> 1 `i `l `ul ]
+"67
+[; ;main.c: 67:     static uint32_t sec = 0;
+[v F12125 `ul ~T0 @X0 1 s sec ]
+[i F12125
+-> -> -> 0 `i `l `ul
+]
+"68
+[; ;main.c: 68:     if(Timer-sec > 1000){
+[e $ ! > - _Timer F12125 -> -> -> 1000 `i `l `ul 1562  ]
+{
+"69
+[; ;main.c: 69:         sec = Timer;
+[e = F12125 _Timer ]
+"70
+[; ;main.c: 70:         Event = evTick;
+[e = _Event . `E12087 1 ]
+"71
+[; ;main.c: 71:     }
+}
+[e :U 1562 ]
 "74
 [; ;main.c: 74: }
 [e :UE 1561 ]
@@ -1663,29 +1683,29 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "79
 [; ;main.c: 79:     static uint32_t t = 0;
-[v F12126 `ul ~T0 @X0 1 s t ]
-[i F12126
+[v F12127 `ul ~T0 @X0 1 s t ]
+[i F12127
 -> -> -> 0 `i `l `ul
 ]
 "80
 [; ;main.c: 80:     if(Timer - t > 150)
-[e $ ! > - _Timer F12126 -> -> -> 150 `i `l `ul 1563  ]
+[e $ ! > - _Timer F12127 -> -> -> 150 `i `l `ul 1564  ]
 "81
 [; ;main.c: 81:     {
 {
 "82
 [; ;main.c: 82:         t = Timer;
-[e = F12126 _Timer ]
+[e = F12127 _Timer ]
 "83
 [; ;main.c: 83:         Event = evS1Pressed;
 [e = _Event . `E12087 2 ]
 "84
 [; ;main.c: 84:     }
 }
-[e :U 1563 ]
+[e :U 1564 ]
 "85
 [; ;main.c: 85: }
-[e :UE 1562 ]
+[e :UE 1563 ]
 }
 "87
 [; ;main.c: 87: void S2EventCallback(){
@@ -1695,7 +1715,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "89
 [; ;main.c: 89: }
-[e :UE 1564 ]
+[e :UE 1565 ]
 }
 "92
 [; ;main.c: 92: uint8_t getPotValue()
@@ -1708,10 +1728,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "94
 [; ;main.c: 94:     return ((uint32_t)(ADCC_GetSingleConversion(1) + 1)*100)>>10;
 [e ) -> >> * -> + -> ( _ADCC_GetSingleConversion (1 -> -> 1 `i `E11662 `ui -> -> 1 `i `ui `ul -> -> -> 100 `i `l `ul -> 10 `i `uc ]
-[e $UE 1565  ]
+[e $UE 1566  ]
 "95
 [; ;main.c: 95: }
-[e :UE 1565 ]
+[e :UE 1566 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
 "106
@@ -1727,13 +1747,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _SYSTEM_Initialize ..  ]
 "115
 [; ;main.c: 115:     TMR0_SetInterruptHandler(timerCallback);
-[e ( _TMR0_SetInterruptHandler (1 -> &U _timerCallback `*F12130 ]
+[e ( _TMR0_SetInterruptHandler (1 -> &U _timerCallback `*F12131 ]
 "116
 [; ;main.c: 116:     IOCAF7_SetInterruptHandler(S1EventCallback);
-[e ( _IOCAF7_SetInterruptHandler (1 -> &U _S1EventCallback `*F12132 ]
+[e ( _IOCAF7_SetInterruptHandler (1 -> &U _S1EventCallback `*F12133 ]
 "117
 [; ;main.c: 117:     IOCAF6_SetInterruptHandler(S2EventCallback);
-[e ( _IOCAF6_SetInterruptHandler (1 -> &U _S2EventCallback `*F12134 ]
+[e ( _IOCAF6_SetInterruptHandler (1 -> &U _S2EventCallback `*F12135 ]
 "120
 [; ;main.c: 120:     (INTCONbits.GIE = 1);
 [e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
@@ -1752,7 +1772,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _e . `E12087 0 ]
 "139
 [; ;main.c: 139:     while (1)
-[e :U 1568 ]
+[e :U 1569 ]
 "140
 [; ;main.c: 140:     {
 {
@@ -1774,12 +1794,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "150
 [; ;main.c: 150:     }
 }
-[e :U 1567 ]
-[e $U 1568  ]
-[e :U 1569 ]
+[e :U 1568 ]
+[e $U 1569  ]
+[e :U 1570 ]
 "151
 [; ;main.c: 151: }
-[e :UE 1566 ]
+[e :UE 1567 ]
 }
 [a 5C 101 118 84 105 109 101 111 117 116 0 ]
 [a 6C 95 105 110 105 116 0 ]

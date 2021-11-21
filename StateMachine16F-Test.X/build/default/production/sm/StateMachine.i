@@ -392,7 +392,7 @@ void StateMachine_SM(event_t event){
    LED3_On();
   break;
   case State1:
-   if(evS1Pressed==event){
+   if(evTick==event){
     vStateMachine = State2;
     LED1_Off();
     LED2_On();
@@ -400,7 +400,7 @@ void StateMachine_SM(event_t event){
    }
    break;
   case State2:
-   if(evS1Pressed==event){
+   if(evTick==event){
     vStateMachine = State3;
     LED1_On();
     LED2_Off();
@@ -408,7 +408,7 @@ void StateMachine_SM(event_t event){
    }
    break;
   case State3:
-   if(evS1Pressed==event){
+   if(evTick==event){
     vStateMachine = State4;
     LED1_Off();
     LED2_On();
@@ -416,7 +416,7 @@ void StateMachine_SM(event_t event){
    }
    break;
   case State4:
-   if(evS1Pressed==event){
+   if(evTick==event){
     vStateMachine = State1;
     LED1_Off();
     LED2_Off();

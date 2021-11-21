@@ -10,7 +10,7 @@
 /* Definitions imports from model */
 #define _USE_TRACE
 #define _USE_ADC
-//#define _USE_TIMERTICK
+#define _USE_TIMERTICK
 /*User defined variables*/
 extern uint16_t vUserVaraible;
 

@@ -20197,7 +20197,15 @@ static uint32_t Timer = 0;
 void timerCallback()
 {
     Timer++;
-# 74 "main.c"
+
+
+    static uint32_t sec = 0;
+    if(Timer-sec > 1000){
+        sec = Timer;
+        Event = evTick;
+    }
+
+
 }
 
 

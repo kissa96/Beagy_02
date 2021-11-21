@@ -93,8 +93,8 @@
 		{
             "source": "State1",
             "target": "State2",
-            "event": "evS1Pressed",
-            "label": "evS1Pressed"
+            "event": "evTick",
+            "label": "evTick"
         }
 		,{
             "source": "root_InitialPseudostate0",
@@ -105,20 +105,20 @@
 		,{
             "source": "State2",
             "target": "State3",
-            "event": "evS1Pressed",
-            "label": "evS1Pressed"
+            "event": "evTick",
+            "label": "evTick"
         }
 		,{
             "source": "State3",
             "target": "State4",
-            "event": "evS1Pressed",
-            "label": "evS1Pressed"
+            "event": "evTick",
+            "label": "evTick"
         }
 		,{
             "source": "State4",
             "target": "State1",
-            "event": "evS1Pressed",
-            "label": "evS1Pressed"
+            "event": "evTick",
+            "label": "evTick"
         }
 	]
 }

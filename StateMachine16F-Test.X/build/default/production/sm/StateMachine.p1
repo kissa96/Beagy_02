@@ -145,8 +145,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;sm/StateMachine.c: 50:   case State1:
 [e :U 10 ]
 "51
-[; ;sm/StateMachine.c: 51:    if(evS1Pressed==event){
-[e $ ! == -> . `E355 2 `ui -> _event `ui 11  ]
+[; ;sm/StateMachine.c: 51:    if(evTick==event){
+[e $ ! == -> . `E355 1 `ui -> _event `ui 11  ]
 {
 "52
 [; ;sm/StateMachine.c: 52:     vStateMachine = State2;
@@ -171,8 +171,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;sm/StateMachine.c: 58:   case State2:
 [e :U 12 ]
 "59
-[; ;sm/StateMachine.c: 59:    if(evS1Pressed==event){
-[e $ ! == -> . `E355 2 `ui -> _event `ui 13  ]
+[; ;sm/StateMachine.c: 59:    if(evTick==event){
+[e $ ! == -> . `E355 1 `ui -> _event `ui 13  ]
 {
 "60
 [; ;sm/StateMachine.c: 60:     vStateMachine = State3;
@@ -197,8 +197,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;sm/StateMachine.c: 66:   case State3:
 [e :U 14 ]
 "67
-[; ;sm/StateMachine.c: 67:    if(evS1Pressed==event){
-[e $ ! == -> . `E355 2 `ui -> _event `ui 15  ]
+[; ;sm/StateMachine.c: 67:    if(evTick==event){
+[e $ ! == -> . `E355 1 `ui -> _event `ui 15  ]
 {
 "68
 [; ;sm/StateMachine.c: 68:     vStateMachine = State4;
@@ -223,8 +223,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;sm/StateMachine.c: 74:   case State4:
 [e :U 16 ]
 "75
-[; ;sm/StateMachine.c: 75:    if(evS1Pressed==event){
-[e $ ! == -> . `E355 2 `ui -> _event `ui 17  ]
+[; ;sm/StateMachine.c: 75:    if(evTick==event){
+[e $ ! == -> . `E355 1 `ui -> _event `ui 17  ]
 {
 "76
 [; ;sm/StateMachine.c: 76:     vStateMachine = State1;
