@@ -25,8 +25,6 @@ typedef enum {
 	_init
 	/* states */
 	,Working
-	/* history pseudostate */
-	,Working_ShallowHistoryPseudostate2
 	,Service
 	,Red
 	,PotDelay
@@ -45,8 +43,6 @@ const char* const trace_state_labels [] = {
 	"_init"
 	/* states */
 	,"Working"
-	/* history pseudostate */
-	,"Working_ShallowHistoryPseudostate2"
 	,"Service"
 	,"Red"
 	,"PotDelay"

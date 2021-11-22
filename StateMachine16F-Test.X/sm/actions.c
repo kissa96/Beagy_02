@@ -4,7 +4,6 @@
 #include "actions.h"
 
 
-
 void LED1_On()
 {
     LED1_SetHigh();

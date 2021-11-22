@@ -20129,8 +20129,10 @@ void LED3_Off();
 
 void LED4_On();
 void LED4_Off();
-# 5 "sm/actions.c" 2
 
+
+void setTimeout(uint32_t val);
+# 5 "sm/actions.c" 2
 
 
 void LED1_On()

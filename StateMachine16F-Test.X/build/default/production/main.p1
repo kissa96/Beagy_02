@@ -18,17 +18,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "310 ./mcc_generated_files/tmr0.h
 [; ;./mcc_generated_files/tmr0.h: 310:  void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _TMR0_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F11714 ]
-[v F12140 `(v ~T0 @X0 0 tf ]
+[v F12141 `(v ~T0 @X0 0 tf ]
 [v F11642 `(v ~T0 @X0 0 tf ]
 "374 ./mcc_generated_files/pin_manager.h
 [; ;./mcc_generated_files/pin_manager.h: 374: void IOCAF7_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _IOCAF7_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F11642 ]
-[v F12142 `(v ~T0 @X0 0 tf ]
+[v F12143 `(v ~T0 @X0 0 tf ]
 [v F11634 `(v ~T0 @X0 0 tf ]
 "290
 [; ;./mcc_generated_files/pin_manager.h: 290: void IOCAF6_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _IOCAF6_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F11634 ]
-[v F12144 `(v ~T0 @X0 0 tf ]
+[v F12145 `(v ~T0 @X0 0 tf ]
 "364 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f18857.h
 [; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f18857.h: 364:     struct {
 [s S31 :1 `uc 1 :5 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -46,8 +46,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "19 ./sm/StateMachine.h
 [; ;./sm/StateMachine.h: 19: extern uint8_t vPotmeter;
 [v _vPotmeter `uc ~T0 @X0 0 e ]
-"65
-[; ;./sm/StateMachine.h: 65: void StateMachine_SM (event_t event);
+"61
+[; ;./sm/StateMachine.h: 61: void StateMachine_SM (event_t event);
 [v _StateMachine_SM `(v ~T0 @X0 0 ef1`E12087 ]
 "55 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f18857.h
 [; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f18857.h: 55: __asm("INDF0 equ 00h");
@@ -1613,10 +1613,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 :s 5C
 ..
 ]
-[v F12127 `*Cuc ~T0 @X0 1 t ]
-"43 ./sm/StateMachine.h
-[; ;./sm/StateMachine.h: 43: const char* const trace_state_labels [] = {
-[v _trace_state_labels `C*Cuc ~T0 @X0 -> 13 `i e ]
+[v F12128 `*Cuc ~T0 @X0 1 t ]
+"41 ./sm/StateMachine.h
+[; ;./sm/StateMachine.h: 41: const char* const trace_state_labels [] = {
+[v _trace_state_labels `C*Cuc ~T0 @X0 -> 12 `i e ]
 [i _trace_state_labels
 :U ..
 :s 6C
@@ -1631,7 +1631,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 :s 15C
 :s 16C
 :s 17C
-:s 18C
 ..
 ]
 "55 main.c
@@ -1659,17 +1658,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ++ _Timer -> -> -> 1 `i `l `ul ]
 "67
 [; ;main.c: 67:     static uint32_t sec = 0;
-[v F12133 `ul ~T0 @X0 1 s sec ]
-[i F12133
+[v F12134 `ul ~T0 @X0 1 s sec ]
+[i F12134
 -> -> -> 0 `i `l `ul
 ]
 "68
 [; ;main.c: 68:     if(Timer-sec > 1000){
-[e $ ! > - _Timer F12133 -> -> -> 1000 `i `l `ul 1562  ]
+[e $ ! > - _Timer F12134 -> -> -> 1000 `i `l `ul 1562  ]
 {
 "69
 [; ;main.c: 69:         sec = Timer;
-[e = F12133 _Timer ]
+[e = F12134 _Timer ]
 "70
 [; ;main.c: 70:         Event = evTick;
 [e = _Event . `E12087 1 ]
@@ -1691,19 +1690,19 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "79
 [; ;main.c: 79:     static uint32_t t = 0;
-[v F12135 `ul ~T0 @X0 1 s t ]
-[i F12135
+[v F12136 `ul ~T0 @X0 1 s t ]
+[i F12136
 -> -> -> 0 `i `l `ul
 ]
 "80
 [; ;main.c: 80:     if(Timer - t > 150)
-[e $ ! > - _Timer F12135 -> -> -> 150 `i `l `ul 1564  ]
+[e $ ! > - _Timer F12136 -> -> -> 150 `i `l `ul 1564  ]
 "81
 [; ;main.c: 81:     {
 {
 "82
 [; ;main.c: 82:         t = Timer;
-[e = F12135 _Timer ]
+[e = F12136 _Timer ]
 "83
 [; ;main.c: 83:         Event = evS1Pressed;
 [e = _Event . `E12087 2 ]
@@ -1723,19 +1722,19 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "88
 [; ;main.c: 88:     static uint32_t t = 0;
-[v F12137 `ul ~T0 @X0 1 s t ]
-[i F12137
+[v F12138 `ul ~T0 @X0 1 s t ]
+[i F12138
 -> -> -> 0 `i `l `ul
 ]
 "89
 [; ;main.c: 89:     if(Timer - t > 150)
-[e $ ! > - _Timer F12137 -> -> -> 150 `i `l `ul 1566  ]
+[e $ ! > - _Timer F12138 -> -> -> 150 `i `l `ul 1566  ]
 "90
 [; ;main.c: 90:     {
 {
 "91
 [; ;main.c: 91:         t = Timer;
-[e = F12137 _Timer ]
+[e = F12138 _Timer ]
 "92
 [; ;main.c: 92:         Event = evS2Pressed;
 [e = _Event . `E12087 3 ]
@@ -1777,13 +1776,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _SYSTEM_Initialize ..  ]
 "120
 [; ;main.c: 120:     TMR0_SetInterruptHandler(timerCallback);
-[e ( _TMR0_SetInterruptHandler (1 -> &U _timerCallback `*F12140 ]
+[e ( _TMR0_SetInterruptHandler (1 -> &U _timerCallback `*F12141 ]
 "121
 [; ;main.c: 121:     IOCAF7_SetInterruptHandler(S1EventCallback);
-[e ( _IOCAF7_SetInterruptHandler (1 -> &U _S1EventCallback `*F12142 ]
+[e ( _IOCAF7_SetInterruptHandler (1 -> &U _S1EventCallback `*F12143 ]
 "122
 [; ;main.c: 122:     IOCAF6_SetInterruptHandler(S2EventCallback);
-[e ( _IOCAF6_SetInterruptHandler (1 -> &U _S2EventCallback `*F12144 ]
+[e ( _IOCAF6_SetInterruptHandler (1 -> &U _S2EventCallback `*F12145 ]
 "125
 [; ;main.c: 125:     (INTCONbits.GIE = 1);
 [e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
@@ -1792,10 +1791,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _INTCONbits 0 2 -> -> 1 `i `uc ]
 "138
 [; ;main.c: 138:     puts("$");
-[e ( _puts (1 :s 19C ]
+[e ( _puts (1 :s 18C ]
 "140
 [; ;main.c: 140:     puts("$init");
-[e ( _puts (1 :s 20C ]
+[e ( _puts (1 :s 19C ]
 "143
 [; ;main.c: 143:     event_t e = evNone;
 [v _e `E12087 ~T0 @X0 1 a ]
@@ -1831,23 +1830,22 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 156: }
 [e :UE 1568 ]
 }
-[a 11C 80 111 116 68 101 108 97 121 0 ]
-[a 12C 82 101 100 89 101 108 108 111 119 0 ]
-[a 14C 89 101 108 108 111 119 0 ]
+[a 10C 80 111 116 68 101 108 97 121 0 ]
+[a 11C 82 101 100 89 101 108 108 111 119 0 ]
+[a 13C 89 101 108 108 111 119 0 ]
 [a 5C 101 118 84 105 109 101 111 117 116 0 ]
 [a 6C 95 105 110 105 116 0 ]
-[a 20C 36 105 110 105 116 0 ]
-[a 13C 71 114 101 101 110 0 ]
-[a 15C 89 101 108 108 111 119 79 110 0 ]
+[a 19C 36 105 110 105 116 0 ]
+[a 12C 71 114 101 101 110 0 ]
+[a 14C 89 101 108 108 111 119 79 110 0 ]
 [a 2C 101 118 84 105 99 107 0 ]
 [a 7C 87 111 114 107 105 110 103 0 ]
-[a 17C 89 101 108 108 111 119 79 102 102 0 ]
+[a 16C 89 101 108 108 111 119 79 102 102 0 ]
 [a 1C 101 118 78 111 110 101 0 ]
-[a 9C 83 101 114 118 105 99 101 0 ]
+[a 8C 83 101 114 118 105 99 101 0 ]
 [a 4C 101 118 83 50 80 114 101 115 115 101 100 0 ]
 [a 3C 101 118 83 49 80 114 101 115 115 101 100 0 ]
-[a 10C 82 101 100 0 ]
-[a 18C 68 117 109 109 121 50 0 ]
-[a 8C 87 111 114 107 105 110 103 95 83 104 97 108 108 111 119 72 105 115 116 111 114 121 80 115 101 117 100 111 115 116 97 116 101 50 0 ]
-[a 16C 68 117 109 109 121 49 0 ]
-[a 19C 36 0 ]
+[a 9C 82 101 100 0 ]
+[a 17C 68 117 109 109 121 50 0 ]
+[a 15C 68 117 109 109 121 49 0 ]
+[a 18C 36 0 ]

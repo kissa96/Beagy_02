@@ -3,7 +3,7 @@
 		"name": "StateMachine",
 		"size":{
 			"width": 1039.0,
-			"height": 1189.0
+			"height": 1198.0
 		}
 	},
 	"states": [
@@ -18,7 +18,7 @@
 	        },
 	        "position":{
 				"x": 67.97682415615373,
-				"y": 51.48810067188066
+				"y": 60.42187752734941
 	        }
 		}
 	}
@@ -29,7 +29,7 @@
 			"name":"Working",
 			"position": {
 				"x": 97.97682415615373,
-				"y": 81.48810067188066
+				"y": 90.42187752734941
 			},
 			"size":{
 				"width": 869.9488028673541,
@@ -49,22 +49,7 @@
 	        },
 	        "position":{
 				"x": 78.55062702350733,
-				"y": 145.23810067188066
-	        }
-		}
-	}
-	,{
-		"state": "Working_ShallowHistoryPseudostate2",
-		"type":"history",
-		"properties":{
-			"name":"ShallowHistoryPseudostate2",
-			"size": {
-	            "width": 20,
-	            "height": 20
-	        },
-	        "position":{
-				"x": 937.9256270235078,
-				"y": 517.4404816242616
+				"y": 154.1718775273494
 	        }
 		}
 	}
@@ -75,7 +60,7 @@
 			"name":"Service",
 			"position": {
 				"x": 205.50658606091702,
-				"y": 725.2381006718807
+				"y": 734.1718775273495
 			},
 			"size":{
 				"width": 634.2940409625908,
@@ -95,7 +80,7 @@
 	        },
 	        "position":{
 				"x": 308.75896035684127,
-				"y": 824.4047673385473
+				"y": 833.3385441940161
 	        }
 		}
 	}
@@ -106,11 +91,11 @@
 			"name":"Red",
 			"position": {
 				"x": 108.55062702350733,
-				"y": 175.23810067188066
+				"y": 184.1718775273494
 			},
 			"size":{
 				"width": 136.25,
-				"height": 81.375
+				"height": 141.75
 			},
 			"events": [ "do/LED1_Off()\nLED2_Off()\nLED3_On()"]
 		}
@@ -122,7 +107,7 @@
 			"name":"PotDelay",
 			"position": {
 				"x": 435.63396035684127,
-				"y": 175.23810067188066
+				"y": 184.1718775273494
 			},
 			"size":{
 				"width": 86.45833333333348,
@@ -138,11 +123,11 @@
 			"name":"RedYellow",
 			"position": {
 				"x": 789.8006270235078,
-				"y": 175.23810067188066
+				"y": 182.46503228925417
 			},
 			"size":{
-				"width": 126.04166666666652,
-				"height": 81.375
+				"width": 153.39285714285643,
+				"height": 113.26934523809524
 			},
 			"events": [, "do/LED1_Off()\nLED2_On()\nLED3_On()"]
 		}
@@ -153,12 +138,12 @@
 		"properties":{
 			"name":"Green",
 			"position": {
-				"x": 783.5506270235073,
-				"y": 348.15476733854734
+				"x": 692.9256270235073,
+				"y": 357.47544895592085
 			},
 			"size":{
-				"width": 86.45833333333348,
-				"height": 96.46875
+				"width": 205.47619047619037,
+				"height": 141.36309523809524
 			},
 			"events": [, "do/LED1_On()\nLED2_Off()\nLED3_Off()"]
 		}
@@ -170,11 +155,11 @@
 			"name":"Yellow",
 			"position": {
 				"x": 170.00896035684173,
-				"y": 355.446434005214
+				"y": 363.7254489559209
 			},
 			"size":{
-				"width": 105.20833333333303,
-				"height": 81.375
+				"width": 161.72619047618946,
+				"height": 127.31101190476181
 			},
 			"events": [, "do/LED1_Off()\nLED2_On()\nLED3_Off()"]
 		}
@@ -186,7 +171,7 @@
 			"name":"YellowOn",
 			"position": {
 				"x": 338.75896035684127,
-				"y": 854.4047673385473
+				"y": 863.3385441940161
 			},
 			"size":{
 				"width": 137.5,
@@ -202,7 +187,7 @@
 			"name":"Dummy1",
 			"position": {
 				"x": 651.2589603568413,
-				"y": 854.4047673385473
+				"y": 863.3385441940161
 			},
 			"size":{
 				"width": 122.91666666666652,
@@ -218,7 +203,7 @@
 			"name":"YellowOff",
 			"position": {
 				"x": 647.0922936901748,
-				"y": 1038.415184005214
+				"y": 1047.3489608606828
 			},
 			"size":{
 				"width": 130.375,
@@ -234,7 +219,7 @@
 			"name":"Dummy2",
 			"position": {
 				"x": 338.75896035684127,
-				"y": 1038.7797673385473
+				"y": 1047.713544194016
 			},
 			"size":{
 				"width": 137.5,
@@ -254,7 +239,6 @@
 				,"Green"
 				,"Yellow"
 				,"Working_InitialPseudostate2"
-				,"Working_ShallowHistoryPseudostate2"
 			]
 		}
 		,{
@@ -273,13 +257,13 @@
             "source": "Red",
             "target": "PotDelay",
             "event": "evTick",
-            "label": "evTick [vPotmeter<50]"
+            "label": " evTick [vPotmeter<50]"
         }
 		,{
             "source": "Red",
             "target": "RedYellow",
             "event": "evTick",
-            "label": "evTick [vPotmeter >= 50]"
+            "label": "  evTick [vPotmeter >= 50]"
         }
 		,{
             "source": "PotDelay",
@@ -355,7 +339,7 @@
         }
 		,{
             "source": "Service",
-            "target": "Working_ShallowHistoryPseudostate2",
+            "target": "Working",
             "event": "evS2Pressed",
             "label": "evS2Pressed"
         }

@@ -13,97 +13,95 @@
 %PSECTS
 $dist/default/production\StateMachine16F-Test.X.production.o
 cinit CODE 0 45 45 2C 2
-text1 CODE 0 731 731 1F 2
-text2 CODE 0 697 697 2B 2
-text3 CODE 0 5FC 5FC 36 2
-text4 CODE 0 632 632 34 2
-text5 CODE 0 FEF FEF 11 2
-text6 CODE 0 71 71 1B8 2
-text7 CODE 0 3B1 3B1 56 2
-text8 CODE 0 7DF 7DF 12 2
-text9 CODE 0 666 666 31 2
-text10 CODE 0 300 300 B1 2
-text11 CODE 0 229 229 D7 2
-text12 CODE 0 750 750 1B 2
-text13 CODE 0 407 407 49 2
-text14 CODE 0 FA1 FA1 7 2
-text15 CODE 0 6C2 6C2 2A 2
-text16 CODE 0 F5A F5A 3 2
-text17 CODE 0 F57 F57 3 2
-text18 CODE 0 F54 F54 3 2
-text19 CODE 0 F51 F51 3 2
-text20 CODE 0 F4E F4E 3 2
-text21 CODE 0 F4B F4B 3 2
-text22 CODE 0 7CC 7CC 13 2
-text23 CODE 0 7B8 7B8 14 2
-text24 CODE 0 F8F F8F 6 2
-text25 CODE 0 FAF FAF 8 2
-text26 CODE 0 450 450 42 2
-text27 CODE 0 F89 F89 6 2
-text28 CODE 0 F83 F83 6 2
-text29 CODE 0 FB7 FB7 9 2
-text30 CODE 0 4D3 4D3 3F 2
-text31 CODE 0 F7D F7D 6 2
-text32 CODE 0 F77 F77 6 2
-text33 CODE 0 F71 F71 6 2
-text34 CODE 0 F6B F6B 6 2
-text35 CODE 0 F65 F65 6 2
-text36 CODE 0 79F 79F 19 2
-text38 CODE 0 7F1 7F1 F 2
+text1 CODE 0 6D6 6D6 1F 2
+text2 CODE 0 65F 65F 2B 2
+text3 CODE 0 5C4 5C4 36 2
+text4 CODE 0 5FA 5FA 34 2
+text5 CODE 0 794 794 11 2
+text6 CODE 0 71 71 17F 2
+text7 CODE 0 377 377 56 2
+text8 CODE 0 782 782 12 2
+text9 CODE 0 62E 62E 31 2
+text10 CODE 0 2C4 2C4 B3 2
+text11 CODE 0 1F0 1F0 D4 2
+text12 CODE 0 6F5 6F5 1B 2
+text13 CODE 0 3CD 3CD 49 2
+text14 CODE 0 FE1 FE1 7 2
+text15 CODE 0 68A 68A 2A 2
+text16 CODE 0 F9A F9A 3 2
+text17 CODE 0 F97 F97 3 2
+text18 CODE 0 F94 F94 3 2
+text19 CODE 0 F91 F91 3 2
+text20 CODE 0 F8E F8E 3 2
+text21 CODE 0 F8B F8B 3 2
+text22 CODE 0 76F 76F 13 2
+text23 CODE 0 75B 75B 14 2
+text24 CODE 0 FCF FCF 6 2
+text25 CODE 0 FEF FEF 8 2
+text26 CODE 0 416 416 42 2
+text27 CODE 0 FC9 FC9 6 2
+text28 CODE 0 FC3 FC3 6 2
+text29 CODE 0 FF7 FF7 9 2
+text30 CODE 0 499 499 41 2
+text31 CODE 0 FBD FBD 6 2
+text32 CODE 0 FB7 FB7 6 2
+text33 CODE 0 FB1 FB1 6 2
+text34 CODE 0 FAB FAB 6 2
+text35 CODE 0 FA5 FA5 6 2
+text36 CODE 0 72A 72A 19 2
+text38 CODE 0 7B6 7B6 F 2
 text39 CODE 0 3 3 1 2
-text40 CODE 0 512 512 3F 2
-text41 CODE 0 FDE FDE 11 2
-text42 CODE 0 FCF FCF F 2
+text40 CODE 0 4DA 4DA 3F 2
+text41 CODE 0 7A5 7A5 11 2
+text42 CODE 0 7C5 7C5 F 2
 text43 CODE 0 2 2 1 2
-text44 CODE 0 551 551 39 2
-text45 CODE 0 FC0 FC0 F 2
-text46 CODE 0 F4A F4A 1 2
-text47 CODE 0 58A 58A 39 2
-text48 CODE 0 70F 70F 22 2
-text49 CODE 0 5C3 5C3 39 2
-text50 CODE 0 F61 F61 4 2
-text51 CODE 0 F49 F49 1 2
-text52 CODE 0 F5D F5D 4 2
-text53 CODE 0 785 785 1A 2
-nvBANK0 BANK0 1 6F 6F 1 1
-nvBANK1 BANK1 1 CC CC 10 1
-maintext CODE 0 492 492 41 2
+text44 CODE 0 519 519 39 2
+text45 CODE 0 7D4 7D4 F 2
+text46 CODE 0 F8A F8A 1 2
+text47 CODE 0 552 552 39 2
+text48 CODE 0 6B4 6B4 22 2
+text49 CODE 0 58B 58B 39 2
+text50 CODE 0 FA1 FA1 4 2
+text51 CODE 0 F89 F89 1 2
+text52 CODE 0 F9D F9D 4 2
+text53 CODE 0 710 710 1A 2
+nvBANK1 BANK1 1 CA CA 11 1
+maintext CODE 0 458 458 41 2
 cstackCOMMON COMMON 1 70 70 6 1
 cstackBANK0 BANK0 1 20 20 42 1
-cstackBANK1 BANK1 1 E3 E3 4 1
-inittext CODE 0 F9B F9B 6 2
-stringtext1 STRCODE 0 76B 76B 1A 2
-stringtext2 STRCODE 0 1024 1024 A 2
-stringtext3 STRCODE 0 6EC 6EC 23 2
-stringtext4 STRCODE 0 1000 1000 C 2
-stringtext5 STRCODE 0 100C 100C C 2
-stringtext6 STRCODE 0 1018 1018 C 2
-stringtext7 STRCODE 0 102E 102E A 2
-stringtext8 STRCODE 0 1038 1038 A 2
-stringtext9 STRCODE 0 1042 1042 A 2
+cstackBANK1 BANK1 1 E2 E2 4 1
+inittext CODE 0 FDB FDB 6 2
+stringtext1 STRCODE 0 743 743 18 2
+stringtext2 STRCODE 0 807 807 A 2
+stringtext3 STRCODE 0 7E3 7E3 C 2
+stringtext4 STRCODE 0 7EF 7EF C 2
+stringtext5 STRCODE 0 7FB 7FB C 2
+stringtext6 STRCODE 0 811 811 A 2
+stringtext7 STRCODE 0 81B 81B A 2
+stringtext8 STRCODE 0 825 825 A 2
+stringtext9 STRCODE 0 82F 82F 9 2
 intentry CODE 0 4 4 3F 2
-bssBANK0 BANK0 1 62 62 D 1
-bssBANK1 BANK1 1 A0 A0 2C 1
+bssBANK0 BANK0 1 62 62 E 1
+bssBANK1 BANK1 1 A0 A0 2A 1
 bssBANK2 BANK2 1 120 120 20 1
-idataBANK1 CODE 0 FA8 FA8 7 2
-dataBANK1 BANK1 1 DC DC 7 1
-clrtext CODE 0 F95 F95 6 2
+idataBANK1 CODE 0 FE8 FE8 7 2
+dataBANK1 BANK1 1 DB DB 7 1
+clrtext CODE 0 FD5 FD5 6 2
 bssCOMMON COMMON 1 76 76 4 1
-stringtext10 STRCODE 0 104C 104C 9 2
-stringtext11 STRCODE 0 1055 1055 9 2
-stringtext12 STRCODE 0 105E 105E 8 2
-stringtext13 STRCODE 0 1066 1066 8 2
-stringtext14 STRCODE 0 106E 106E 7 2
-stringtext15 STRCODE 0 1075 1075 7 2
-stringtext16 STRCODE 0 107C 107C 7 2
-stringtext17 STRCODE 0 1083 1083 7 2
-stringtext18 STRCODE 0 108A 108A 6 2
-stringtext19 STRCODE 0 1090 1090 6 2
-stringtext20 STRCODE 0 1096 1096 6 2
-stringtext21 STRCODE 0 109C 109C 4 2
-stringtext22 STRCODE 0 10A0 10A0 2 2
+stringtext10 STRCODE 0 838 838 9 2
+stringtext11 STRCODE 0 1000 1000 8 2
+stringtext12 STRCODE 0 1008 1008 8 2
+stringtext13 STRCODE 0 1010 1010 7 2
+stringtext14 STRCODE 0 1017 1017 7 2
+stringtext15 STRCODE 0 101E 101E 7 2
+stringtext16 STRCODE 0 1025 1025 7 2
+stringtext17 STRCODE 0 102C 102C 6 2
+stringtext18 STRCODE 0 1032 1032 6 2
+stringtext19 STRCODE 0 1038 1038 6 2
+stringtext20 STRCODE 0 103E 103E 4 2
+stringtext21 STRCODE 0 1042 1042 2 2
 config CONFIG 4 8007 8007 5 2
-$C:\Users\kissa\AppData\Local\Temp\xcAseh4.o
+$C:\Users\kissa\AppData\Local\Temp\xcAsbjo.o
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 43 43 2 2
 config CONFIG 4 8007 8007 5 2
@@ -113,7 +111,7 @@ config CONFIG 4 8007 8007 5 2
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM E7-EF 1
+RAM E6-EF 1
 RAM 140-16F 1
 RAM 1A0-1EF 1
 RAM 220-26F 1
@@ -163,7 +161,7 @@ RAM 17A0-17EF 1
 RAM 1820-186F 1
 RAM 18A0-18EF 1
 RAM 1920-196F 1
-BANK1 E7-EF 1
+BANK1 E6-EF 1
 BANK2 140-16F 1
 BANK3 1A0-1EF 1
 BANK4 220-26F 1
@@ -172,10 +170,10 @@ BANK6 320-36F 1
 BANK7 3A0-3EF 1
 BANK8 420-46F 1
 BANK9 4A0-4EF 1
-CONST 800-F48 2
-CONST 10A2-7FFF 2
-ENTRY 800-F48 2
-ENTRY 10A2-7FFF 2
+CONST 841-F88 2
+CONST 1044-7FFF 2
+ENTRY 841-F88 2
+ENTRY 1044-7FFF 2
 IDLOC 8000-8003 2
 SFR10 500-51F 1
 SFR11 580-59F 1
@@ -232,8 +230,8 @@ SFR61 1E80-1EEF 1
 SFR62 1F00-1F6F 1
 SFR63 1F80-1FEF 1
 STACK 20C0-2FEF 1
-CODE 800-F48 2
-CODE 10A2-7FFF 2
+CODE 841-F88 2
+CODE 1044-7FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-11F 1
@@ -288,10 +286,10 @@ BANK50 1920-196F 1
 BIGRAM 2000-2FEF 1
 COMMON 7A-7D 1
 EEDATA F000-F0FF 2
-STRCODE 800-F48 2
-STRCODE 10A2-7FFF 2
-STRING 800-F48 2
-STRING 10A2-7FFF 2
+STRCODE 841-F88 2
+STRCODE 1044-7FFF 2
+STRING 841-F88 2
+STRING 1044-7FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -306,44 +304,44 @@ STRING 10A2-7FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\StateMachine16F-Test.X.production.o
-45 cinit CODE >10154:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-45 cinit CODE >10157:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-45 cinit CODE >10268:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-46 cinit CODE >10269:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-47 cinit CODE >10270:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-48 cinit CODE >10271:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-49 cinit CODE >10272:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-4A cinit CODE >10273:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-4B cinit CODE >10274:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-4C cinit CODE >10275:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-4D cinit CODE >10276:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-4E cinit CODE >10277:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-51 cinit CODE >10294:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-52 cinit CODE >10295:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-53 cinit CODE >10296:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-54 cinit CODE >10297:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-55 cinit CODE >10301:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-56 cinit CODE >10302:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-57 cinit CODE >10303:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-58 cinit CODE >10304:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-59 cinit CODE >10305:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-5A cinit CODE >10306:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-5D cinit CODE >10310:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-5E cinit CODE >10311:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-5F cinit CODE >10312:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-60 cinit CODE >10313:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-61 cinit CODE >10314:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-62 cinit CODE >10315:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-65 cinit CODE >10319:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-66 cinit CODE >10320:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-67 cinit CODE >10321:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-68 cinit CODE >10322:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-69 cinit CODE >10323:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-6A cinit CODE >10324:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-6D cinit CODE >10330:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-6D cinit CODE >10332:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-6E cinit CODE >10333:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-6F cinit CODE >10334:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
+45 cinit CODE >10106:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+45 cinit CODE >10109:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+45 cinit CODE >10217:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+46 cinit CODE >10218:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+47 cinit CODE >10219:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+48 cinit CODE >10220:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+49 cinit CODE >10221:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+4A cinit CODE >10222:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+4B cinit CODE >10223:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+4C cinit CODE >10224:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+4D cinit CODE >10225:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+4E cinit CODE >10226:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+51 cinit CODE >10243:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+52 cinit CODE >10244:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+53 cinit CODE >10245:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+54 cinit CODE >10246:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+55 cinit CODE >10250:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+56 cinit CODE >10251:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+57 cinit CODE >10252:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+58 cinit CODE >10253:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+59 cinit CODE >10254:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+5A cinit CODE >10255:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+5D cinit CODE >10259:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+5E cinit CODE >10260:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+5F cinit CODE >10261:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+60 cinit CODE >10262:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+61 cinit CODE >10263:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+62 cinit CODE >10264:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+65 cinit CODE >10268:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+66 cinit CODE >10269:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+67 cinit CODE >10270:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+68 cinit CODE >10271:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+69 cinit CODE >10272:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+6A cinit CODE >10273:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+6D cinit CODE >10279:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+6D cinit CODE >10281:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+6E cinit CODE >10282:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+6F cinit CODE >10283:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
 4 intentry CODE >52:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/interrupt_manager.c
 6 intentry CODE >55:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/interrupt_manager.c
 F intentry CODE >57:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/interrupt_manager.c
@@ -360,513 +358,505 @@ F intentry CODE >57:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachi
 40 intentry CODE >72:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/interrupt_manager.c
 41 intentry CODE >81:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/interrupt_manager.c
 41 intentry CODE >82:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/interrupt_manager.c
-785 text53 CODE >249:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-785 text53 CODE >251:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-792 text53 CODE >252:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-794 text53 CODE >252:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-798 text53 CODE >254:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-799 text53 CODE >256:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-79E text53 CODE >257:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F5D text52 CODE >269:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F5D text52 CODE >270:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F60 text52 CODE >271:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F49 text51 CODE >259:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F61 text50 CODE >261:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F61 text50 CODE >264:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F63 text50 CODE >265:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F64 text50 CODE >267:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-5C3 text49 CODE >225:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-5C3 text49 CODE >228:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-5C8 text49 CODE >230:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-5CD text49 CODE >231:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-5D2 text49 CODE >232:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-5D8 text49 CODE >235:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-5DD text49 CODE >236:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-5E2 text49 CODE >237:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-5E8 text49 CODE >240:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-5F1 text49 CODE >241:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-5F7 text49 CODE >242:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-5F8 text49 CODE >243:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-5FB text49 CODE >247:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-70F text48 CODE >206:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-70F text48 CODE >210:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-712 text48 CODE >210:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-716 text48 CODE >212:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-721 text48 CODE >213:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-723 text48 CODE >213:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-727 text48 CODE >215:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-728 text48 CODE >217:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-72D text48 CODE >218:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-72E text48 CODE >219:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-72E text48 CODE >221:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-730 text48 CODE >223:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-58A text47 CODE >87:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-58A text47 CODE >89:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-5AD text47 CODE >91:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-5BD text47 CODE >92:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-5C2 text47 CODE >94:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-F4A text46 CODE >181:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-F4A text46 CODE >184:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-FC0 text45 CODE >159:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-FC0 text45 CODE >164:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-FC7 text45 CODE >166:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-FCC text45 CODE >168:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-FCE text45 CODE >169:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-551 text44 CODE >77:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-551 text44 CODE >80:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-574 text44 CODE >82:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-584 text44 CODE >83:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-589 text44 CODE >85:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+710 text53 CODE >249:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+710 text53 CODE >251:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+71D text53 CODE >252:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+71F text53 CODE >252:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+723 text53 CODE >254:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+724 text53 CODE >256:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+729 text53 CODE >257:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+F9D text52 CODE >269:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+F9D text52 CODE >270:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FA0 text52 CODE >271:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+F89 text51 CODE >259:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FA1 text50 CODE >261:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FA1 text50 CODE >264:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FA3 text50 CODE >265:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FA4 text50 CODE >267:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+58B text49 CODE >225:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+58B text49 CODE >228:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+590 text49 CODE >230:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+595 text49 CODE >231:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+59A text49 CODE >232:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+5A0 text49 CODE >235:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+5A5 text49 CODE >236:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+5AA text49 CODE >237:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+5B0 text49 CODE >240:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+5B9 text49 CODE >241:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+5BF text49 CODE >242:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+5C0 text49 CODE >243:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+5C3 text49 CODE >247:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+6B4 text48 CODE >206:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+6B4 text48 CODE >210:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+6B7 text48 CODE >210:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+6BB text48 CODE >212:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+6C6 text48 CODE >213:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+6C8 text48 CODE >213:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+6CC text48 CODE >215:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+6CD text48 CODE >217:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+6D2 text48 CODE >218:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+6D3 text48 CODE >219:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+6D3 text48 CODE >221:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+6D5 text48 CODE >223:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+552 text47 CODE >87:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+552 text47 CODE >89:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+575 text47 CODE >91:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+585 text47 CODE >92:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+58A text47 CODE >94:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+F8A text46 CODE >181:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+F8A text46 CODE >184:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+7D4 text45 CODE >159:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+7D4 text45 CODE >164:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+7DB text45 CODE >166:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+7E0 text45 CODE >168:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+7E2 text45 CODE >169:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+519 text44 CODE >77:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+519 text44 CODE >80:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+53C text44 CODE >82:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+54C text44 CODE >83:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+551 text44 CODE >85:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
 2 text43 CODE >211:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
 2 text43 CODE >214:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-FCF text42 CODE >189:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-FCF text42 CODE >194:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-FD6 text42 CODE >196:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-FDB text42 CODE >198:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-FDD text42 CODE >199:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-FDE text41 CODE >142:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-FDE text41 CODE >145:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-FE3 text41 CODE >147:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-FE6 text41 CODE >150:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-FEB text41 CODE >152:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-FEE text41 CODE >154:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-512 text40 CODE >62:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-512 text40 CODE >64:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-51B text40 CODE >68:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-53D text40 CODE >69:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-54D text40 CODE >70:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-550 text40 CODE >74:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+7C5 text42 CODE >189:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+7C5 text42 CODE >194:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+7CC text42 CODE >196:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+7D1 text42 CODE >198:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+7D3 text42 CODE >199:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+7A5 text41 CODE >142:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+7A5 text41 CODE >145:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+7AA text41 CODE >147:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+7AD text41 CODE >150:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+7B2 text41 CODE >152:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+7B5 text41 CODE >154:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+4DA text40 CODE >62:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+4DA text40 CODE >64:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+4E3 text40 CODE >68:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+505 text40 CODE >69:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+515 text40 CODE >70:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+518 text40 CODE >74:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
 3 text39 CODE >138:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
 3 text39 CODE >141:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
-7F1 text38 CODE >121:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
-7F1 text38 CODE >124:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
-7F3 text38 CODE >125:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
-7FA text38 CODE >127:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
-7FF text38 CODE >131:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
-79F text36 CODE >63:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-79F text36 CODE >67:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-7A1 text36 CODE >69:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-7A2 text36 CODE >71:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-7A3 text36 CODE >73:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-7A4 text36 CODE >75:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-7A5 text36 CODE >77:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-7A6 text36 CODE >79:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-7A7 text36 CODE >81:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-7A9 text36 CODE >83:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-7AA text36 CODE >85:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-7AB text36 CODE >87:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-7AC text36 CODE >89:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-7AD text36 CODE >91:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-7AE text36 CODE >93:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-7AF text36 CODE >95:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-7B0 text36 CODE >97:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-7B1 text36 CODE >99:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-7B3 text36 CODE >101:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-7B5 text36 CODE >103:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-7B7 text36 CODE >106:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-F65 text35 CODE >281:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F65 text35 CODE >282:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F6A text35 CODE >283:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F6B text34 CODE >273:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F6B text34 CODE >274:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F70 text34 CODE >275:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F71 text33 CODE >277:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F71 text33 CODE >278:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F76 text33 CODE >279:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F77 text32 CODE >289:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F77 text32 CODE >290:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F7C text32 CODE >291:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F7D text31 CODE >285:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F7D text31 CODE >286:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-F82 text31 CODE >287:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-4D3 text30 CODE >88:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-4D3 text30 CODE >91:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-4D5 text30 CODE >92:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-4DC text30 CODE >93:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-4DE text30 CODE >94:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-4E5 text30 CODE >98:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-4E8 text30 CODE >101:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-4EA text30 CODE >104:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-4EC text30 CODE >107:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-4EE text30 CODE >110:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-4EF text30 CODE >113:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-4F6 text30 CODE >114:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-4FD text30 CODE >115:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-504 text30 CODE >117:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-506 text30 CODE >120:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-507 text30 CODE >121:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-508 text30 CODE >122:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-50C text30 CODE >124:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-50D text30 CODE >125:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-50E text30 CODE >126:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-50F text30 CODE >129:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-511 text30 CODE >130:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-FB7 text29 CODE >60:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-FB7 text29 CODE >63:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-FBA text29 CODE >65:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-FBB text29 CODE >67:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-FBC text29 CODE >69:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-FBE text29 CODE >71:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-FBF text29 CODE >72:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-F83 text28 CODE >174:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-F83 text28 CODE >175:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-F88 text28 CODE >176:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-F89 text27 CODE >204:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-F89 text27 CODE >205:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-F8E text27 CODE >206:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-450 text26 CODE >58:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-450 text26 CODE >63:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-452 text26 CODE >64:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-453 text26 CODE >65:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-454 text26 CODE >70:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-456 text26 CODE >71:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-458 text26 CODE >72:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-45A text26 CODE >77:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-45D text26 CODE >78:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-45F text26 CODE >79:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-461 text26 CODE >84:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-462 text26 CODE >85:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-463 text26 CODE >86:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-464 text26 CODE >87:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-465 text26 CODE >92:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-466 text26 CODE >93:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-467 text26 CODE >94:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-468 text26 CODE >99:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-46A text26 CODE >100:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-46C text26 CODE >101:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-46E text26 CODE >106:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-470 text26 CODE >107:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-472 text26 CODE >108:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-474 text26 CODE >109:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-475 text26 CODE >116:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-476 text26 CODE >118:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-477 text26 CODE >120:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-478 text26 CODE >122:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-479 text26 CODE >124:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-47A text26 CODE >126:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-47B text26 CODE >131:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-482 text26 CODE >132:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-489 text26 CODE >135:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-48B text26 CODE >138:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-48E text26 CODE >139:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-491 text26 CODE >140:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
-FAF text25 CODE >74:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-FAF text25 CODE >77:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-FB1 text25 CODE >79:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-FB2 text25 CODE >81:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-FB3 text25 CODE >83:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-FB4 text25 CODE >85:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-FB5 text25 CODE >87:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-FB6 text25 CODE >88:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-F8F text24 CODE >134:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
-F8F text24 CODE >135:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
-F94 text24 CODE >136:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
-7B8 text23 CODE >61:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
-7B8 text23 CODE >66:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
-7BB text23 CODE >69:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
-7BD text23 CODE >72:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
-7BE text23 CODE >75:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
-7C0 text23 CODE >78:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
-7C1 text23 CODE >81:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
-7C8 text23 CODE >84:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
-7CB text23 CODE >85:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
-7CC text22 CODE >50:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-7CC text22 CODE >52:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-7CF text22 CODE >53:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-7D2 text22 CODE >54:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-7D5 text22 CODE >55:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-7D8 text22 CODE >56:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-7DB text22 CODE >57:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-7DE text22 CODE >58:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
-F4B text21 CODE >13:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
-F4B text21 CODE >15:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
-F4D text21 CODE >16:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
-F4E text20 CODE >8:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
-F4E text20 CODE >10:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
-F50 text20 CODE >11:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
-F51 text19 CODE >23:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
-F51 text19 CODE >25:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
-F53 text19 CODE >26:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
-F54 text18 CODE >18:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
-F54 text18 CODE >20:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
-F56 text18 CODE >21:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
-F57 text17 CODE >33:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
-F57 text17 CODE >35:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
-F59 text17 CODE >36:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
-F5A text16 CODE >28:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
-F5A text16 CODE >30:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
-F5C text16 CODE >31:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
-6C2 text15 CODE >173:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-6C3 text15 CODE >175:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-6C9 text15 CODE >179:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-6CE text15 CODE >181:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-6D1 text15 CODE >182:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-6D2 text15 CODE >183:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-6D2 text15 CODE >185:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-6D3 text15 CODE >186:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-6DF text15 CODE >187:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-6E1 text15 CODE >187:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-6E5 text15 CODE >189:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-6E6 text15 CODE >191:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-6E9 text15 CODE >193:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-6EB text15 CODE >194:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-FA1 text14 CODE >201:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-FA3 text14 CODE >203:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-FA7 text14 CODE >204:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
-407 text13 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
-407 text13 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
-412 text13 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
-416 text13 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
-417 text13 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
-436 text13 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
-43A text13 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
-43E text13 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
-445 text13 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
-447 text13 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
-44F text13 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
-750 text12 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
-750 text12 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
-755 text12 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
-756 text12 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
-75A text12 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
-763 text12 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
-76A text12 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
-229 text11 CODE >568:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-22B text11 CODE >570:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-239 text11 CODE >574:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-23D text11 CODE >575:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-243 text11 CODE >576:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-247 text11 CODE >580:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-253 text11 CODE >581:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-25B text11 CODE >582:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-265 text11 CODE >582:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-269 text11 CODE >582:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-273 text11 CODE >583:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-278 text11 CODE >584:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-280 text11 CODE >587:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-286 text11 CODE >589:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-292 text11 CODE >590:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-297 text11 CODE >588:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-29E text11 CODE >588:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-2A2 text11 CODE >588:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-2A6 text11 CODE >595:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-2A9 text11 CODE >596:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-2AA text11 CODE >597:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-2BD text11 CODE >598:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-2C2 text11 CODE >599:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-2C6 text11 CODE >596:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-2CC text11 CODE >596:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-2D0 text11 CODE >596:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-2D4 text11 CODE >603:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-2DA text11 CODE >605:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-2E6 text11 CODE >606:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-2EB text11 CODE >604:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-2F2 text11 CODE >604:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-2F6 text11 CODE >604:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-2FA text11 CODE >610:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-2FF text11 CODE >611:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-300 text10 CODE >692:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-302 text10 CODE >702:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-313 text10 CODE >703:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-319 text10 CODE >703:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-31B text10 CODE >705:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-320 text10 CODE >706:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-324 text10 CODE >1171:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-336 text10 CODE >1173:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-33C text10 CODE >1173:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-33E text10 CODE >1174:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-34A text10 CODE >1176:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-358 text10 CODE >1372:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-369 text10 CODE >1373:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-36F text10 CODE >1373:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-371 text10 CODE >1374:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-37C text10 CODE >1375:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-382 text10 CODE >1379:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-388 text10 CODE >1379:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-38A text10 CODE >1380:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-38D text10 CODE >1384:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-3A6 text10 CODE >1385:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-3AD text10 CODE >1385:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-3B0 text10 CODE >1387:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-666 text9 CODE >1390:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-668 text9 CODE >1395:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-66C text9 CODE >1396:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-66F text9 CODE >1397:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-670 text9 CODE >1398:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-684 text9 CODE >1397:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-68E text9 CODE >1400:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-696 text9 CODE >1404:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
-7DF text8 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
-7DF text8 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
-7E4 text8 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
-7F0 text8 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
-3B1 text7 CODE >21:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-3B3 text7 CODE >24:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-3B5 text7 CODE >24:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-3BB text7 CODE >24:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-3BF text7 CODE >26:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-3C6 text7 CODE >26:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-3CA text7 CODE >27:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-3FD text7 CODE >29:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-402 text7 CODE >30:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-406 text7 CODE >32:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-71 text6 CODE >43:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-73 text6 CODE >45:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-74 text6 CODE >46:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-74 text6 CODE >47:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-77 text6 CODE >48:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-78 text6 CODE >51:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-7F text6 CODE >52:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-80 text6 CODE >55:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-85 text6 CODE >56:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-8B text6 CODE >57:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-92 text6 CODE >62:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-97 text6 CODE >63:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-9D text6 CODE >64:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-A4 text6 CODE >69:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-A7 text6 CODE >70:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-AA text6 CODE >71:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-AD text6 CODE >74:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-B4 text6 CODE >75:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-BA text6 CODE >79:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-C0 text6 CODE >80:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-C0 text6 CODE >81:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-C2 text6 CODE >81:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-CB text6 CODE >82:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-D1 text6 CODE >83:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-D1 text6 CODE >84:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-D3 text6 CODE >84:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-DC text6 CODE >85:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-E3 text6 CODE >90:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-EA text6 CODE >91:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-F0 text6 CODE >95:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-F6 text6 CODE >97:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-FD text6 CODE >103:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-100 text6 CODE >104:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-103 text6 CODE >105:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-106 text6 CODE >108:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-10D text6 CODE >109:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-113 text6 CODE >113:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-119 text6 CODE >115:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-11E text6 CODE >116:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-125 text6 CODE >121:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-128 text6 CODE >122:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-12B text6 CODE >123:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-12E text6 CODE >126:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-135 text6 CODE >127:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-13B text6 CODE >131:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-141 text6 CODE >133:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-146 text6 CODE >134:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-14D text6 CODE >139:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-150 text6 CODE >140:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-153 text6 CODE >141:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-156 text6 CODE >144:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-15D text6 CODE >145:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-163 text6 CODE >149:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-169 text6 CODE >151:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-16E text6 CODE >152:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-175 text6 CODE >157:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-178 text6 CODE >158:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-17B text6 CODE >159:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-17E text6 CODE >162:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-185 text6 CODE >164:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-18B text6 CODE >167:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-190 text6 CODE >168:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-197 text6 CODE >173:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-19E text6 CODE >175:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-1A4 text6 CODE >178:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-1A9 text6 CODE >179:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-1B0 text6 CODE >184:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-1B3 text6 CODE >185:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-1B6 text6 CODE >186:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-1B9 text6 CODE >189:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-1C0 text6 CODE >191:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-1C6 text6 CODE >194:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-1CB text6 CODE >195:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-1D2 text6 CODE >200:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-1D9 text6 CODE >202:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-1DF text6 CODE >205:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-1E4 text6 CODE >206:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-1EB text6 CODE >211:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-1F1 text6 CODE >211:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-1F6 text6 CODE >211:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-1F9 text6 CODE >211:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-1FC text6 CODE >211:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-1FF text6 CODE >211:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-202 text6 CODE >211:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-205 text6 CODE >211:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-208 text6 CODE >211:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-20B text6 CODE >211:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-20E text6 CODE >211:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-211 text6 CODE >211:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-214 text6 CODE >211:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-217 text6 CODE >211:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-21A text6 CODE >211:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-21D text6 CODE >214:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-228 text6 CODE >216:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
-FEF text5 CODE >132:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-FF1 text5 CODE >135:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-FF4 text5 CODE >138:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-FF5 text5 CODE >141:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-FF6 text5 CODE >144:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-FF7 text5 CODE >148:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-FF7 text5 CODE >150:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-FFB text5 CODE >154:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-FFF text5 CODE >155:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
-632 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
-632 text4 CODE >119:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
-63B text4 CODE >121:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
-63F text4 CODE >122:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
-647 text4 CODE >123:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
-64E text4 CODE >124:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
-655 text4 CODE >125:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
-659 text4 CODE >125:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
-65D text4 CODE >128:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
-665 text4 CODE >129:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
-5FC text3 CODE >97:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-5FC text3 CODE >99:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-631 text3 CODE >100:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-697 text2 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
-697 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
-69A text2 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
-69B text2 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
-6A9 text2 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
-6AE text2 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
-6BD text2 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
-6C1 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
-731 text1 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\puts.c
-731 text1 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\puts.c
-74F text1 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\puts.c
-492 maintext CODE >111:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-492 maintext CODE >114:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-495 maintext CODE >120:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-49C maintext CODE >121:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-4A3 maintext CODE >122:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-4AA maintext CODE >125:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-4AB maintext CODE >128:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-4AC maintext CODE >138:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-4B4 maintext CODE >140:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-4BC maintext CODE >143:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-4BC maintext CODE >148:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-4C4 maintext CODE >151:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-4C9 maintext CODE >152:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-4CB maintext CODE >153:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
-F95 clrtext CODE >10283:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-F95 clrtext CODE >10284:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-F96 clrtext CODE >10285:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-F96 clrtext CODE >10286:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-F97 clrtext CODE >10287:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-F98 clrtext CODE >10288:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-F99 clrtext CODE >10289:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-F9A clrtext CODE >10290:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-F9B inittext CODE >10257:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-F9B inittext CODE >10258:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-F9C inittext CODE >10259:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-F9C inittext CODE >10260:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-F9D inittext CODE >10261:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-F9E inittext CODE >10262:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-F9F inittext CODE >10263:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
-FA0 inittext CODE >10264:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
+7B6 text38 CODE >121:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
+7B6 text38 CODE >124:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
+7B8 text38 CODE >125:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
+7BF text38 CODE >127:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
+7C4 text38 CODE >131:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
+72A text36 CODE >63:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+72A text36 CODE >67:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+72C text36 CODE >69:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+72D text36 CODE >71:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+72E text36 CODE >73:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+72F text36 CODE >75:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+730 text36 CODE >77:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+731 text36 CODE >79:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+732 text36 CODE >81:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+734 text36 CODE >83:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+735 text36 CODE >85:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+736 text36 CODE >87:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+737 text36 CODE >89:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+738 text36 CODE >91:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+739 text36 CODE >93:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+73A text36 CODE >95:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+73B text36 CODE >97:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+73C text36 CODE >99:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+73E text36 CODE >101:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+740 text36 CODE >103:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+742 text36 CODE >106:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+FA5 text35 CODE >281:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FA5 text35 CODE >282:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FAA text35 CODE >283:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FAB text34 CODE >273:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FAB text34 CODE >274:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FB0 text34 CODE >275:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FB1 text33 CODE >277:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FB1 text33 CODE >278:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FB6 text33 CODE >279:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FB7 text32 CODE >289:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FB7 text32 CODE >290:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FBC text32 CODE >291:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FBD text31 CODE >285:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FBD text31 CODE >286:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FC2 text31 CODE >287:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+499 text30 CODE >88:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+499 text30 CODE >91:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+49B text30 CODE >92:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+4A2 text30 CODE >93:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+4A4 text30 CODE >94:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+4AB text30 CODE >98:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+4AE text30 CODE >101:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+4B0 text30 CODE >104:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+4B2 text30 CODE >107:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+4B4 text30 CODE >110:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+4B5 text30 CODE >113:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+4BC text30 CODE >114:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+4C3 text30 CODE >115:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+4CA text30 CODE >117:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+4CC text30 CODE >120:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+4CD text30 CODE >121:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+4CE text30 CODE >122:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+4D3 text30 CODE >124:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+4D4 text30 CODE >125:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+4D5 text30 CODE >126:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+4D7 text30 CODE >129:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+4D9 text30 CODE >130:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FF7 text29 CODE >60:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+FF7 text29 CODE >63:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+FFA text29 CODE >65:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+FFB text29 CODE >67:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+FFC text29 CODE >69:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+FFE text29 CODE >71:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+FFF text29 CODE >72:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+FC3 text28 CODE >174:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+FC3 text28 CODE >175:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+FC8 text28 CODE >176:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+FC9 text27 CODE >204:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+FC9 text27 CODE >205:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+FCE text27 CODE >206:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+416 text26 CODE >58:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+416 text26 CODE >63:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+418 text26 CODE >64:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+419 text26 CODE >65:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+41A text26 CODE >70:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+41C text26 CODE >71:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+41E text26 CODE >72:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+420 text26 CODE >77:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+423 text26 CODE >78:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+425 text26 CODE >79:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+427 text26 CODE >84:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+428 text26 CODE >85:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+429 text26 CODE >86:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+42A text26 CODE >87:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+42B text26 CODE >92:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+42C text26 CODE >93:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+42D text26 CODE >94:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+42E text26 CODE >99:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+430 text26 CODE >100:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+432 text26 CODE >101:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+434 text26 CODE >106:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+436 text26 CODE >107:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+438 text26 CODE >108:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+43A text26 CODE >109:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+43B text26 CODE >116:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+43C text26 CODE >118:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+43D text26 CODE >120:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+43E text26 CODE >122:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+43F text26 CODE >124:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+440 text26 CODE >126:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+441 text26 CODE >131:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+448 text26 CODE >132:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+44F text26 CODE >135:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+451 text26 CODE >138:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+454 text26 CODE >139:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+457 text26 CODE >140:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/pin_manager.c
+FEF text25 CODE >74:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+FEF text25 CODE >77:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+FF1 text25 CODE >79:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+FF2 text25 CODE >81:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+FF3 text25 CODE >83:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+FF4 text25 CODE >85:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+FF5 text25 CODE >87:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+FF6 text25 CODE >88:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+FCF text24 CODE >134:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
+FCF text24 CODE >135:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
+FD4 text24 CODE >136:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
+75B text23 CODE >61:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
+75B text23 CODE >66:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
+75E text23 CODE >69:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
+760 text23 CODE >72:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
+761 text23 CODE >75:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
+763 text23 CODE >78:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
+764 text23 CODE >81:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
+76B text23 CODE >84:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
+76E text23 CODE >85:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/tmr0.c
+76F text22 CODE >50:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+76F text22 CODE >52:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+772 text22 CODE >53:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+775 text22 CODE >54:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+778 text22 CODE >55:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+77B text22 CODE >56:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+77E text22 CODE >57:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+781 text22 CODE >58:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
+F8B text21 CODE >12:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
+F8B text21 CODE >14:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
+F8D text21 CODE >15:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
+F8E text20 CODE >7:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
+F8E text20 CODE >9:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
+F90 text20 CODE >10:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
+F91 text19 CODE >22:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
+F91 text19 CODE >24:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
+F93 text19 CODE >25:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
+F94 text18 CODE >17:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
+F94 text18 CODE >19:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
+F96 text18 CODE >20:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
+F97 text17 CODE >32:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
+F97 text17 CODE >34:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
+F99 text17 CODE >35:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
+F9A text16 CODE >27:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
+F9A text16 CODE >29:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
+F9C text16 CODE >30:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
+68A text15 CODE >173:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+68B text15 CODE >175:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+691 text15 CODE >179:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+696 text15 CODE >181:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+699 text15 CODE >182:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+69A text15 CODE >183:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+69A text15 CODE >185:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+69B text15 CODE >186:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+6A7 text15 CODE >187:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+6A9 text15 CODE >187:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+6AD text15 CODE >189:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+6AE text15 CODE >191:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+6B1 text15 CODE >193:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+6B3 text15 CODE >194:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FE1 text14 CODE >201:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FE3 text14 CODE >203:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+FE7 text14 CODE >204:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
+3CD text13 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+3CD text13 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+3D8 text13 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+3DC text13 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+3DD text13 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+3FC text13 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+400 text13 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+404 text13 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+40B text13 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+40D text13 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+415 text13 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+6F5 text12 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+6F5 text12 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+6FA text12 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+6FB text12 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+6FF text12 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+708 text12 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+70F text12 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+1F0 text11 CODE >568:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1F2 text11 CODE >570:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+200 text11 CODE >574:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+204 text11 CODE >575:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+20A text11 CODE >576:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+20E text11 CODE >580:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+21A text11 CODE >581:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+222 text11 CODE >582:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+22C text11 CODE >582:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+230 text11 CODE >582:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+23A text11 CODE >583:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+23F text11 CODE >584:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+247 text11 CODE >587:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+24C text11 CODE >589:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+258 text11 CODE >590:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+25D text11 CODE >588:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+263 text11 CODE >588:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+267 text11 CODE >588:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+26B text11 CODE >595:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+26E text11 CODE >596:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+26F text11 CODE >597:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+282 text11 CODE >598:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+287 text11 CODE >599:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+28B text11 CODE >596:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+291 text11 CODE >596:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+295 text11 CODE >596:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+299 text11 CODE >603:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+29F text11 CODE >605:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+2AB text11 CODE >606:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+2B0 text11 CODE >604:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+2B6 text11 CODE >604:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+2BA text11 CODE >604:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+2BE text11 CODE >610:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+2C3 text11 CODE >611:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+2C4 text10 CODE >692:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+2C6 text10 CODE >702:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+2D7 text10 CODE >703:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+2DD text10 CODE >703:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+2DF text10 CODE >705:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+2E5 text10 CODE >706:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+2EA text10 CODE >1171:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+2FC text10 CODE >1173:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+302 text10 CODE >1173:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+304 text10 CODE >1174:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+310 text10 CODE >1176:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+31E text10 CODE >1372:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+32F text10 CODE >1373:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+335 text10 CODE >1373:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+337 text10 CODE >1374:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+342 text10 CODE >1375:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+348 text10 CODE >1379:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+34E text10 CODE >1379:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+350 text10 CODE >1380:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+353 text10 CODE >1384:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+36C text10 CODE >1385:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+373 text10 CODE >1385:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+376 text10 CODE >1387:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+62E text9 CODE >1390:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+630 text9 CODE >1395:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+634 text9 CODE >1396:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+637 text9 CODE >1397:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+638 text9 CODE >1398:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+64C text9 CODE >1397:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+656 text9 CODE >1400:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+65E text9 CODE >1404:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+782 text8 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+782 text8 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+787 text8 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+793 text8 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+377 text7 CODE >21:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+379 text7 CODE >24:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+37B text7 CODE >24:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+381 text7 CODE >24:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+385 text7 CODE >26:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+38C text7 CODE >26:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+390 text7 CODE >27:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+3C3 text7 CODE >29:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+3C8 text7 CODE >30:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+3CC text7 CODE >32:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+71 text6 CODE >41:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+73 text6 CODE >43:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+74 text6 CODE >44:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+74 text6 CODE >45:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+77 text6 CODE >46:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+78 text6 CODE >49:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+7D text6 CODE >50:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+83 text6 CODE >51:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+8A text6 CODE >56:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+8F text6 CODE >57:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+96 text6 CODE >63:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+99 text6 CODE >64:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+9C text6 CODE >65:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+9F text6 CODE >68:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+A6 text6 CODE >69:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+AC text6 CODE >72:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+AC text6 CODE >73:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+AE text6 CODE >73:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+B7 text6 CODE >74:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+BD text6 CODE >75:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+BD text6 CODE >76:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+BF text6 CODE >76:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+C8 text6 CODE >77:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+CF text6 CODE >82:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+D6 text6 CODE >83:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+DC text6 CODE >87:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+E2 text6 CODE >88:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+E9 text6 CODE >93:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+EC text6 CODE >94:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+EF text6 CODE >95:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+F2 text6 CODE >98:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+F9 text6 CODE >99:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+FF text6 CODE >103:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+104 text6 CODE >104:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+10B text6 CODE >109:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+10E text6 CODE >110:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+111 text6 CODE >111:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+114 text6 CODE >114:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+11B text6 CODE >115:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+121 text6 CODE >119:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+126 text6 CODE >120:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+12D text6 CODE >125:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+130 text6 CODE >126:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+133 text6 CODE >127:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+136 text6 CODE >130:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+13D text6 CODE >131:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+143 text6 CODE >135:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+148 text6 CODE >136:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+14F text6 CODE >141:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+152 text6 CODE >142:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+155 text6 CODE >143:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+158 text6 CODE >146:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+15F text6 CODE >147:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+161 text6 CODE >151:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+166 text6 CODE >152:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+16D text6 CODE >157:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+174 text6 CODE >158:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+176 text6 CODE >162:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+17B text6 CODE >163:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+182 text6 CODE >168:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+185 text6 CODE >169:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+188 text6 CODE >170:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+18B text6 CODE >173:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+192 text6 CODE >174:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+194 text6 CODE >178:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+199 text6 CODE >179:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+1A0 text6 CODE >184:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+1A7 text6 CODE >185:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+1A9 text6 CODE >189:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+1AE text6 CODE >190:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+1B5 text6 CODE >195:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+1BB text6 CODE >195:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+1C0 text6 CODE >195:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+1C3 text6 CODE >195:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+1C6 text6 CODE >195:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+1C9 text6 CODE >195:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+1CC text6 CODE >195:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+1CF text6 CODE >195:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+1D2 text6 CODE >195:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+1D5 text6 CODE >195:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+1D8 text6 CODE >195:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+1DB text6 CODE >195:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+1DE text6 CODE >195:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+1E1 text6 CODE >195:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+1E4 text6 CODE >198:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+1EF text6 CODE >200:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+794 text5 CODE >132:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+796 text5 CODE >135:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+799 text5 CODE >138:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+79A text5 CODE >141:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+79B text5 CODE >144:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+79C text5 CODE >148:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+79C text5 CODE >150:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+7A0 text5 CODE >154:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+7A4 text5 CODE >155:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/adcc.c
+5FA text4 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+5FA text4 CODE >119:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+603 text4 CODE >121:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+607 text4 CODE >122:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+60F text4 CODE >123:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+616 text4 CODE >124:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+61D text4 CODE >125:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+621 text4 CODE >125:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+625 text4 CODE >128:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+62D text4 CODE >129:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+5C4 text3 CODE >97:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+5C4 text3 CODE >99:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+5F9 text3 CODE >100:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+65F text2 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+65F text2 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+662 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+663 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+671 text2 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+676 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+685 text2 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+689 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+6D6 text1 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\puts.c
+6D6 text1 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\puts.c
+6F4 text1 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\puts.c
+458 maintext CODE >111:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+458 maintext CODE >114:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+45B maintext CODE >120:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+462 maintext CODE >121:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+469 maintext CODE >122:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+470 maintext CODE >125:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+471 maintext CODE >128:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+472 maintext CODE >138:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+47A maintext CODE >140:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+482 maintext CODE >143:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+482 maintext CODE >148:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+48A maintext CODE >151:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+48F maintext CODE >152:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+491 maintext CODE >153:C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
+FD5 clrtext CODE >10232:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+FD5 clrtext CODE >10233:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+FD6 clrtext CODE >10234:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+FD6 clrtext CODE >10235:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+FD7 clrtext CODE >10236:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+FD8 clrtext CODE >10237:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+FD9 clrtext CODE >10238:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+FDA clrtext CODE >10239:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+FDB inittext CODE >10206:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+FDB inittext CODE >10207:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+FDC inittext CODE >10208:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+FDC inittext CODE >10209:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+FDD inittext CODE >10210:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+FDE inittext CODE >10211:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+FDF inittext CODE >10212:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
+FE0 inittext CODE >10213:C:\Users\kissa\AppData\Local\Temp\xcAsbjo.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -881,21 +871,20 @@ FA0 inittext CODE >10264:C:\Users\kissa\AppData\Local\Temp\xcAseh4.s
 %SYMTAB
 ___latbits 4 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __LdataBANK1 0 0 ABS 0 dataBANK1 -
-__Hspace_0 10A2 0 ABS 0 - -
+__Hspace_0 1044 0 ABS 0 - -
 __Hspace_1 140 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 10013 0 ABS 0 - -
 __HidataBANK1 0 0 ABS 0 idataBANK1 -
-_IOCAF6_DefaultInterruptHandler 1E94 0 CODE 0 text46 dist/default/production\StateMachine16F-Test.X.production.o
-stoa@F1133 DC 0 BANK1 1 dataBANK1 dist/default/production\StateMachine16F-Test.X.production.o
-_vStateMachine_Working_ShallowHistoryPseudostate2 67 0 BANK0 1 bssBANK0 dist/default/production\StateMachine16F-Test.X.production.o
+_IOCAF6_DefaultInterruptHandler 1F14 0 CODE 0 text46 dist/default/production\StateMachine16F-Test.X.production.o
+stoa@F1133 DB 0 BANK1 1 dataBANK1 dist/default/production\StateMachine16F-Test.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
-_PMD_Initialize 1F5E 0 CODE 0 text25 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_PIN_MANAGER_IOC 1FDE 0 CODE 0 text41 dist/default/production\StateMachine16F-Test.X.production.o
-main@e E6 0 BANK1 1 cstackBANK1 dist/default/production\StateMachine16F-Test.X.production.o
+_PMD_Initialize 1FDE 0 CODE 0 text25 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_PIN_MANAGER_IOC F6C 0 CODE 0 text41 dist/default/production\StateMachine16F-Test.X.production.o
+main@e E5 0 BANK1 1 cstackBANK1 dist/default/production\StateMachine16F-Test.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-_EUSART_RxDefaultInterruptHandler D8 0 BANK1 1 nvBANK1 dist/default/production\StateMachine16F-Test.X.production.o
+_EUSART_RxDefaultInterruptHandler D6 0 BANK1 1 nvBANK1 dist/default/production\StateMachine16F-Test.X.production.o
 ?_vfprintf 4A 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 _LATA 16 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _LATB 17 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
@@ -910,16 +899,16 @@ _WPUA 1F39 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _WPUB 1F44 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _WPUC 1F4F 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _WPUE 1F65 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\kissa\AppData\Local\Temp\xcAseh4.o
-_main 924 0 CODE 0 maintext dist/default/production\StateMachine16F-Test.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\kissa\AppData\Local\Temp\xcAsbjo.o
+_main 8B0 0 CODE 0 maintext dist/default/production\StateMachine16F-Test.X.production.o
 _nout C4 0 BANK1 1 bssBANK1 dist/default/production\StateMachine16F-Test.X.production.o
 _prec C8 0 BANK1 1 bssBANK1 dist/default/production\StateMachine16F-Test.X.production.o
-_puts E62 0 CODE 0 text1 dist/default/production\StateMachine16F-Test.X.production.o
-_stoa 452 0 CODE 0 text11 dist/default/production\StateMachine16F-Test.X.production.o
+_puts DAC 0 CODE 0 text1 dist/default/production\StateMachine16F-Test.X.production.o
+_stoa 3E0 0 CODE 0 text11 dist/default/production\StateMachine16F-Test.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-start 86 0 CODE 0 init C:\Users\kissa\AppData\Local\Temp\xcAseh4.o
-_EUSART_Write D84 0 CODE 0 text15 dist/default/production\StateMachine16F-Test.X.production.o
-_TMR0_InterruptHandler D2 0 BANK1 1 nvBANK1 dist/default/production\StateMachine16F-Test.X.production.o
+start 86 0 CODE 0 init C:\Users\kissa\AppData\Local\Temp\xcAsbjo.o
+_EUSART_Write D14 0 CODE 0 text15 dist/default/production\StateMachine16F-Test.X.production.o
+_TMR0_InterruptHandler D0 0 BANK1 1 nvBANK1 dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_puts 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_stoa 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
@@ -936,19 +925,18 @@ __Hstringtext19 0 0 ABS 0 stringtext19 -
 __Hstringtext20 0 0 ABS 0 stringtext20 -
 __Hstringtext21 0 0 ABS 0 stringtext21 -
 __Hstringtext22 0 0 ABS 0 stringtext22 -
-__Hstringtext23 0 0 ABS 0 stringtext23 -
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
-__end_of_TMR0_SetInterruptHandler 1F2A 0 CODE 0 text24 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_TMR0_SetInterruptHandler 1FAA 0 CODE 0 text24 dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_S2EventCallback 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_EUSART_SetFramingErrorHandler 1EE2 0 CODE 0 text34 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_EUSART_SetOverrunErrorHandler 1EEE 0 CODE 0 text33 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_EUSART_SetFramingErrorHandler 1F62 0 CODE 0 text34 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_EUSART_SetOverrunErrorHandler 1F6E 0 CODE 0 text33 dist/default/production\StateMachine16F-Test.X.production.o
 ?___lmul 21 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 puts@s 32 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
-_IOCAF7_InterruptHandler D4 0 BANK1 1 nvBANK1 dist/default/production\StateMachine16F-Test.X.production.o
+_IOCAF7_InterruptHandler D2 0 BANK1 1 nvBANK1 dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_StateMachine_SM 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 IOCAF6_SetInterruptHandler@InterruptHandler 74 0 COMMON 1 cstackCOMMON dist/default/production\StateMachine16F-Test.X.production.o
 __LidataBANK1 0 0 ABS 0 idataBANK1 -
-__end_of_EUSART_Initialize A24 0 CODE 0 text30 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_EUSART_Initialize 9B4 0 CODE 0 text30 dist/default/production\StateMachine16F-Test.X.production.o
 ?_ADCC_GetSingleConversion 74 0 COMMON 1 cstackCOMMON dist/default/production\StateMachine16F-Test.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
 __size_of_LED1_On 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
@@ -959,31 +947,31 @@ stoa@l 3E 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.p
 stoa@p 3C 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 stoa@s 29 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 stoa@w 37 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_vfpfcnvrt 762 0 CODE 0 text10 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_vfpfcnvrt 6EE 0 CODE 0 text10 dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_vfpfcnvrt 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 TMR0_SetInterruptHandler@InterruptHandler 74 0 COMMON 1 cstackCOMMON dist/default/production\StateMachine16F-Test.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\kissa\AppData\Local\Temp\xcAseh4.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\kissa\AppData\Local\Temp\xcAseh4.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\kissa\AppData\Local\Temp\xcAseh4.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\kissa\AppData\Local\Temp\xcAseh4.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\kissa\AppData\Local\Temp\xcAseh4.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\kissa\AppData\Local\Temp\xcAseh4.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\kissa\AppData\Local\Temp\xcAsbjo.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\kissa\AppData\Local\Temp\xcAsbjo.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\kissa\AppData\Local\Temp\xcAsbjo.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\kissa\AppData\Local\Temp\xcAsbjo.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\kissa\AppData\Local\Temp\xcAsbjo.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\kissa\AppData\Local\Temp\xcAsbjo.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
-__end_of_trace_state_labels F0A 0 STRCODE 0 stringtext1 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_trace_state_labels EB6 0 STRCODE 0 stringtext1 dist/default/production\StateMachine16F-Test.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 _RC1STAbits 11D 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-_EUSART_DefaultFramingErrorHandler 1E92 0 CODE 0 text51 dist/default/production\StateMachine16F-Test.X.production.o
-_EUSART_DefaultOverrunErrorHandler 1EC2 0 CODE 0 text50 dist/default/production\StateMachine16F-Test.X.production.o
-_IOCAF6_InterruptHandler D6 0 BANK1 1 nvBANK1 dist/default/production\StateMachine16F-Test.X.production.o
-_PIN_MANAGER_IOC 1FBC 0 CODE 0 text41 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_PMD_Initialize 1F6E 0 CODE 0 text25 dist/default/production\StateMachine16F-Test.X.production.o
+_EUSART_DefaultFramingErrorHandler 1F12 0 CODE 0 text51 dist/default/production\StateMachine16F-Test.X.production.o
+_EUSART_DefaultOverrunErrorHandler 1F42 0 CODE 0 text50 dist/default/production\StateMachine16F-Test.X.production.o
+_IOCAF6_InterruptHandler D4 0 BANK1 1 nvBANK1 dist/default/production\StateMachine16F-Test.X.production.o
+_PIN_MANAGER_IOC F4A 0 CODE 0 text41 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_PMD_Initialize 1FEE 0 CODE 0 text25 dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_EUSART_Write 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_EUSART_Transmit_ISR E62 0 CODE 0 text48 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_EUSART_Transmit_ISR DAC 0 CODE 0 text48 dist/default/production\StateMachine16F-Test.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
-_vfpfcnvrt 600 0 CODE 0 text10 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_IOCAF6_SetInterruptHandler 1F12 0 CODE 0 text28 dist/default/production\StateMachine16F-Test.X.production.o
+_vfpfcnvrt 588 0 CODE 0 text10 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_IOCAF6_SetInterruptHandler 1F92 0 CODE 0 text28 dist/default/production\StateMachine16F-Test.X.production.o
 _eusartTxBuffer B0 0 BANK1 1 bssBANK1 dist/default/production\StateMachine16F-Test.X.production.o
 _ADACCH 91 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _ADACCL 90 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
@@ -1006,17 +994,16 @@ _ANSELC 1F4E 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production
 __size_of_ADCC_GetSingleConversion 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _TMR0_DefaultInterruptHandler 6 0 CODE 0 text39 dist/default/production\StateMachine16F-Test.X.production.o
 __end_of_INTERRUPT_InterruptManager 86 0 CODE 0 intentry dist/default/production\StateMachine16F-Test.X.production.o
-__end_of___lmul CCC 0 CODE 0 text4 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of___lmul C5C 0 CODE 0 text4 dist/default/production\StateMachine16F-Test.X.production.o
 EUSART_SetRxInterruptHandler@interruptHandler 74 0 COMMON 1 cstackCOMMON dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_EUSART_Write DD8 0 CODE 0 text15 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of__trace 80E 0 CODE 0 text7 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_EUSART_Write D68 0 CODE 0 text15 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of__trace 79A 0 CODE 0 text7 dist/default/production\StateMachine16F-Test.X.production.o
 ADCC_GetSingleConversion@channel 20 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
-_trace_state_labels ED6 0 STRCODE 0 stringtext1 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_getPotValue C64 0 CODE 0 text3 dist/default/production\StateMachine16F-Test.X.production.o
+_trace_state_labels E86 0 STRCODE 0 stringtext1 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_getPotValue BF4 0 CODE 0 text3 dist/default/production\StateMachine16F-Test.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
 __size_of_IOCAF7_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 ?_printf 52 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
-__LnvBANK0 0 0 ABS 0 nvBANK0 -
 __LnvBANK1 0 0 ABS 0 nvBANK1 -
 StateMachine_SM@event 61 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 _INLVLA 1F3C 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
@@ -1024,16 +1011,16 @@ _INLVLB 1F47 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production
 _INLVLC 1F52 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _INLVLE 1F68 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 ?_strlen 74 0 COMMON 1 cstackCOMMON dist/default/production\StateMachine16F-Test.X.production.o
-___stackhi 2FEF 0 ABS 0 - C:\Users\kissa\AppData\Local\Temp\xcAseh4.o
-___stacklo 20C0 0 ABS 0 - C:\Users\kissa\AppData\Local\Temp\xcAseh4.o
-_EUSART_Initialize 9A6 0 CODE 0 text30 dist/default/production\StateMachine16F-Test.X.production.o
+___stackhi 2FEF 0 ABS 0 - C:\Users\kissa\AppData\Local\Temp\xcAsbjo.o
+___stacklo 20C0 0 ABS 0 - C:\Users\kissa\AppData\Local\Temp\xcAsbjo.o
+_EUSART_Initialize 932 0 CODE 0 text30 dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_fputc 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_fputs 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_LED1_On 1EA2 0 CODE 0 text20 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_LED2_On 1EAE 0 CODE 0 text18 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_LED3_On 1EBA 0 CODE 0 text16 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_LED1_On 1F22 0 CODE 0 text20 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_LED2_On 1F2E 0 CODE 0 text18 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_LED3_On 1F3A 0 CODE 0 text16 dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_putch 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-_PIN_MANAGER_Initialize 8A0 0 CODE 0 text26 dist/default/production\StateMachine16F-Test.X.production.o
+_PIN_MANAGER_Initialize 82C 0 CODE 0 text26 dist/default/production\StateMachine16F-Test.X.production.o
 __Lstringtext10 0 0 ABS 0 stringtext10 -
 __Lstringtext11 0 0 ABS 0 stringtext11 -
 __Lstringtext12 0 0 ABS 0 stringtext12 -
@@ -1047,20 +1034,19 @@ __Lstringtext19 0 0 ABS 0 stringtext19 -
 __Lstringtext20 0 0 ABS 0 stringtext20 -
 __Lstringtext21 0 0 ABS 0 stringtext21 -
 __Lstringtext22 0 0 ABS 0 stringtext22 -
-__Lstringtext23 0 0 ABS 0 stringtext23 -
 start_initialization 8A 0 CODE 0 cinit dist/default/production\StateMachine16F-Test.X.production.o
 _ODCONA 1F3A 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _ODCONB 1F45 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _ODCONC 1F50 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-_EUSART_SetErrorHandler 1ECA 0 CODE 0 text35 dist/default/production\StateMachine16F-Test.X.production.o
+_EUSART_SetErrorHandler 1F4A 0 CODE 0 text35 dist/default/production\StateMachine16F-Test.X.production.o
 _OSCFRQ 893 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 EUSART_SetOverrunErrorHandler@interruptHandler 74 0 COMMON 1 cstackCOMMON dist/default/production\StateMachine16F-Test.X.production.o
 _eusartRxBuffer A8 0 BANK1 1 bssBANK1 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_EUSART_DefaultErrorHandler 1EC2 0 CODE 0 text52 dist/default/production\StateMachine16F-Test.X.production.o
-_EUSART_RxDataHandler F0A 0 CODE 0 text53 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_EUSART_DefaultErrorHandler 1F42 0 CODE 0 text52 dist/default/production\StateMachine16F-Test.X.production.o
+_EUSART_RxDataHandler E20 0 CODE 0 text53 dist/default/production\StateMachine16F-Test.X.production.o
 _ADFLTRH 115 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _ADFLTRL 114 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-_timerCallback A24 0 CODE 0 text40 dist/default/production\StateMachine16F-Test.X.production.o
+_timerCallback 9B4 0 CODE 0 text40 dist/default/production\StateMachine16F-Test.X.production.o
 _ADPREVH 8F 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _ADPREVL 8E 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _ADSTPTH 113 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
@@ -1071,23 +1057,23 @@ _RC1STA 11D 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.
 __size_of_EUSART_SetFramingErrorHandler 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_PIN_MANAGER_IOC 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_EUSART_SetOverrunErrorHandler 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_SYSTEM_Initialize FBE 0 CODE 0 text22 dist/default/production\StateMachine16F-Test.X.production.o
-clear_ram0 1F2A 0 CODE 0 clrtext dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_SYSTEM_Initialize F04 0 CODE 0 text22 dist/default/production\StateMachine16F-Test.X.production.o
+clear_ram0 1FAA 0 CODE 0 clrtext dist/default/production\StateMachine16F-Test.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
-__pcstackBANK1 E3 0 BANK1 1 cstackBANK1 dist/default/production\StateMachine16F-Test.X.production.o
+__pcstackBANK1 E2 0 BANK1 1 cstackBANK1 dist/default/production\StateMachine16F-Test.X.production.o
 _T0CON0 1E 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _T0CON1 1F 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _TX1REG 11A 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _TX1STA 11E 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_EUSART_DefaultFramingErrorHandler 1E94 0 CODE 0 text51 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_ADCC_GetSingleConversion 2000 0 CODE 0 text5 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_EUSART_DefaultOverrunErrorHandler 1ECA 0 CODE 0 text50 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_printf FE2 0 CODE 0 text8 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_EUSART_DefaultFramingErrorHandler 1F14 0 CODE 0 text51 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_ADCC_GetSingleConversion F4A 0 CODE 0 text5 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_EUSART_DefaultOverrunErrorHandler 1F4A 0 CODE 0 text50 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_printf F28 0 CODE 0 text8 dist/default/production\StateMachine16F-Test.X.production.o
 fputc@fp 23 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 fputs@fp 2B 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
-_EUSART_TxDefaultInterruptHandler DA 0 BANK1 1 nvBANK1 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_ADCC_Initialize F70 0 CODE 0 text36 dist/default/production\StateMachine16F-Test.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\kissa\AppData\Local\Temp\xcAseh4.o
+_EUSART_TxDefaultInterruptHandler D8 0 BANK1 1 nvBANK1 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_ADCC_Initialize E86 0 CODE 0 text36 dist/default/production\StateMachine16F-Test.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\kissa\AppData\Local\Temp\xcAsbjo.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -1099,7 +1085,7 @@ __Hbank7 0 0 ABS 0 bank7 -
 __Hbank8 0 0 ABS 0 bank8 -
 __Hbank9 0 0 ABS 0 bank9 -
 __Hcinit E2 0 CODE 0 cinit -
-__end_of_strlen ED6 0 CODE 0 text12 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_strlen E20 0 CODE 0 text12 dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __Hsfr10 0 0 ABS 0 sfr10 -
 __Hsfr11 0 0 ABS 0 sfr11 -
@@ -1283,7 +1269,7 @@ __Lsfr61 0 0 ABS 0 sfr61 -
 __Lsfr62 0 0 ABS 0 sfr62 -
 __Lsfr63 0 0 ABS 0 sfr63 -
 __Lstack 0 0 STACK 2 stack -
-init_ram 1F36 0 CODE 0 inittext dist/default/production\StateMachine16F-Test.X.production.o
+init_ram 1FB6 0 CODE 0 inittext dist/default/production\StateMachine16F-Test.X.production.o
 __Linittext 0 0 ABS 0 inittext -
 _INTCONbits B 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __end_of_IOCAF7_DefaultInterruptHandler 6 0 CODE 0 text43 dist/default/production\StateMachine16F-Test.X.production.o
@@ -1315,68 +1301,65 @@ __Lsfr7 0 0 ABS 0 sfr7 -
 __Lsfr8 0 0 ABS 0 sfr8 -
 __Lsfr9 0 0 ABS 0 sfr9 -
 __Ltext 0 0 ABS 0 text -
-__pstringtext1 ED6 0 STRCODE 0 stringtext1 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext2 2048 0 STRCODE 0 stringtext2 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext3 DD8 0 STRCODE 0 stringtext3 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext4 2000 0 STRCODE 0 stringtext4 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext5 2018 0 STRCODE 0 stringtext5 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext6 2030 0 STRCODE 0 stringtext6 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext7 205C 0 STRCODE 0 stringtext7 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext8 2070 0 STRCODE 0 stringtext8 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext9 2084 0 STRCODE 0 stringtext9 dist/default/production\StateMachine16F-Test.X.production.o
-__pnvBANK0 6F 0 BANK0 1 nvBANK0 dist/default/production\StateMachine16F-Test.X.production.o
-__pnvBANK1 CC 0 BANK1 1 nvBANK1 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext10 2098 0 STRCODE 0 stringtext10 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext11 20AA 0 STRCODE 0 stringtext11 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext12 20BC 0 STRCODE 0 stringtext12 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext13 20CC 0 STRCODE 0 stringtext13 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext14 20DC 0 STRCODE 0 stringtext14 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext15 20EA 0 STRCODE 0 stringtext15 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext16 20F8 0 STRCODE 0 stringtext16 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext17 2106 0 STRCODE 0 stringtext17 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext18 2114 0 STRCODE 0 stringtext18 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext19 2120 0 STRCODE 0 stringtext19 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext20 212C 0 STRCODE 0 stringtext20 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext21 2138 0 STRCODE 0 stringtext21 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext22 2140 0 STRCODE 0 stringtext22 dist/default/production\StateMachine16F-Test.X.production.o
-__pstringtext23 0 0 STRCODE 0 stringtext23 dist/default/production\StateMachine16F-Test.X.production.o
-___lmul C64 0 CODE 0 text4 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext1 E86 0 STRCODE 0 stringtext1 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext2 100E 0 STRCODE 0 stringtext2 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext3 FC6 0 STRCODE 0 stringtext3 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext4 FDE 0 STRCODE 0 stringtext4 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext5 FF6 0 STRCODE 0 stringtext5 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext6 1022 0 STRCODE 0 stringtext6 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext7 1036 0 STRCODE 0 stringtext7 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext8 104A 0 STRCODE 0 stringtext8 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext9 105E 0 STRCODE 0 stringtext9 dist/default/production\StateMachine16F-Test.X.production.o
+__pnvBANK1 CA 0 BANK1 1 nvBANK1 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext10 1070 0 STRCODE 0 stringtext10 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext11 2000 0 STRCODE 0 stringtext11 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext12 2010 0 STRCODE 0 stringtext12 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext13 2020 0 STRCODE 0 stringtext13 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext14 202E 0 STRCODE 0 stringtext14 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext15 203C 0 STRCODE 0 stringtext15 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext16 204A 0 STRCODE 0 stringtext16 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext17 2058 0 STRCODE 0 stringtext17 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext18 2064 0 STRCODE 0 stringtext18 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext19 2070 0 STRCODE 0 stringtext19 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext20 207C 0 STRCODE 0 stringtext20 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext21 2084 0 STRCODE 0 stringtext21 dist/default/production\StateMachine16F-Test.X.production.o
+__pstringtext22 0 0 STRCODE 0 stringtext22 dist/default/production\StateMachine16F-Test.X.production.o
+___lmul BF4 0 CODE 0 text4 dist/default/production\StateMachine16F-Test.X.production.o
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __LcstackBANK1 0 0 ABS 0 cstackBANK1 -
 int$flags 7E 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-__trace 762 0 CODE 0 text7 dist/default/production\StateMachine16F-Test.X.production.o
+__trace 6EE 0 CODE 0 text7 dist/default/production\StateMachine16F-Test.X.production.o
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-__S0 10A2 0 ABS 0 - -
+__S0 1044 0 ABS 0 - -
 __S1 140 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 __size_of_TMR0_ISR 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_TMR0_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_IOCAF7_SetInterruptHandler 1F1E 0 CODE 0 text27 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_IOCAF7_SetInterruptHandler 1F9E 0 CODE 0 text27 dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_getPotValue 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-_vStateMachine 68 0 BANK0 1 bssBANK0 dist/default/production\StateMachine16F-Test.X.production.o
+_vStateMachine 69 0 BANK0 1 bssBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 __end_of_TMR0_DefaultInterruptHandler 8 0 CODE 0 text39 dist/default/production\StateMachine16F-Test.X.production.o
-_ADCC_Initialize F3E 0 CODE 0 text36 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_EUSART_Receive_ISR BF8 0 CODE 0 text49 dist/default/production\StateMachine16F-Test.X.production.o
-_SYSTEM_Initialize F98 0 CODE 0 text22 dist/default/production\StateMachine16F-Test.X.production.o
-_IOCAF6_ISR 1F80 0 CODE 0 text45 dist/default/production\StateMachine16F-Test.X.production.o
-_IOCAF7_ISR 1F9E 0 CODE 0 text42 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_S1EventCallback B14 0 CODE 0 text44 dist/default/production\StateMachine16F-Test.X.production.o
-_EUSART_SetTxInterruptHandler 1EFA 0 CODE 0 text31 dist/default/production\StateMachine16F-Test.X.production.o
+_ADCC_Initialize E54 0 CODE 0 text36 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_EUSART_Receive_ISR B88 0 CODE 0 text49 dist/default/production\StateMachine16F-Test.X.production.o
+_SYSTEM_Initialize EDE 0 CODE 0 text22 dist/default/production\StateMachine16F-Test.X.production.o
+_IOCAF6_ISR FA8 0 CODE 0 text45 dist/default/production\StateMachine16F-Test.X.production.o
+_IOCAF7_ISR F8A 0 CODE 0 text42 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_S1EventCallback AA4 0 CODE 0 text44 dist/default/production\StateMachine16F-Test.X.production.o
+_EUSART_SetTxInterruptHandler 1F7A 0 CODE 0 text31 dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_timerCallback 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-_IOCAF6_SetInterruptHandler 1F06 0 CODE 0 text28 dist/default/production\StateMachine16F-Test.X.production.o
-__HnvBANK0 0 0 ABS 0 nvBANK0 -
+_IOCAF6_SetInterruptHandler 1F86 0 CODE 0 text28 dist/default/production\StateMachine16F-Test.X.production.o
 __HnvBANK1 0 0 ABS 0 nvBANK1 -
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\kissa\AppData\Local\Temp\xcAseh4.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\kissa\AppData\Local\Temp\xcAsbjo.o
 strlen@a 21 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 strlen@s 74 0 COMMON 1 cstackCOMMON dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_IOCAF6_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_LED1_Off 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_LED2_Off 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_LED3_Off 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-__pdataBANK1 DC 0 BANK1 1 dataBANK1 dist/default/production\StateMachine16F-Test.X.production.o
+__pdataBANK1 DB 0 BANK1 1 dataBANK1 dist/default/production\StateMachine16F-Test.X.production.o
 __size_of___lmul 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 __LbssBANK1 0 0 ABS 0 bssBANK1 -
@@ -1391,7 +1374,7 @@ __Lstringtext6 0 0 ABS 0 stringtext6 -
 __Lstringtext7 0 0 ABS 0 stringtext7 -
 __Lstringtext8 0 0 ABS 0 stringtext8 -
 __Lstringtext9 0 0 ABS 0 stringtext9 -
-_puts$1646 34 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
+_puts$1642 34 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 vfpfcnvrt@fmt 40 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 _INTERRUPT_InterruptManager 8 0 CODE 0 intentry dist/default/production\StateMachine16F-Test.X.production.o
 _IOCAFbits 1F3F 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
@@ -1402,54 +1385,54 @@ _PIE0bits 716 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.productio
 _PIE3bits 719 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 EUSART_SetFramingErrorHandler@interruptHandler 74 0 COMMON 1 cstackCOMMON dist/default/production\StateMachine16F-Test.X.production.o
 stoa@nuls 2E 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
-_TMR0_ISR FE2 0 CODE 0 text38 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext10 600 0 CODE 0 text10 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext11 452 0 CODE 0 text11 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext12 EA0 0 CODE 0 text12 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext13 80E 0 CODE 0 text13 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext14 1F42 0 CODE 0 text14 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext15 D84 0 CODE 0 text15 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext16 1EB4 0 CODE 0 text16 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext17 1EAE 0 CODE 0 text17 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext18 1EA8 0 CODE 0 text18 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext19 1EA2 0 CODE 0 text19 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext20 1E9C 0 CODE 0 text20 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext21 1E96 0 CODE 0 text21 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext22 F98 0 CODE 0 text22 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext23 F70 0 CODE 0 text23 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext24 1F1E 0 CODE 0 text24 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext25 1F5E 0 CODE 0 text25 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext26 8A0 0 CODE 0 text26 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext27 1F12 0 CODE 0 text27 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext28 1F06 0 CODE 0 text28 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext29 1F6E 0 CODE 0 text29 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext30 9A6 0 CODE 0 text30 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext31 1EFA 0 CODE 0 text31 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext32 1EEE 0 CODE 0 text32 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext33 1EE2 0 CODE 0 text33 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext34 1ED6 0 CODE 0 text34 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext35 1ECA 0 CODE 0 text35 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext36 F3E 0 CODE 0 text36 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext38 FE2 0 CODE 0 text38 dist/default/production\StateMachine16F-Test.X.production.o
+_TMR0_ISR F6C 0 CODE 0 text38 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext10 588 0 CODE 0 text10 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext11 3E0 0 CODE 0 text11 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext12 DEA 0 CODE 0 text12 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext13 79A 0 CODE 0 text13 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext14 1FC2 0 CODE 0 text14 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext15 D14 0 CODE 0 text15 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext16 1F34 0 CODE 0 text16 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext17 1F2E 0 CODE 0 text17 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext18 1F28 0 CODE 0 text18 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext19 1F22 0 CODE 0 text19 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext20 1F1C 0 CODE 0 text20 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext21 1F16 0 CODE 0 text21 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext22 EDE 0 CODE 0 text22 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext23 EB6 0 CODE 0 text23 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext24 1F9E 0 CODE 0 text24 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext25 1FDE 0 CODE 0 text25 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext26 82C 0 CODE 0 text26 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext27 1F92 0 CODE 0 text27 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext28 1F86 0 CODE 0 text28 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext29 1FEE 0 CODE 0 text29 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext30 932 0 CODE 0 text30 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext31 1F7A 0 CODE 0 text31 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext32 1F6E 0 CODE 0 text32 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext33 1F62 0 CODE 0 text33 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext34 1F56 0 CODE 0 text34 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext35 1F4A 0 CODE 0 text35 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext36 E54 0 CODE 0 text36 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext38 F6C 0 CODE 0 text38 dist/default/production\StateMachine16F-Test.X.production.o
 __ptext39 6 0 CODE 0 text39 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext40 A24 0 CODE 0 text40 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext41 1FBC 0 CODE 0 text41 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext42 1F9E 0 CODE 0 text42 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext40 9B4 0 CODE 0 text40 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext41 F4A 0 CODE 0 text41 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext42 F8A 0 CODE 0 text42 dist/default/production\StateMachine16F-Test.X.production.o
 __ptext43 4 0 CODE 0 text43 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext44 AA2 0 CODE 0 text44 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext45 1F80 0 CODE 0 text45 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext46 1E94 0 CODE 0 text46 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext47 B14 0 CODE 0 text47 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext48 E1E 0 CODE 0 text48 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext49 B86 0 CODE 0 text49 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext50 1EC2 0 CODE 0 text50 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext51 1E92 0 CODE 0 text51 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext52 1EBA 0 CODE 0 text52 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext53 F0A 0 CODE 0 text53 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext44 A32 0 CODE 0 text44 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext45 FA8 0 CODE 0 text45 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext46 1F14 0 CODE 0 text46 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext47 AA4 0 CODE 0 text47 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext48 D68 0 CODE 0 text48 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext49 B16 0 CODE 0 text49 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext50 1F42 0 CODE 0 text50 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext51 1F12 0 CODE 0 text51 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext52 1F3A 0 CODE 0 text52 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext53 E20 0 CODE 0 text53 dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_EUSART_DefaultErrorHandler 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-_EUSART_Receive_ISR B86 0 CODE 0 text49 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_PIN_MANAGER_Initialize 924 0 CODE 0 text26 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_TMR0_Initialize F98 0 CODE 0 text23 dist/default/production\StateMachine16F-Test.X.production.o
+_EUSART_Receive_ISR B16 0 CODE 0 text49 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_PIN_MANAGER_Initialize 8B0 0 CODE 0 text26 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_TMR0_Initialize EDE 0 CODE 0 text23 dist/default/production\StateMachine16F-Test.X.production.o
 __Lbank10 0 0 ABS 0 bank10 -
 __Lbank11 0 0 ABS 0 bank11 -
 __Lbank12 0 0 ABS 0 bank12 -
@@ -1504,33 +1487,33 @@ __Lbank60 0 0 BANK60 1 bank60 -
 __Lbank61 0 0 BANK61 1 bank61 -
 __Lbank62 0 0 BANK62 1 bank62 -
 __Lbank63 0 0 BANK63 1 bank63 -
-__end_of_timerCallback AA2 0 CODE 0 text40 dist/default/production\StateMachine16F-Test.X.production.o
-__pmaintext 924 0 CODE 0 maintext dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_timerCallback A32 0 CODE 0 text40 dist/default/production\StateMachine16F-Test.X.production.o
+__pmaintext 8B0 0 CODE 0 maintext dist/default/production\StateMachine16F-Test.X.production.o
 __Lbigram 0 0 ABS 0 bigram -
 ___lmul@multiplier 21 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_EUSART_SetErrorHandler 1ED6 0 CODE 0 text35 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_EUSART_SetErrorHandler 1F56 0 CODE 0 text35 dist/default/production\StateMachine16F-Test.X.production.o
 ?_stoa 29 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
-_printf FBE 0 CODE 0 text8 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_TMR0_ISR 1000 0 CODE 0 text38 dist/default/production\StateMachine16F-Test.X.production.o
+_printf F04 0 CODE 0 text8 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_TMR0_ISR F8A 0 CODE 0 text38 dist/default/production\StateMachine16F-Test.X.production.o
 __Hinittext 0 0 ABS 0 inittext -
 _LATCbits 18 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-_S1EventCallback AA2 0 CODE 0 text44 dist/default/production\StateMachine16F-Test.X.production.o
-_LED1_On 1E9C 0 CODE 0 text20 dist/default/production\StateMachine16F-Test.X.production.o
-_LED2_On 1EA8 0 CODE 0 text18 dist/default/production\StateMachine16F-Test.X.production.o
-_LED3_On 1EB4 0 CODE 0 text16 dist/default/production\StateMachine16F-Test.X.production.o
-_strlen EA0 0 CODE 0 text12 dist/default/production\StateMachine16F-Test.X.production.o
-_TMR0_SetInterruptHandler 1F1E 0 CODE 0 text24 dist/default/production\StateMachine16F-Test.X.production.o
-_EUSART_FramingErrorHandler D0 0 BANK1 1 nvBANK1 dist/default/production\StateMachine16F-Test.X.production.o
-_EUSART_OverrunErrorHandler CE 0 BANK1 1 nvBANK1 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_IOCAF6_ISR 1F9E 0 CODE 0 text45 dist/default/production\StateMachine16F-Test.X.production.o
+_S1EventCallback A32 0 CODE 0 text44 dist/default/production\StateMachine16F-Test.X.production.o
+_LED1_On 1F1C 0 CODE 0 text20 dist/default/production\StateMachine16F-Test.X.production.o
+_LED2_On 1F28 0 CODE 0 text18 dist/default/production\StateMachine16F-Test.X.production.o
+_LED3_On 1F34 0 CODE 0 text16 dist/default/production\StateMachine16F-Test.X.production.o
+_strlen DEA 0 CODE 0 text12 dist/default/production\StateMachine16F-Test.X.production.o
+_TMR0_SetInterruptHandler 1F9E 0 CODE 0 text24 dist/default/production\StateMachine16F-Test.X.production.o
+_EUSART_FramingErrorHandler CE 0 BANK1 1 nvBANK1 dist/default/production\StateMachine16F-Test.X.production.o
+_EUSART_OverrunErrorHandler CC 0 BANK1 1 nvBANK1 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_IOCAF6_ISR FC6 0 CODE 0 text45 dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_vfprintf 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_IOCAF7_ISR 1FBC 0 CODE 0 text42 dist/default/production\StateMachine16F-Test.X.production.o
-_EUSART_SetRxInterruptHandler 1EEE 0 CODE 0 text32 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_IOCAF7_ISR FA8 0 CODE 0 text42 dist/default/production\StateMachine16F-Test.X.production.o
+_EUSART_SetRxInterruptHandler 1F6E 0 CODE 0 text32 dist/default/production\StateMachine16F-Test.X.production.o
 stoa@cp 3A 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 stoa@fp 39 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_trace_event_labels 205C 0 STRCODE 0 stringtext2 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_trace_event_labels 1022 0 STRCODE 0 stringtext2 dist/default/production\StateMachine16F-Test.X.production.o
 _OSCCON1 88D 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _OSCCON3 88F 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _OSCTUNE 892 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
@@ -1539,11 +1522,11 @@ _ADCON0bits 93 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.producti
 _ADCON1bits 94 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _ADCON2bits 95 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _ADCON3bits 96 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-_LED1_Off 1E96 0 CODE 0 text21 dist/default/production\StateMachine16F-Test.X.production.o
-_LED2_Off 1EA2 0 CODE 0 text19 dist/default/production\StateMachine16F-Test.X.production.o
-_LED3_Off 1EAE 0 CODE 0 text17 dist/default/production\StateMachine16F-Test.X.production.o
-_EUSART_ErrorHandler CC 0 BANK1 1 nvBANK1 dist/default/production\StateMachine16F-Test.X.production.o
-_vPotmeter 6B 0 BANK0 1 bssBANK0 dist/default/production\StateMachine16F-Test.X.production.o
+_LED1_Off 1F16 0 CODE 0 text21 dist/default/production\StateMachine16F-Test.X.production.o
+_LED2_Off 1F22 0 CODE 0 text19 dist/default/production\StateMachine16F-Test.X.production.o
+_LED3_Off 1F2E 0 CODE 0 text17 dist/default/production\StateMachine16F-Test.X.production.o
+_EUSART_ErrorHandler CA 0 BANK1 1 nvBANK1 dist/default/production\StateMachine16F-Test.X.production.o
+_vPotmeter 6C 0 BANK0 1 bssBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 ?_vfpfcnvrt 40 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_ADCC_Initialize 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __Lspace_0 0 0 ABS 0 - -
@@ -1558,17 +1541,17 @@ __HcstackBANK1 0 0 ABS 0 cstackBANK1 -
 _PIR0bits 70C 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _PIR3bits 70F 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __Lend_init 86 0 CODE 0 end_init -
-_EUSART_DefaultErrorHandler 1EBA 0 CODE 0 text52 dist/default/production\StateMachine16F-Test.X.production.o
+_EUSART_DefaultErrorHandler 1F3A 0 CODE 0 text52 dist/default/production\StateMachine16F-Test.X.production.o
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-__end_of_LED1_Off 1E9C 0 CODE 0 text21 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_LED2_Off 1EA8 0 CODE 0 text19 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_LED3_Off 1EB4 0 CODE 0 text17 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_LED1_Off 1F1C 0 CODE 0 text21 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_LED2_Off 1F28 0 CODE 0 text19 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_LED3_Off 1F34 0 CODE 0 text17 dist/default/production\StateMachine16F-Test.X.production.o
 printf@ap 59 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
-_EUSART_SetFramingErrorHandler 1ED6 0 CODE 0 text34 dist/default/production\StateMachine16F-Test.X.production.o
+_EUSART_SetFramingErrorHandler 1F56 0 CODE 0 text34 dist/default/production\StateMachine16F-Test.X.production.o
 IOCAF7_SetInterruptHandler@InterruptHandler 74 0 COMMON 1 cstackCOMMON dist/default/production\StateMachine16F-Test.X.production.o
-_EUSART_SetOverrunErrorHandler 1EE2 0 CODE 0 text33 dist/default/production\StateMachine16F-Test.X.production.o
+_EUSART_SetOverrunErrorHandler 1F62 0 CODE 0 text33 dist/default/production\StateMachine16F-Test.X.production.o
 end_of_initialization DA 0 CODE 0 cinit dist/default/production\StateMachine16F-Test.X.production.o
-_TMR0_Initialize F70 0 CODE 0 text23 dist/default/production\StateMachine16F-Test.X.production.o
+_TMR0_Initialize EB6 0 CODE 0 text23 dist/default/production\StateMachine16F-Test.X.production.o
 __Hintentry 86 0 CODE 0 intentry -
 __size_of_printf 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 fputc@c 21 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
@@ -1586,30 +1569,30 @@ __HbssBANK2 0 0 ABS 0 bssBANK2 -
 __trace@state 5A 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_IOCAF7_SetInterruptHandler 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_strlen 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-_trace_event_labels 2048 0 STRCODE 0 stringtext2 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_S2EventCallback B86 0 CODE 0 text47 dist/default/production\StateMachine16F-Test.X.production.o
+_trace_event_labels 100E 0 STRCODE 0 stringtext2 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_S2EventCallback B16 0 CODE 0 text47 dist/default/production\StateMachine16F-Test.X.production.o
 S1EventCallback@t BC 0 BANK1 1 bssBANK1 dist/default/production\StateMachine16F-Test.X.production.o
 vfpfcnvrt@ap 41 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 vfpfcnvrt@cp 47 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 vfpfcnvrt@fp 49 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext1 E62 0 CODE 0 text1 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext2 D2E 0 CODE 0 text2 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext3 BF8 0 CODE 0 text3 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext4 C64 0 CODE 0 text4 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext5 1FDE 0 CODE 0 text5 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext1 DAC 0 CODE 0 text1 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext2 CBE 0 CODE 0 text2 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext3 B88 0 CODE 0 text3 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext4 BF4 0 CODE 0 text4 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext5 F28 0 CODE 0 text5 dist/default/production\StateMachine16F-Test.X.production.o
 __ptext6 E2 0 CODE 0 text6 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext7 762 0 CODE 0 text7 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext8 FBE 0 CODE 0 text8 dist/default/production\StateMachine16F-Test.X.production.o
-__ptext9 CCC 0 CODE 0 text9 dist/default/production\StateMachine16F-Test.X.production.o
-_eusartTxBufferRemaining 6F 0 BANK0 1 nvBANK0 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext7 6EE 0 CODE 0 text7 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext8 F04 0 CODE 0 text8 dist/default/production\StateMachine16F-Test.X.production.o
+__ptext9 C5C 0 CODE 0 text9 dist/default/production\StateMachine16F-Test.X.production.o
+_eusartTxBufferRemaining DA 0 BANK1 1 nvBANK1 dist/default/production\StateMachine16F-Test.X.production.o
 vfprintf@ap 4C 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 vfprintf@fp 4F 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 vfprintf@cfmt 50 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_StateMachine_SM 452 0 CODE 0 text6 dist/default/production\StateMachine16F-Test.X.production.o
-__trace@e 6A 0 BANK0 1 bssBANK0 dist/default/production\StateMachine16F-Test.X.production.o
-__trace@s 69 0 BANK0 1 bssBANK0 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_IOCAF6_DefaultInterruptHandler 1E96 0 CODE 0 text46 dist/default/production\StateMachine16F-Test.X.production.o
-_vfprintf CCC 0 CODE 0 text9 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_StateMachine_SM 3E0 0 CODE 0 text6 dist/default/production\StateMachine16F-Test.X.production.o
+__trace@e 6B 0 BANK0 1 bssBANK0 dist/default/production\StateMachine16F-Test.X.production.o
+__trace@s 6A 0 BANK0 1 bssBANK0 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_IOCAF6_DefaultInterruptHandler 1F16 0 CODE 0 text46 dist/default/production\StateMachine16F-Test.X.production.o
+_vfprintf C5C 0 CODE 0 text9 dist/default/production\StateMachine16F-Test.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __size_of_EUSART_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
@@ -1625,13 +1608,13 @@ __Hstringtext7 0 0 ABS 0 stringtext7 -
 __Hstringtext8 0 0 ABS 0 stringtext8 -
 __Hstringtext9 0 0 ABS 0 stringtext9 -
 S2EventCallback@t B8 0 BANK1 1 bssBANK1 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_vfprintf D2E 0 CODE 0 text9 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_vfprintf CBE 0 CODE 0 text9 dist/default/production\StateMachine16F-Test.X.production.o
 _eusartRxStatusBuffer A0 0 BANK1 1 bssBANK1 dist/default/production\StateMachine16F-Test.X.production.o
 _SLRCONA 1F3B 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _SLRCONB 1F46 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _SLRCONC 1F51 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_EUSART_SetTxInterruptHandler 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-_getPotValue BF8 0 CODE 0 text3 dist/default/production\StateMachine16F-Test.X.production.o
+_getPotValue B88 0 CODE 0 text3 dist/default/production\StateMachine16F-Test.X.production.o
 EUSART_Write@txData 75 0 COMMON 1 cstackCOMMON dist/default/production\StateMachine16F-Test.X.production.o
 __end_of__initialization DA 0 CODE 0 cinit dist/default/production\StateMachine16F-Test.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
@@ -1639,28 +1622,28 @@ __size_of_S1EventCallback 0 0 ABS 0 - dist/default/production\StateMachine16F-Te
 _ADSTATbits 97 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 ?_fputc 21 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 ?_fputs 29 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
-__pidataBANK1 1F50 0 CODE 0 idataBANK1 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_EUSART_SetTxInterruptHandler 1F06 0 CODE 0 text31 dist/default/production\StateMachine16F-Test.X.production.o
+__pidataBANK1 1FD0 0 CODE 0 idataBANK1 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_EUSART_SetTxInterruptHandler 1F86 0 CODE 0 text31 dist/default/production\StateMachine16F-Test.X.production.o
 _SP1BRGH 11C 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _SP1BRGL 11B 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-_eusartRxCount 6E 0 BANK0 1 bssBANK0 dist/default/production\StateMachine16F-Test.X.production.o
+_eusartRxCount 6F 0 BANK0 1 bssBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_EUSART_Transmit_ISR 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext -
 ___lmul@product 29 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_EUSART_RxDataHandler 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-_IOCAF7_SetInterruptHandler 1F12 0 CODE 0 text27 dist/default/production\StateMachine16F-Test.X.production.o
+_IOCAF7_SetInterruptHandler 1F92 0 CODE 0 text27 dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_EUSART_Initialize 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 ___lmul@multiplicand 25 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\StateMachine16F-Test.X.production.o
-_S2EventCallback B14 0 CODE 0 text47 dist/default/production\StateMachine16F-Test.X.production.o
+_S2EventCallback AA4 0 CODE 0 text47 dist/default/production\StateMachine16F-Test.X.production.o
 _T0CON0bits 1E 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __Hend_init 8A 0 CODE 0 end_init -
 __size_of_TMR0_SetInterruptHandler 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 putch@txData 20 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 _StateMachine_SM E2 0 CODE 0 text6 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_main 9A6 0 CODE 0 maintext dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_puts EA0 0 CODE 0 text1 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_stoa 600 0 CODE 0 text11 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_main 932 0 CODE 0 maintext dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_puts DEA 0 CODE 0 text1 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_stoa 588 0 CODE 0 text11 dist/default/production\StateMachine16F-Test.X.production.o
 printf@fmt 52 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 _ADACQ 9D 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _ADACT 99 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
@@ -1671,10 +1654,10 @@ _ADPCH 9E 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _ADPRE 9C 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _ADREF 9A 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _ADRPT 10D 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_EUSART_RxDataHandler F3E 0 CODE 0 text53 dist/default/production\StateMachine16F-Test.X.production.o
-_Event 66 0 BANK0 1 bssBANK0 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_fputc 8A0 0 CODE 0 text13 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_fputs D84 0 CODE 0 text2 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_EUSART_RxDataHandler E54 0 CODE 0 text53 dist/default/production\StateMachine16F-Test.X.production.o
+_Event 68 0 BANK0 1 bssBANK0 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_fputc 82C 0 CODE 0 text13 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_fputs D14 0 CODE 0 text2 dist/default/production\StateMachine16F-Test.X.production.o
 _OSCEN 891 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _RXPPS 1ECB 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _TMR0H 1D 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
@@ -1683,27 +1666,27 @@ _TRISA 11 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _TRISB 12 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _TRISC 13 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 _Timer 62 0 BANK0 1 bssBANK0 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_putch 1F50 0 CODE 0 text14 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_putch 1FD0 0 CODE 0 text14 dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_TMR0_Initialize 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
-_flags CA 0 BANK1 1 bssBANK1 dist/default/production\StateMachine16F-Test.X.production.o
-_fputc 80E 0 CODE 0 text13 dist/default/production\StateMachine16F-Test.X.production.o
-_fputs D2E 0 CODE 0 text2 dist/default/production\StateMachine16F-Test.X.production.o
-_putch 1F42 0 CODE 0 text14 dist/default/production\StateMachine16F-Test.X.production.o
+_flags 66 0 BANK0 1 bssBANK0 dist/default/production\StateMachine16F-Test.X.production.o
+_fputc 79A 0 CODE 0 text13 dist/default/production\StateMachine16F-Test.X.production.o
+_fputs CBE 0 CODE 0 text2 dist/default/production\StateMachine16F-Test.X.production.o
+_putch 1FC2 0 CODE 0 text14 dist/default/production\StateMachine16F-Test.X.production.o
 _width C6 0 BANK1 1 bssBANK1 dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-_eusartRxLastError 6D 0 BANK0 1 bssBANK0 dist/default/production\StateMachine16F-Test.X.production.o
+_eusartRxLastError 6E 0 BANK0 1 bssBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 __pintentry 8 0 CODE 0 intentry dist/default/production\StateMachine16F-Test.X.production.o
 __HdataBANK1 0 0 ABS 0 dataBANK1 -
 __size_of_EUSART_SetErrorHandler 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_OSCILLATOR_Initialize 1F80 0 CODE 0 text29 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_OSCILLATOR_Initialize 2000 0 CODE 0 text29 dist/default/production\StateMachine16F-Test.X.production.o
 __initialization 8A 0 CODE 0 cinit dist/default/production\StateMachine16F-Test.X.production.o
-_ADCC_GetSingleConversion 1FDE 0 CODE 0 text5 dist/default/production\StateMachine16F-Test.X.production.o
+_ADCC_GetSingleConversion F28 0 CODE 0 text5 dist/default/production\StateMachine16F-Test.X.production.o
 __pbssBANK0 62 0 BANK0 1 bssBANK0 dist/default/production\StateMachine16F-Test.X.production.o
 __pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production\StateMachine16F-Test.X.production.o
 __pbssBANK2 120 0 BANK2 1 bssBANK2 dist/default/production\StateMachine16F-Test.X.production.o
-_EUSART_Transmit_ISR E1E 0 CODE 0 text48 dist/default/production\StateMachine16F-Test.X.production.o
+_EUSART_Transmit_ISR D68 0 CODE 0 text48 dist/default/production\StateMachine16F-Test.X.production.o
 _eusartRxHead 77 0 COMMON 1 bssCOMMON dist/default/production\StateMachine16F-Test.X.production.o
 _eusartRxTail 76 0 COMMON 1 bssCOMMON dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_EUSART_Receive_ISR 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
@@ -1713,9 +1696,9 @@ _eusartTxTail 78 0 COMMON 1 bssCOMMON dist/default/production\StateMachine16F-Te
 __size_of_IOCAF6_ISR 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 __size_of_IOCAF7_ISR 0 0 ABS 0 - dist/default/production\StateMachine16F-Test.X.production.o
 timerCallback@sec C0 0 BANK1 1 bssBANK1 dist/default/production\StateMachine16F-Test.X.production.o
-__end_of_EUSART_SetRxInterruptHandler 1EFA 0 CODE 0 text32 dist/default/production\StateMachine16F-Test.X.production.o
-__trace$967 5E 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
-_OSCILLATOR_Initialize 1F6E 0 CODE 0 text29 dist/default/production\StateMachine16F-Test.X.production.o
+__end_of_EUSART_SetRxInterruptHandler 1F7A 0 CODE 0 text32 dist/default/production\StateMachine16F-Test.X.production.o
+__trace$965 5E 0 BANK0 1 cstackBANK0 dist/default/production\StateMachine16F-Test.X.production.o
+_OSCILLATOR_Initialize 1FEE 0 CODE 0 text29 dist/default/production\StateMachine16F-Test.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -1741,46 +1724,41 @@ _OSCILLATOR_Initialize 1F6E 0 CODE 0 text29 dist/default/production\StateMachine
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-text5 0 FEF 1FDE 11 2
-text14 0 FA1 1F42 7 2
-text16 0 F5A 1EB4 3 2
-text17 0 F57 1EAE 3 2
-text18 0 F54 1EA8 3 2
-text19 0 F51 1EA2 3 2
-text20 0 F4E 1E9C 3 2
-text21 0 F4B 1E96 3 2
-text24 0 F8F 1F1E 6 2
-text25 0 FAF 1F5E 8 2
-text27 0 F89 1F12 6 2
-text28 0 F83 1F06 6 2
-text29 0 FB7 1F6E 9 2
-text31 0 F7D 1EFA 6 2
-text32 0 F77 1EEE 6 2
-text33 0 F71 1EE2 6 2
-text34 0 F6B 1ED6 6 2
-text35 0 F65 1ECA 6 2
+text14 0 FE1 1FC2 7 2
+text16 0 F9A 1F34 3 2
+text17 0 F97 1F2E 3 2
+text18 0 F94 1F28 3 2
+text19 0 F91 1F22 3 2
+text20 0 F8E 1F1C 3 2
+text21 0 F8B 1F16 3 2
+text23 0 75B EB6 88 2
+text24 0 FCF 1F9E 6 2
+text25 0 FEF 1FDE 8 2
+text27 0 FC9 1F92 6 2
+text28 0 FC3 1F86 6 2
+text29 0 FF7 1FEE 9 2
+text31 0 FBD 1F7A 6 2
+text32 0 FB7 1F6E 6 2
+text33 0 FB1 1F62 6 2
+text34 0 FAB 1F56 6 2
+text35 0 FA5 1F4A 6 2
 text39 0 3 6 1 2
-text41 0 FDE 1FBC 11 2
-text42 0 FCF 1F9E F 2
-text45 0 FC0 1F80 F 2
-text46 0 F4A 1E94 1 2
-text48 0 70F E1E 5C 2
-text50 0 F61 1EC2 4 2
-text51 0 F49 1E92 1 2
-text52 0 F5D 1EBA 4 2
-text53 0 785 F0A 7B 2
+text46 0 F8A 1F14 1 2
+text50 0 FA1 1F42 4 2
+text51 0 F89 1F12 1 2
+text52 0 F9D 1F3A 4 2
 cstackCOMMON 1 70 70 A 1
 cstackBANK0 1 20 20 50 1
-inittext 0 F9B 1F36 6 2
-stringtext1 0 76B ED6 1A 2
-stringtext3 0 6EC DD8 23 2
-stringtext4 0 1000 2000 A2 2
-intentry 0 4 8 6E8 2
+inittext 0 FDB 1FB6 6 2
+stringtext1 0 743 E86 18 2
+stringtext3 0 7E3 FC6 5E 2
+intentry 0 4 8 73F 2
 reset_vec 0 0 0 3 2
-bssBANK1 1 A0 A0 47 1
+bssBANK1 1 A0 A0 46 1
 bssBANK2 1 120 120 20 1
-idataBANK1 0 FA8 1F50 7 2
-clrtext 0 F95 1F2A 6 2
+idataBANK1 0 FE8 1FD0 7 2
+clrtext 0 FD5 1FAA 6 2
+stringtext11 0 1000 2000 44 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

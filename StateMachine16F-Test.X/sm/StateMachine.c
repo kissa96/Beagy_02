@@ -33,8 +33,6 @@ static void _trace(event_t event, state_t state){
 
 // States
 static state_t vStateMachine = _init;
-// history
-static state_t vStateMachine_Working_ShallowHistoryPseudostate2;
 
 
 /**
@@ -46,10 +44,6 @@ void StateMachine_SM(event_t event){
 		case _init:
 			vStateMachine = Working;
 		break;
-		//ShallowHistoryPseudostate
-		case Working_ShallowHistoryPseudostate2:
-			vStateMachine = vStateMachine_Working_ShallowHistoryPseudostate2;
-			break;
 		case Working:
 			// has substates
 			vStateMachine = Red;
@@ -61,7 +55,7 @@ void StateMachine_SM(event_t event){
 			// has substates
 			vStateMachine = YellowOn;
 			if(evS2Pressed==event){ 
-				vStateMachine = Working_ShallowHistoryPseudostate2; // set new state
+				vStateMachine = Working; // set new state
 			}
 			break;
 		case Red:
@@ -75,14 +69,12 @@ void StateMachine_SM(event_t event){
 				vStateMachine = Service;
 
 
-				// save state into ShallowHistoryPseudostate
-				vStateMachine_Working_ShallowHistoryPseudostate2 = Red;
-			}
-			if((vPotmeter<50) && evTick==event){ 
-				vStateMachine = PotDelay; // set new state
 			}
 			if((vPotmeter >= 50) && evTick==event){ 
 				vStateMachine = RedYellow; // set new state
+			}
+			if((vPotmeter<50) && evTick==event){ 
+				vStateMachine = PotDelay; // set new state
 			}
 			break;
 		case PotDelay:
@@ -91,8 +83,6 @@ void StateMachine_SM(event_t event){
 				vStateMachine = Service;
 
 
-				// save state into ShallowHistoryPseudostate
-				vStateMachine_Working_ShallowHistoryPseudostate2 = PotDelay;
 			}
 			if(evS1Pressed==event){ 
 				vStateMachine = RedYellow; // set new state
@@ -109,8 +99,6 @@ void StateMachine_SM(event_t event){
 				vStateMachine = Service;
 
 
-				// save state into ShallowHistoryPseudostate
-				vStateMachine_Working_ShallowHistoryPseudostate2 = RedYellow;
 			}
 			if(evTick==event){ 
 				vStateMachine = Green; // set new state
@@ -127,8 +115,6 @@ void StateMachine_SM(event_t event){
 				vStateMachine = Service;
 
 
-				// save state into ShallowHistoryPseudostate
-				vStateMachine_Working_ShallowHistoryPseudostate2 = Green;
 			}
 			if(evTick==event){ 
 				vStateMachine = Yellow; // set new state
@@ -145,8 +131,6 @@ void StateMachine_SM(event_t event){
 				vStateMachine = Service;
 
 
-				// save state into ShallowHistoryPseudostate
-				vStateMachine_Working_ShallowHistoryPseudostate2 = Yellow;
 			}
 			if(evTick==event){ 
 				vStateMachine = Red; // set new state
@@ -160,8 +144,8 @@ void StateMachine_SM(event_t event){
 
 			// Container
 			if(evS2Pressed==event){
+				vStateMachine = Working;
 
-				vStateMachine = Working_ShallowHistoryPseudostate2;
 
 			}
 			if(evTick==event){ 
@@ -171,8 +155,8 @@ void StateMachine_SM(event_t event){
 		case Dummy1:
 			// Container
 			if(evS2Pressed==event){
+				vStateMachine = Working;
 
-				vStateMachine = Working_ShallowHistoryPseudostate2;
 
 			}
 			if(evTick==event){ 
@@ -187,8 +171,8 @@ void StateMachine_SM(event_t event){
 
 			// Container
 			if(evS2Pressed==event){
+				vStateMachine = Working;
 
-				vStateMachine = Working_ShallowHistoryPseudostate2;
 
 			}
 			if(evTick==event){ 
@@ -198,8 +182,8 @@ void StateMachine_SM(event_t event){
 		case Dummy2:
 			// Container
 			if(evS2Pressed==event){
+				vStateMachine = Working;
 
-				vStateMachine = Working_ShallowHistoryPseudostate2;
 
 			}
 			if(evTick==event){ 

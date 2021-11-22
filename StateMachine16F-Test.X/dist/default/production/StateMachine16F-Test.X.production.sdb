@@ -19,20 +19,19 @@ evS1Pressed 2
 evS2Pressed 3
 evTimeout 4
 ]
-[e E378 . `uc
+[e E380 . `uc
 _init 0
 Working 1
-Working_ShallowHistoryPseudostate2 2
-Service 3
-Red 4
-PotDelay 5
-RedYellow 6
-Green 7
-Yellow 8
-YellowOn 9
-Dummy1 10
-YellowOff 11
-Dummy2 12
+Service 2
+Red 3
+PotDelay 4
+RedYellow 5
+Green 6
+Yellow 7
+YellowOn 8
+Dummy1 9
+YellowOff 10
+Dummy2 11
 ]
 "55 C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
 [e E12087 . `uc
@@ -152,26 +151,26 @@ channel_FVR_buf1 63
 [v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
 "138
 [v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
-"8 C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
+"7 C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
 [v _LED1_On LED1_On `(v  1 e 1 0 ]
-"13
+"12
 [v _LED1_Off LED1_Off `(v  1 e 1 0 ]
-"18
+"17
 [v _LED2_On LED2_On `(v  1 e 1 0 ]
-"23
+"22
 [v _LED2_Off LED2_Off `(v  1 e 1 0 ]
-"28
+"27
 [v _LED3_On LED3_On `(v  1 e 1 0 ]
-"33
+"32
 [v _LED3_Off LED3_Off `(v  1 e 1 0 ]
 "21 C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
 [v __trace _trace `(v  1 s 1 _trace ]
-"43
+"41
 [v _StateMachine_SM StateMachine_SM `(v  1 e 1 0 ]
 "14 C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X/sm/events.h
 [v _trace_event_labels trace_event_labels `DC[5]*.25DCuc  1 e 10 0 ]
-"43 C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X/sm/StateMachine.h
-[v _trace_state_labels trace_state_labels `DC[13]*.25DCuc  1 e 26 0 ]
+"41 C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X/sm/StateMachine.h
+[v _trace_state_labels trace_state_labels `DC[12]*.25DCuc  1 e 24 0 ]
 [s S56 . 1 `uc 1 INTEDG 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 PEIE 1 0 :1:6 
@@ -192,7 +191,7 @@ channel_FVR_buf1 63
 [v _LATB LATB `VEuc  1 e 1 @23 ]
 "908
 [v _LATC LATC `VEuc  1 e 1 @24 ]
-[s S973 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S970 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -202,8 +201,8 @@ channel_FVR_buf1 63
 `uc 1 LATC7 1 0 :1:7 
 ]
 "925
-[u S982 . 1 `S973 1 . 1 0 ]
-[v _LATCbits LATCbits `VES982  1 e 1 @24 ]
+[u S979 . 1 `S970 1 . 1 0 ]
+[v _LATCbits LATCbits `VES979  1 e 1 @24 ]
 "970
 [v _TMR0L TMR0L `VEuc  1 e 1 @28 ]
 "1108
@@ -596,9 +595,7 @@ channel_FVR_buf1 63
 "15 C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
 [v _vPotmeter vPotmeter `uc  1 e 1 0 ]
 "35
-[v _vStateMachine vStateMachine `E378  1 s 1 vStateMachine ]
-"37
-[v _vStateMachine_Working_ShallowHistoryPseudostate2 vStateMachine_Working_ShallowHistoryPseudostate2 `E378  1 s 1 vStateMachine_Working_ShallowHistoryPseudostate2 ]
+[v _vStateMachine vStateMachine `E380  1 s 1 vStateMachine ]
 "111 C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
@@ -621,8 +618,8 @@ channel_FVR_buf1 63
 [v fputs@c c `uc  1 a 1 15 ]
 "8
 [v fputs@s s `*.25DCuc  1 p 2 9 ]
-[s S1534 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
-[v fputs@fp fp `*.1S1534  1 p 1 11 ]
+[s S1530 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputs@fp fp `*.1S1530  1 p 1 11 ]
 "19
 } 0
 "97 C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\main.c
@@ -649,24 +646,24 @@ channel_FVR_buf1 63
 [v ADCC_GetSingleConversion@channel channel `E11631  1 a 1 0 ]
 "155
 } 0
-"43 C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
+"41 C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/StateMachine.c
 [v _StateMachine_SM StateMachine_SM `(v  1 e 1 0 ]
 {
 [v StateMachine_SM@event event `E355  1 a 1 wreg ]
 [v StateMachine_SM@event event `E355  1 a 1 wreg ]
 [v StateMachine_SM@event event `E355  1 a 1 65 ]
-"216
+"200
 } 0
 "21
 [v __trace _trace `(v  1 s 1 _trace ]
 {
 [v __trace@event event `E355  1 a 1 wreg ]
 [v __trace@event event `E355  1 a 1 wreg ]
-[v __trace@state state `E378  1 p 1 58 ]
+[v __trace@state state `E380  1 p 1 58 ]
 "22
 [v __trace@e e `E355  1 s 1 e ]
 "23
-[v __trace@s s `E378  1 s 1 s ]
+[v __trace@s s `E380  1 s 1 s ]
 [v __trace@event event `E355  1 a 1 64 ]
 "32
 } 0
@@ -682,40 +679,40 @@ channel_FVR_buf1 63
 "1390 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
 {
-[s S1551 _IO_FILE 0 ]
-[v vfprintf@fp fp `*.1S1551  1 a 1 wreg ]
+[s S1547 _IO_FILE 0 ]
+[v vfprintf@fp fp `*.1S1547  1 a 1 wreg ]
 "1393
 [v vfprintf@cfmt cfmt `*.25uc  1 a 2 48 ]
 "1390
-[v vfprintf@fp fp `*.1S1551  1 a 1 wreg ]
+[v vfprintf@fp fp `*.1S1547  1 a 1 wreg ]
 [v vfprintf@fmt fmt `*.25DCuc  1 p 2 42 ]
 [v vfprintf@ap ap `*.4*.4v  1 p 1 44 ]
 "1395
 "1390
-[v vfprintf@fp fp `*.1S1551  1 a 1 47 ]
+[v vfprintf@fp fp `*.1S1547  1 a 1 47 ]
 "1404
 } 0
 "692
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
 {
-[s S1551 _IO_FILE 0 ]
-[v vfpfcnvrt@fp fp `*.1S1551  1 a 1 wreg ]
+[s S1547 _IO_FILE 0 ]
+[v vfpfcnvrt@fp fp `*.1S1547  1 a 1 wreg ]
 "694
 [v vfpfcnvrt@cp cp `*.26uc  1 a 2 39 ]
 "692
-[v vfpfcnvrt@fp fp `*.1S1551  1 a 1 wreg ]
+[v vfpfcnvrt@fp fp `*.1S1547  1 a 1 wreg ]
 [v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 32 ]
 [v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 33 ]
 "702
 "692
-[v vfpfcnvrt@fp fp `*.1S1551  1 a 1 41 ]
+[v vfpfcnvrt@fp fp `*.1S1547  1 a 1 41 ]
 "1387
 } 0
 "568
 [v _stoa stoa `(i  1 s 2 stoa ]
 {
-[s S1551 _IO_FILE 0 ]
-[v stoa@fp fp `*.1S1551  1 a 1 wreg ]
+[s S1547 _IO_FILE 0 ]
+[v stoa@fp fp `*.1S1547  1 a 1 wreg ]
 "570
 [v stoa@nuls nuls `[7]uc  1 a 7 14 ]
 "571
@@ -727,12 +724,12 @@ channel_FVR_buf1 63
 [v stoa@w w `i  1 a 2 23 ]
 [v stoa@i i `i  1 a 2 21 ]
 "568
-[v stoa@fp fp `*.1S1551  1 a 1 wreg ]
+[v stoa@fp fp `*.1S1547  1 a 1 wreg ]
 [v stoa@s s `*.26uc  1 p 2 9 ]
 "570
 [v stoa@F1133 F1133 `[7]uc  1 s 7 F1133 ]
 "568
-[v stoa@fp fp `*.1S1551  1 a 1 25 ]
+[v stoa@fp fp `*.1S1547  1 a 1 25 ]
 "611
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
@@ -748,8 +745,8 @@ channel_FVR_buf1 63
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 1 ]
-[s S1534 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
-[v fputc@fp fp `*.1S1534  1 p 1 3 ]
+[s S1530 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputc@fp fp `*.1S1530  1 p 1 3 ]
 "24
 } 0
 "201 C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/eusart.c
@@ -769,35 +766,35 @@ channel_FVR_buf1 63
 [v EUSART_Write@txData txData `uc  1 a 1 5 ]
 "194
 } 0
-"28 C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
+"27 C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\sm/actions.c
 [v _LED3_On LED3_On `(v  1 e 1 0 ]
 {
-"31
+"30
 } 0
-"33
+"32
 [v _LED3_Off LED3_Off `(v  1 e 1 0 ]
 {
-"36
+"35
 } 0
-"18
+"17
 [v _LED2_On LED2_On `(v  1 e 1 0 ]
 {
-"21
+"20
 } 0
-"23
+"22
 [v _LED2_Off LED2_Off `(v  1 e 1 0 ]
 {
-"26
+"25
 } 0
-"8
+"7
 [v _LED1_On LED1_On `(v  1 e 1 0 ]
 {
-"11
+"10
 } 0
-"13
+"12
 [v _LED1_Off LED1_Off `(v  1 e 1 0 ]
 {
-"16
+"15
 } 0
 "50 C:\Users\kissa\Desktop\Beagyazott_git\02\Beagy_02\StateMachine16F-Test.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]

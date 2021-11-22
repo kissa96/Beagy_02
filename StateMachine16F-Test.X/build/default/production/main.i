@@ -20138,6 +20138,9 @@ void LED3_Off();
 
 void LED4_On();
 void LED4_Off();
+
+
+void setTimeout(uint32_t val);
 # 9 "./sm/StateMachine.h" 2
 
 
@@ -20158,8 +20161,6 @@ typedef enum {
  _init
 
  ,Working
-
- ,Working_ShallowHistoryPseudostate2
  ,Service
  ,Red
  ,PotDelay
@@ -20178,8 +20179,6 @@ const char* const trace_state_labels [] = {
  "_init"
 
  ,"Working"
-
- ,"Working_ShallowHistoryPseudostate2"
  ,"Service"
  ,"Red"
  ,"PotDelay"

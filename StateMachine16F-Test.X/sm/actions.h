@@ -20,7 +20,6 @@ void LED4_On();
 void LED4_Off();
 
 /* User defined functions*/
-
-//void UserActivityTemplate();
+void setTimeout(uint32_t val);
 
 #endif /* _ACTIONS_H_ */
