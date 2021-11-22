@@ -5,6 +5,9 @@
         <group>
             <file>file:/C:/Users/kissa/Desktop/Beagyazott_git/02/Beagy_02/StateMachine16F-Test.X/main.c</file>
             <file>file:/C:/Users/kissa/Desktop/Beagyazott_git/02/Beagy_02/StateMachine16F-Test.X/mcc_generated_files/tmr0.c</file>
+            <file>file:/C:/Users/kissa/Desktop/Beagyazott_git/02/Beagy_02/StateMachine16F-Test.X/sm/actions.c</file>
+            <file>file:/C:/Users/kissa/Desktop/Beagyazott_git/02/Beagy_02/StateMachine16F-Test.X/sm/StateMachine.h</file>
+            <file>file:/C:/Users/kissa/Desktop/Beagyazott_git/02/Beagy_02/StateMachine16F-Test.X/sm/events.h</file>
             <file>file:/C:/Users/kissa/Desktop/Beagyazott_git/02/Beagy_02/StateMachine16F-Test.X/sm/StateMachine.c</file>
         </group>
     </open-files>

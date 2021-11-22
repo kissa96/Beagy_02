@@ -85,7 +85,12 @@ void S1EventCallback()
 }
 // S2 button IOC interrupt callback
 void S2EventCallback(){    
-    // Create evS2Pressed event based on evS1Pressed...
+    static uint32_t t = 0;    
+    if(Timer - t > _BUTTONSAFETOUT_MS)
+    {
+        t = Timer;
+        Event = evS2Pressed;
+    }  
 }
 
 // Read potentiometer percentage

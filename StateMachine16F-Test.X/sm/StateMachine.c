@@ -33,6 +33,8 @@ static void _trace(event_t event, state_t state){
 
 // States
 static state_t vStateMachine = _init;
+// history
+static state_t vStateMachine_Working_ShallowHistoryPseudostate2;
 
 
 /**
@@ -42,57 +44,166 @@ void StateMachine_SM(event_t event){
 				
 	switch(vStateMachine){
 		case _init:
-			vStateMachine = State1;
-			LED1_Off();	// initial entry action
-			LED2_Off();	// initial entry action
-			LED3_On();	// initial entry action
+			vStateMachine = Working;
 		break;
-		case State1:
-			if(evTick==event){ 
-				vStateMachine = Pseudo; // set new state
+		//ShallowHistoryPseudostate
+		case Working_ShallowHistoryPseudostate2:
+			vStateMachine = vStateMachine_Working_ShallowHistoryPseudostate2;
+			break;
+		case Working:
+			// has substates
+			vStateMachine = Red;
+			if(evS2Pressed==event){ 
+				vStateMachine = Service; // set new state
 			}
 			break;
-		case State2:
-			if(evTick==event){ 
-				vStateMachine = State3; // set new state
-				LED1_On();	// entry action of State3
-				LED2_Off();	// entry action of State3
-				LED3_Off();	// entry action of State3
+		case Service:
+			// has substates
+			vStateMachine = YellowOn;
+			if(evS2Pressed==event){ 
+				vStateMachine = Working_ShallowHistoryPseudostate2; // set new state
 			}
 			break;
-		case State3:
-			if(evTick==event){ 
-				vStateMachine = State4; // set new state
-				LED1_Off();	// entry action of State4
-				LED2_On();	// entry action of State4
-				LED3_Off();	// entry action of State4
+		case Red:
+			// do actions of Red
+			LED1_Off();
+			LED2_Off();
+			LED3_On();
+
+			// Container
+			if(evS2Pressed==event){
+				vStateMachine = Service;
+
+
+				// save state into ShallowHistoryPseudostate
+				vStateMachine_Working_ShallowHistoryPseudostate2 = Red;
+			}
+			if((vPotmeter<50) && evTick==event){ 
+				vStateMachine = PotDelay; // set new state
+			}
+			if((vPotmeter >= 50) && evTick==event){ 
+				vStateMachine = RedYellow; // set new state
 			}
 			break;
-		case State4:
-			if(evTick==event){ 
-				vStateMachine = State1; // set new state
-				LED1_Off();	// entry action of State1
-				LED2_Off();	// entry action of State1
-				LED3_On();	// entry action of State1
+		case PotDelay:
+			// Container
+			if(evS2Pressed==event){
+				vStateMachine = Service;
+
+
+				// save state into ShallowHistoryPseudostate
+				vStateMachine_Working_ShallowHistoryPseudostate2 = PotDelay;
 			}
-			break;
-		case StatePot:
 			if(evS1Pressed==event){ 
-				vStateMachine = State2; // set new state
-				LED1_Off();	// entry action of State2
-				LED2_On();	// entry action of State2
-				LED3_On();	// entry action of State2
+				vStateMachine = RedYellow; // set new state
 			}
 			break;
-		case Pseudo:
-			if((vPotmeter>=50) && true){ 
-				vStateMachine = State2; // set new state
-				LED1_Off();	// entry action of State2
-				LED2_On();	// entry action of State2
-				LED3_On();	// entry action of State2
+		case RedYellow:
+			// do actions of RedYellow
+			LED1_Off();
+			LED2_On();
+			LED3_On();
+
+			// Container
+			if(evS2Pressed==event){
+				vStateMachine = Service;
+
+
+				// save state into ShallowHistoryPseudostate
+				vStateMachine_Working_ShallowHistoryPseudostate2 = RedYellow;
 			}
-			if((vPotmeter<50) && true){ 
-				vStateMachine = StatePot; // set new state
+			if(evTick==event){ 
+				vStateMachine = Green; // set new state
+			}
+			break;
+		case Green:
+			// do actions of Green
+			LED1_On();
+			LED2_Off();
+			LED3_Off();
+
+			// Container
+			if(evS2Pressed==event){
+				vStateMachine = Service;
+
+
+				// save state into ShallowHistoryPseudostate
+				vStateMachine_Working_ShallowHistoryPseudostate2 = Green;
+			}
+			if(evTick==event){ 
+				vStateMachine = Yellow; // set new state
+			}
+			break;
+		case Yellow:
+			// do actions of Yellow
+			LED1_Off();
+			LED2_On();
+			LED3_Off();
+
+			// Container
+			if(evS2Pressed==event){
+				vStateMachine = Service;
+
+
+				// save state into ShallowHistoryPseudostate
+				vStateMachine_Working_ShallowHistoryPseudostate2 = Yellow;
+			}
+			if(evTick==event){ 
+				vStateMachine = Red; // set new state
+			}
+			break;
+		case YellowOn:
+			// do actions of YellowOn
+			LED1_Off();
+			LED2_On();
+			LED3_Off();
+
+			// Container
+			if(evS2Pressed==event){
+
+				vStateMachine = Working_ShallowHistoryPseudostate2;
+
+			}
+			if(evTick==event){ 
+				vStateMachine = Dummy1; // set new state
+			}
+			break;
+		case Dummy1:
+			// Container
+			if(evS2Pressed==event){
+
+				vStateMachine = Working_ShallowHistoryPseudostate2;
+
+			}
+			if(evTick==event){ 
+				vStateMachine = YellowOff; // set new state
+			}
+			break;
+		case YellowOff:
+			// do actions of YellowOff
+			LED1_Off();
+			LED2_Off();
+			LED3_Off();
+
+			// Container
+			if(evS2Pressed==event){
+
+				vStateMachine = Working_ShallowHistoryPseudostate2;
+
+			}
+			if(evTick==event){ 
+				vStateMachine = Dummy2; // set new state
+			}
+			break;
+		case Dummy2:
+			// Container
+			if(evS2Pressed==event){
+
+				vStateMachine = Working_ShallowHistoryPseudostate2;
+
+			}
+			if(evTick==event){ 
+				vStateMachine = YellowOn; // set new state
 			}
 			break;
 		default:

@@ -2,13 +2,90 @@
 	"graph":{
 		"name": "StateMachine",
 		"size":{
-			"width": 1661.0,
-			"height": 523.0
+			"width": 1039.0,
+			"height": 1189.0
 		}
 	},
 	"states": [
 	{
-		"state": "root_InitialPseudostate0",
+		"state": "root_InitialPseudostate1",
+		"type":"initial",
+		"properties":{
+			"name":"InitialPseudostate1",
+			"size": {
+	            "width": 20,
+	            "height": 20
+	        },
+	        "position":{
+				"x": 67.97682415615373,
+				"y": 51.48810067188066
+	        }
+		}
+	}
+	,{
+		"state": "Working",
+		"type":"state",
+		"properties":{
+			"name":"Working",
+			"position": {
+				"x": 97.97682415615373,
+				"y": 81.48810067188066
+			},
+			"size":{
+				"width": 869.9488028673541,
+				"height": 465.9523809523809
+			},
+			"events": []
+		}
+	}
+	,{
+		"state": "Working_InitialPseudostate2",
+		"type":"initial",
+		"properties":{
+			"name":"InitialPseudostate2",
+			"size": {
+	            "width": 20,
+	            "height": 20
+	        },
+	        "position":{
+				"x": 78.55062702350733,
+				"y": 145.23810067188066
+	        }
+		}
+	}
+	,{
+		"state": "Working_ShallowHistoryPseudostate2",
+		"type":"history",
+		"properties":{
+			"name":"ShallowHistoryPseudostate2",
+			"size": {
+	            "width": 20,
+	            "height": 20
+	        },
+	        "position":{
+				"x": 937.9256270235078,
+				"y": 517.4404816242616
+	        }
+		}
+	}
+	,{
+		"state": "Service",
+		"type":"state",
+		"properties":{
+			"name":"Service",
+			"position": {
+				"x": 205.50658606091702,
+				"y": 725.2381006718807
+			},
+			"size":{
+				"width": 634.2940409625908,
+				"height": 423.95833333333337
+			},
+			"events": []
+		}
+	}
+	,{
+		"state": "Service_InitialPseudostate0",
 		"type":"initial",
 		"properties":{
 			"name":"InitialPseudostate0",
@@ -17,158 +94,270 @@
 	            "height": 20
 	        },
 	        "position":{
-				"x": -5.0,
-				"y": 177.09375
+				"x": 308.75896035684127,
+				"y": 824.4047673385473
 	        }
 		}
 	}
 	,{
-		"state": "State1",
+		"state": "Red",
 		"type":"state",
 		"properties":{
-			"name":"State1",
+			"name":"Red",
 			"position": {
-				"x": 25.0,
-				"y": 207.09375
+				"x": 108.55062702350733,
+				"y": 175.23810067188066
 			},
 			"size":{
-				"width": 178.0,
-				"height": 102.0
+				"width": 136.25,
+				"height": 81.375
 			},
-			"events": [ "entry/LED1_Off()\nLED2_Off()\nLED3_On()"]
+			"events": [ "do/LED1_Off()\nLED2_Off()\nLED3_On()"]
 		}
 	}
 	,{
-		"state": "State2",
+		"state": "PotDelay",
 		"type":"state",
 		"properties":{
-			"name":"State2",
+			"name":"PotDelay",
 			"position": {
-				"x": 654.5,
-				"y": 207.09375
+				"x": 435.63396035684127,
+				"y": 175.23810067188066
 			},
 			"size":{
-				"width": 178.0,
-				"height": 102.0
-			},
-			"events": [ "entry/LED1_Off()\nLED2_On()\nLED3_On()"]
-		}
-	}
-	,{
-		"state": "State3",
-		"type":"state",
-		"properties":{
-			"name":"State3",
-			"position": {
-				"x": 1000.2777777777777,
-				"y": 212.90277777777777
-			},
-			"size":{
-				"width": 170.0,
-				"height": 90.0
-			},
-			"events": [ "entry/LED1_On()\nLED2_Off()\nLED3_Off()"]
-		}
-	}
-	,{
-		"state": "State4",
-		"type":"state",
-		"properties":{
-			"name":"State4",
-			"position": {
-				"x": 1386.2777777777778,
-				"y": 184.90277777777777
-			},
-			"size":{
-				"width": 250.0,
-				"height": 146.0
-			},
-			"events": [ "entry/LED1_Off()\nLED2_On()\nLED3_Off()"]
-		}
-	}
-	,{
-		"state": "StatePot",
-		"type":"state",
-		"properties":{
-			"name":"StatePot",
-			"position": {
-				"x": 328.51111111111106,
-				"y": 69.09375
-			},
-			"size":{
-				"width": 170.0,
-				"height": 90.0
+				"width": 86.45833333333348,
+				"height": 53.125
 			},
 			"events": []
 		}
 	}
 	,{
-		"state": "Pseudo",
+		"state": "RedYellow",
 		"type":"state",
 		"properties":{
-			"name":"Pseudo",
+			"name":"RedYellow",
 			"position": {
-				"x": 328.51111111111106,
-				"y": 219.09375
+				"x": 789.8006270235078,
+				"y": 175.23810067188066
 			},
 			"size":{
-				"width": 129.0,
-				"height": 90.0
+				"width": 126.04166666666652,
+				"height": 81.375
+			},
+			"events": [, "do/LED1_Off()\nLED2_On()\nLED3_On()"]
+		}
+	}
+	,{
+		"state": "Green",
+		"type":"state",
+		"properties":{
+			"name":"Green",
+			"position": {
+				"x": 783.5506270235073,
+				"y": 348.15476733854734
+			},
+			"size":{
+				"width": 86.45833333333348,
+				"height": 96.46875
+			},
+			"events": [, "do/LED1_On()\nLED2_Off()\nLED3_Off()"]
+		}
+	}
+	,{
+		"state": "Yellow",
+		"type":"state",
+		"properties":{
+			"name":"Yellow",
+			"position": {
+				"x": 170.00896035684173,
+				"y": 355.446434005214
+			},
+			"size":{
+				"width": 105.20833333333303,
+				"height": 81.375
+			},
+			"events": [, "do/LED1_Off()\nLED2_On()\nLED3_Off()"]
+		}
+	}
+	,{
+		"state": "YellowOn",
+		"type":"state",
+		"properties":{
+			"name":"YellowOn",
+			"position": {
+				"x": 338.75896035684127,
+				"y": 854.4047673385473
+			},
+			"size":{
+				"width": 137.5,
+				"height": 81.375
+			},
+			"events": [, "do/LED1_Off()\nLED2_On()\nLED3_Off()"]
+		}
+	}
+	,{
+		"state": "Dummy1",
+		"type":"state",
+		"properties":{
+			"name":"Dummy1",
+			"position": {
+				"x": 651.2589603568413,
+				"y": 854.4047673385473
+			},
+			"size":{
+				"width": 122.91666666666652,
+				"height": 75.0
+			},
+			"events": []
+		}
+	}
+	,{
+		"state": "YellowOff",
+		"type":"state",
+		"properties":{
+			"name":"YellowOff",
+			"position": {
+				"x": 647.0922936901748,
+				"y": 1038.415184005214
+			},
+			"size":{
+				"width": 130.375,
+				"height": 81.375
+			},
+			"events": [, "do/LED1_Off()\nLED2_Off()\nLED3_Off()"]
+		}
+	}
+	,{
+		"state": "Dummy2",
+		"type":"state",
+		"properties":{
+			"name":"Dummy2",
+			"position": {
+				"x": 338.75896035684127,
+				"y": 1038.7797673385473
+			},
+			"size":{
+				"width": 137.5,
+				"height": 81.375
 			},
 			"events": []
 		}
 	}
 	],
 	"tree":[
+		{
+			"state":"Working",
+			"substates":[			
+				"Red"
+				,"PotDelay"
+				,"RedYellow"
+				,"Green"
+				,"Yellow"
+				,"Working_InitialPseudostate2"
+				,"Working_ShallowHistoryPseudostate2"
+			]
+		}
+		,{
+			"state":"Service",
+			"substates":[			
+				"YellowOn"
+				,"Dummy1"
+				,"YellowOff"
+				,"Dummy2"
+				,"Service_InitialPseudostate0"
+			]
+		}
 	],
 	"transitions":[
 		{
-            "source": "root_InitialPseudostate0",
-            "target": "State1",
-            "event": "",
-            "label": ""
-        }
-		,{
-            "source": "State2",
-            "target": "State3",
+            "source": "Red",
+            "target": "PotDelay",
             "event": "evTick",
-            "label": "evTick"
+            "label": "evTick [vPotmeter<50]"
         }
 		,{
-            "source": "State3",
-            "target": "State4",
+            "source": "Red",
+            "target": "RedYellow",
             "event": "evTick",
-            "label": "evTick"
+            "label": "evTick [vPotmeter >= 50]"
         }
 		,{
-            "source": "State4",
-            "target": "State1",
-            "event": "evTick",
-            "label": "evTick"
-        }
-		,{
-            "source": "StatePot",
-            "target": "State2",
+            "source": "PotDelay",
+            "target": "RedYellow",
             "event": "evS1Pressed",
             "label": "evS1Pressed"
         }
 		,{
-            "source": "State1",
-            "target": "Pseudo",
+            "source": "RedYellow",
+            "target": "Green",
             "event": "evTick",
             "label": "evTick"
         }
 		,{
-            "source": "Pseudo",
-            "target": "State2",
-            "event": "",
-            "label": "[vPotmeter>=50]"
+            "source": "Green",
+            "target": "Yellow",
+            "event": "evTick",
+            "label": "evTick"
         }
 		,{
-            "source": "Pseudo",
-            "target": "StatePot",
+            "source": "Yellow",
+            "target": "Red",
+            "event": "evTick",
+            "label": "evTick"
+        }
+		,{
+            "source": "YellowOn",
+            "target": "Dummy1",
+            "event": "evTick",
+            "label": "evTick"
+        }
+		,{
+            "source": "Dummy1",
+            "target": "YellowOff",
+            "event": "evTick",
+            "label": "evTick"
+        }
+		,{
+            "source": "YellowOff",
+            "target": "Dummy2",
+            "event": "evTick",
+            "label": "evTick"
+        }
+		,{
+            "source": "Dummy2",
+            "target": "YellowOn",
+            "event": "evTick",
+            "label": "evTick"
+        }
+		,{
+            "source": "Service_InitialPseudostate0",
+            "target": "YellowOn",
             "event": "",
-            "label": "[vPotmeter<50]"
+            "label": ""
+        }
+		,{
+            "source": "root_InitialPseudostate1",
+            "target": "Working",
+            "event": "",
+            "label": ""
+        }
+		,{
+            "source": "Working",
+            "target": "Service",
+            "event": "evS2Pressed",
+            "label": "evS2Pressed"
+        }
+		,{
+            "source": "Working_InitialPseudostate2",
+            "target": "Red",
+            "event": "",
+            "label": ""
+        }
+		,{
+            "source": "Service",
+            "target": "Working_ShallowHistoryPseudostate2",
+            "event": "evS2Pressed",
+            "label": "evS2Pressed"
         }
 	]
 }

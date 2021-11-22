@@ -20157,12 +20157,19 @@ typedef enum {
 
  _init
 
- ,State1
- ,State2
- ,State3
- ,State4
- ,StatePot
- ,Pseudo
+ ,Working
+
+ ,Working_ShallowHistoryPseudostate2
+ ,Service
+ ,Red
+ ,PotDelay
+ ,RedYellow
+ ,Green
+ ,Yellow
+ ,YellowOn
+ ,Dummy1
+ ,YellowOff
+ ,Dummy2
 }state_t;
 
 
@@ -20170,12 +20177,19 @@ const char* const trace_state_labels [] = {
 
  "_init"
 
- ,"State1"
- ,"State2"
- ,"State3"
- ,"State4"
- ,"StatePot"
- ,"Pseudo"
+ ,"Working"
+
+ ,"Working_ShallowHistoryPseudostate2"
+ ,"Service"
+ ,"Red"
+ ,"PotDelay"
+ ,"RedYellow"
+ ,"Green"
+ ,"Yellow"
+ ,"YellowOn"
+ ,"Dummy1"
+ ,"YellowOff"
+ ,"Dummy2"
 };
 
 
@@ -20224,7 +20238,12 @@ void S1EventCallback()
 }
 
 void S2EventCallback(){
-
+    static uint32_t t = 0;
+    if(Timer - t > 150)
+    {
+        t = Timer;
+        Event = evS2Pressed;
+    }
 }
 
 
@@ -20232,7 +20251,7 @@ uint8_t getPotValue()
 {
     return ((uint32_t)(ADCC_GetSingleConversion(1) + 1)*100)>>10;
 }
-# 106 "main.c"
+# 111 "main.c"
 void main(void)
 {
 
@@ -20251,7 +20270,7 @@ void main(void)
 
 
     (INTCONbits.PEIE = 1);
-# 133 "main.c"
+# 138 "main.c"
     puts("$");
 
     puts("$init");
