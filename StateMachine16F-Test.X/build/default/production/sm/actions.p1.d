@@ -8,4 +8,5 @@ sm/../mcc_generated_files/adcc.h  \
 sm/../mcc_generated_files/tmr0.h  \
 sm/../mcc_generated_files/eusart.h  \
 sm/actions.h  \
-sm/events.h 
+sm/events.h  \
+sm/StateMachine.h 

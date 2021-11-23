@@ -2,7 +2,11 @@
 #include <stdbool.h>
 #include "../mcc_generated_files/mcc.h"
 #include "actions.h"
+#include "StateMachine.h"
 
+void setTimeout(uint32_t val){
+    UserVariable = val/1000;
+}
 
 void LED1_On()
 {

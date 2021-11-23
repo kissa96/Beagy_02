@@ -33,104 +33,28 @@ static void _trace(event_t event, state_t state){
 
 // States
 static state_t vStateMachine = _init;
-// history
-static state_t vStateMachine_Working_ShallowHistoryPseudostate1;
 
 
 /**
 * @brief State Machine
 */	
 void StateMachine_SM(event_t event){
-				
+    asm("nop");
 	switch(vStateMachine){
 		case _init:
-			vStateMachine = Red;
-			LED1_Off();	// initial do action
-			LED2_Off();	// initial do action
-			LED3_On();	// initial do action
-            UserVariable = 8;
+			vStateMachine = State0;
 		break;
-		//ShallowHistoryPseudostate
-		case Working_ShallowHistoryPseudostate1:
-			vStateMachine = vStateMachine_Working_ShallowHistoryPseudostate1;
-			break;
-		case Working:
-			if(evTick==event){ 
-				vStateMachine = Working_ShallowHistoryPseudostate1; // set new state
-			}
-			break;
 		case Red:
 			// do actions of Red
 			LED1_Off();
 			LED2_Off();
 			LED3_On();
 
-			// Container
-			if(evTick==event){
-
-				vStateMachine = Working_ShallowHistoryPseudostate1;
-
-				// save state into ShallowHistoryPseudostate
-				vStateMachine_Working_ShallowHistoryPseudostate1 = Red;
-			}
 			if((vPotmeter >= 50) && evTimeout==event){ 
-				UserVariable = 1;	// transition action Red to RedYellow
 				vStateMachine = RedYellow; // set new state
 			}
 			if((vPotmeter<50) && evTimeout==event){ 
 				vStateMachine = PotDelay; // set new state
-			}
-			break;
-		case PotDelay:
-			// Container
-			if(evTick==event){
-
-				vStateMachine = Working_ShallowHistoryPseudostate1;
-
-				// save state into ShallowHistoryPseudostate
-				vStateMachine_Working_ShallowHistoryPseudostate1 = PotDelay;
-			}
-			if(evS1Pressed==event){ 
-				UserVariable = 1;	// transition action PotDelay to RedYellow
-				vStateMachine = RedYellow; // set new state
-			}
-			break;
-		case RedYellow:
-			// do actions of RedYellow
-			LED1_Off();
-			LED2_On();
-			LED3_On();
-
-			// Container
-			if(evTick==event){
-
-				vStateMachine = Working_ShallowHistoryPseudostate1;
-
-				// save state into ShallowHistoryPseudostate
-				vStateMachine_Working_ShallowHistoryPseudostate1 = RedYellow;
-			}
-			if(evTimeout==event){ 
-				UserVariable = 5;	// transition action RedYellow to Green
-				vStateMachine = Green; // set new state
-			}
-			break;
-		case Green:
-			// do actions of Green
-			LED1_On();
-			LED2_Off();
-			LED3_Off();
-
-			// Container
-			if(evTick==event){
-
-				vStateMachine = Working_ShallowHistoryPseudostate1;
-
-				// save state into ShallowHistoryPseudostate
-				vStateMachine_Working_ShallowHistoryPseudostate1 = Green;
-			}
-			if(evTimeout==event){ 
-				UserVariable = 1;	// transition action Green to Yellow
-				vStateMachine = Yellow; // set new state
 			}
 			break;
 		case Yellow:
@@ -139,18 +63,43 @@ void StateMachine_SM(event_t event){
 			LED2_On();
 			LED3_Off();
 
-			// Container
-			if(evTick==event){
-
-				vStateMachine = Working_ShallowHistoryPseudostate1;
-
-				// save state into ShallowHistoryPseudostate
-				vStateMachine_Working_ShallowHistoryPseudostate1 = Yellow;
-			}
 			if(evTimeout==event){ 
-				UserVariable = 8;	// transition action Yellow to Red
+				setTimeout(8000);	// transition action Yellow to Red
 				vStateMachine = Red; // set new state
 			}
+			break;
+		case PotDelay:
+			if(evS1Pressed==event){ 
+				setTimeout(1000);	// transition action PotDelay to RedYellow
+				vStateMachine = RedYellow; // set new state
+			}
+			break;
+		case Green:
+			// do actions of Green
+			LED1_On();
+			LED2_Off();
+			LED3_Off();
+
+			if(evTimeout==event){ 
+				setTimeout(1000);	// transition action Green to Yellow
+				vStateMachine = Yellow; // set new state
+			}
+			break;
+		case RedYellow:
+			// do actions of RedYellow
+			LED1_Off();
+			LED2_On();
+			LED3_On();
+
+			if(evTimeout==event){ 
+				setTimeout(5000);	// transition action RedYellow to Green
+				vStateMachine = Green; // set new state
+			}
+			break;
+		case State0:
+                asm("nop");
+				setTimeout(8000);	// transition action State0 to Red
+				vStateMachine = Red; // set new state
 			break;
 		default:
 			break;

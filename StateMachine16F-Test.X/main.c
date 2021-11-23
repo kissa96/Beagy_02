@@ -66,13 +66,13 @@ void timerCallback()
 #ifdef _USE_TIMERTICK
     static uint32_t sec = 0;
     if(Timer-sec > 1000){
-        sec = Timer;
         Event = evTick;
-        if(!--UserVariable)
+        if((Timer-sec) > UserVariable){
             Event = evTimeout;
+        }
+        sec = Timer;
     }
 #endif
-    // user defined events..
 }
 
 // S1 button IOC interrupt callback

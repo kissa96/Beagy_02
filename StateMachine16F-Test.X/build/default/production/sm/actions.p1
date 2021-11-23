@@ -1,4 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
+"15 sm/StateMachine.h
+[; ;sm/StateMachine.h: 15: extern uint8_t UserVariable;
+[v _UserVariable `uc ~T0 @X0 0 e ]
 "914 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f18857.h
 [; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f18857.h: 914:     struct {
 [s S51 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -1574,160 +1577,196 @@ Version 4.0 HI-TECH Software Intermediate Code
 :s 5C
 ..
 ]
+[v F12123 `*Cuc ~T0 @X0 1 t ]
+"36 sm/StateMachine.h
+[; ;sm/StateMachine.h: 36: const char* const trace_state_labels [] = {
+[v _trace_state_labels `C*Cuc ~T0 @X0 -> 7 `i e ]
+[i _trace_state_labels
+:U ..
+:s 6C
+:s 7C
+:s 8C
+:s 9C
+:s 10C
+:s 11C
+:s 12C
+..
+]
 "7 sm/actions.c
-[; ;sm/actions.c: 7: void LED1_On()
-[v _LED1_On `(v ~T0 @X0 1 ef ]
+[; ;sm/actions.c: 7: void setTimeout(uint32_t val){
+[v _setTimeout `(v ~T0 @X0 1 ef1`ul ]
+{
+[e :U _setTimeout ]
+[v _val `ul ~T0 @X0 1 r1 ]
+[f ]
 "8
-[; ;sm/actions.c: 8: {
+[; ;sm/actions.c: 8:     UserVariable = val/1000;
+[e = _UserVariable -> / _val -> -> -> 1000 `i `l `ul `uc ]
+"9
+[; ;sm/actions.c: 9: }
+[e :UE 1561 ]
+}
+"11
+[; ;sm/actions.c: 11: void LED1_On()
+[v _LED1_On `(v ~T0 @X0 1 ef ]
+"12
+[; ;sm/actions.c: 12: {
 {
 [e :U _LED1_On ]
 [f ]
-"9
-[; ;sm/actions.c: 9:     do { LATCbits.LATC4 = 1; } while(0);
-[e :U 1564 ]
+"13
+[; ;sm/actions.c: 13:     do { LATCbits.LATC4 = 1; } while(0);
+[e :U 1565 ]
 {
 [e = . . _LATCbits 0 4 -> -> 1 `i `uc ]
 }
-[e :U 1563 ]
-"10
-[; ;sm/actions.c: 10: }
-[e :UE 1561 ]
+[e :U 1564 ]
+"14
+[; ;sm/actions.c: 14: }
+[e :UE 1562 ]
 }
-"12
-[; ;sm/actions.c: 12: void LED1_Off()
+"16
+[; ;sm/actions.c: 16: void LED1_Off()
 [v _LED1_Off `(v ~T0 @X0 1 ef ]
-"13
-[; ;sm/actions.c: 13: {
+"17
+[; ;sm/actions.c: 17: {
 {
 [e :U _LED1_Off ]
 [f ]
-"14
-[; ;sm/actions.c: 14:     do { LATCbits.LATC4 = 0; } while(0);
-[e :U 1568 ]
+"18
+[; ;sm/actions.c: 18:     do { LATCbits.LATC4 = 0; } while(0);
+[e :U 1569 ]
 {
 [e = . . _LATCbits 0 4 -> -> 0 `i `uc ]
 }
-[e :U 1567 ]
-"15
-[; ;sm/actions.c: 15: }
-[e :UE 1565 ]
+[e :U 1568 ]
+"19
+[; ;sm/actions.c: 19: }
+[e :UE 1566 ]
 }
-"17
-[; ;sm/actions.c: 17: void LED2_On()
+"21
+[; ;sm/actions.c: 21: void LED2_On()
 [v _LED2_On `(v ~T0 @X0 1 ef ]
-"18
-[; ;sm/actions.c: 18: {
+"22
+[; ;sm/actions.c: 22: {
 {
 [e :U _LED2_On ]
 [f ]
-"19
-[; ;sm/actions.c: 19:     do { LATCbits.LATC5 = 1; } while(0);
-[e :U 1572 ]
+"23
+[; ;sm/actions.c: 23:     do { LATCbits.LATC5 = 1; } while(0);
+[e :U 1573 ]
 {
 [e = . . _LATCbits 0 5 -> -> 1 `i `uc ]
 }
-[e :U 1571 ]
-"20
-[; ;sm/actions.c: 20: }
-[e :UE 1569 ]
+[e :U 1572 ]
+"24
+[; ;sm/actions.c: 24: }
+[e :UE 1570 ]
 }
-"22
-[; ;sm/actions.c: 22: void LED2_Off()
+"26
+[; ;sm/actions.c: 26: void LED2_Off()
 [v _LED2_Off `(v ~T0 @X0 1 ef ]
-"23
-[; ;sm/actions.c: 23: {
+"27
+[; ;sm/actions.c: 27: {
 {
 [e :U _LED2_Off ]
 [f ]
-"24
-[; ;sm/actions.c: 24:     do { LATCbits.LATC5 = 0; } while(0);
-[e :U 1576 ]
+"28
+[; ;sm/actions.c: 28:     do { LATCbits.LATC5 = 0; } while(0);
+[e :U 1577 ]
 {
 [e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
 }
-[e :U 1575 ]
-"25
-[; ;sm/actions.c: 25: }
-[e :UE 1573 ]
+[e :U 1576 ]
+"29
+[; ;sm/actions.c: 29: }
+[e :UE 1574 ]
 }
-"27
-[; ;sm/actions.c: 27: void LED3_On()
+"31
+[; ;sm/actions.c: 31: void LED3_On()
 [v _LED3_On `(v ~T0 @X0 1 ef ]
-"28
-[; ;sm/actions.c: 28: {
+"32
+[; ;sm/actions.c: 32: {
 {
 [e :U _LED3_On ]
 [f ]
-"29
-[; ;sm/actions.c: 29:     do { LATCbits.LATC6 = 1; } while(0);
-[e :U 1580 ]
+"33
+[; ;sm/actions.c: 33:     do { LATCbits.LATC6 = 1; } while(0);
+[e :U 1581 ]
 {
 [e = . . _LATCbits 0 6 -> -> 1 `i `uc ]
 }
-[e :U 1579 ]
-"30
-[; ;sm/actions.c: 30: }
-[e :UE 1577 ]
+[e :U 1580 ]
+"34
+[; ;sm/actions.c: 34: }
+[e :UE 1578 ]
 }
-"32
-[; ;sm/actions.c: 32: void LED3_Off()
+"36
+[; ;sm/actions.c: 36: void LED3_Off()
 [v _LED3_Off `(v ~T0 @X0 1 ef ]
-"33
-[; ;sm/actions.c: 33: {
+"37
+[; ;sm/actions.c: 37: {
 {
 [e :U _LED3_Off ]
 [f ]
-"34
-[; ;sm/actions.c: 34:     do { LATCbits.LATC6 = 0; } while(0);
-[e :U 1584 ]
+"38
+[; ;sm/actions.c: 38:     do { LATCbits.LATC6 = 0; } while(0);
+[e :U 1585 ]
 {
 [e = . . _LATCbits 0 6 -> -> 0 `i `uc ]
 }
-[e :U 1583 ]
-"35
-[; ;sm/actions.c: 35: }
-[e :UE 1581 ]
+[e :U 1584 ]
+"39
+[; ;sm/actions.c: 39: }
+[e :UE 1582 ]
 }
-"37
-[; ;sm/actions.c: 37: void LED4_On()
+"41
+[; ;sm/actions.c: 41: void LED4_On()
 [v _LED4_On `(v ~T0 @X0 1 ef ]
-"38
-[; ;sm/actions.c: 38: {
+"42
+[; ;sm/actions.c: 42: {
 {
 [e :U _LED4_On ]
 [f ]
-"39
-[; ;sm/actions.c: 39:     do { LATCbits.LATC7 = 1; } while(0);
-[e :U 1588 ]
+"43
+[; ;sm/actions.c: 43:     do { LATCbits.LATC7 = 1; } while(0);
+[e :U 1589 ]
 {
 [e = . . _LATCbits 0 7 -> -> 1 `i `uc ]
 }
-[e :U 1587 ]
-"40
-[; ;sm/actions.c: 40: }
-[e :UE 1585 ]
+[e :U 1588 ]
+"44
+[; ;sm/actions.c: 44: }
+[e :UE 1586 ]
 }
-"42
-[; ;sm/actions.c: 42: void LED4_Off()
+"46
+[; ;sm/actions.c: 46: void LED4_Off()
 [v _LED4_Off `(v ~T0 @X0 1 ef ]
-"43
-[; ;sm/actions.c: 43: {
+"47
+[; ;sm/actions.c: 47: {
 {
 [e :U _LED4_Off ]
 [f ]
-"44
-[; ;sm/actions.c: 44:     do { LATCbits.LATC7 = 0; } while(0);
-[e :U 1592 ]
+"48
+[; ;sm/actions.c: 48:     do { LATCbits.LATC7 = 0; } while(0);
+[e :U 1593 ]
 {
 [e = . . _LATCbits 0 7 -> -> 0 `i `uc ]
 }
-[e :U 1591 ]
-"45
-[; ;sm/actions.c: 45: }
-[e :UE 1589 ]
+[e :U 1592 ]
+"49
+[; ;sm/actions.c: 49: }
+[e :UE 1590 ]
 }
+[a 9C 80 111 116 68 101 108 97 121 0 ]
+[a 11C 82 101 100 89 101 108 108 111 119 0 ]
+[a 8C 89 101 108 108 111 119 0 ]
 [a 5C 101 118 84 105 109 101 111 117 116 0 ]
+[a 6C 95 105 110 105 116 0 ]
+[a 10C 71 114 101 101 110 0 ]
 [a 2C 101 118 84 105 99 107 0 ]
 [a 1C 101 118 78 111 110 101 0 ]
 [a 4C 101 118 83 50 80 114 101 115 115 101 100 0 ]
 [a 3C 101 118 83 49 80 114 101 115 115 101 100 0 ]
+[a 7C 82 101 100 0 ]
+[a 12C 83 116 97 116 101 48 0 ]

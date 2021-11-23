@@ -1,0 +1,346 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"21 sm/StateMachine.c
+[; ;sm/StateMachine.c: 21: static void _trace(event_t event, state_t state){
+[c E355 0 1 2 3 4 .. ]
+[n E355 . evNone evTick evS1Pressed evS2Pressed evTimeout  ]
+[c E380 0 1 2 3 4 5 6 .. ]
+[n E380 . _init Red Yellow PotDelay Green RedYellow State0  ]
+"111 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
+[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
+"11 sm/actions.h
+[; ;sm/actions.h: 11: void LED1_Off();
+[v _LED1_Off `(v ~T0 @X0 0 e? ]
+"14
+[; ;sm/actions.h: 14: void LED2_Off();
+[v _LED2_Off `(v ~T0 @X0 0 e? ]
+"16
+[; ;sm/actions.h: 16: void LED3_On();
+[v _LED3_On `(v ~T0 @X0 0 e? ]
+"13
+[; ;sm/actions.h: 13: void LED2_On();
+[v _LED2_On `(v ~T0 @X0 0 e? ]
+"17
+[; ;sm/actions.h: 17: void LED3_Off();
+[v _LED3_Off `(v ~T0 @X0 0 e? ]
+"23
+[; ;sm/actions.h: 23: void setTimeout(uint32_t val);
+[v _setTimeout `(v ~T0 @X0 0 ef1`ul ]
+"10
+[; ;sm/actions.h: 10: void LED1_On();
+[v _LED1_On `(v ~T0 @X0 0 e? ]
+[v F364 `*Cuc ~T0 @X0 1 t ]
+"14 sm/events.h
+[; ;sm/events.h: 14: const char* const trace_event_labels [] = {
+[v _trace_event_labels `C*Cuc ~T0 @X0 -> 5 `i e ]
+[i _trace_event_labels
+:U ..
+:s 1C
+:s 2C
+:s 3C
+:s 4C
+:s 5C
+..
+]
+[v F391 `*Cuc ~T0 @X0 1 t ]
+"36 sm/StateMachine.h
+[; ;sm/StateMachine.h: 36: const char* const trace_state_labels [] = {
+[v _trace_state_labels `C*Cuc ~T0 @X0 -> 7 `i e ]
+[i _trace_state_labels
+:U ..
+:s 6C
+:s 7C
+:s 8C
+:s 9C
+:s 10C
+:s 11C
+:s 12C
+..
+]
+"11 sm/StateMachine.c
+[; ;sm/StateMachine.c: 11: uint8_t UserVariable;
+[v _UserVariable `uc ~T0 @X0 1 e ]
+"15
+[; ;sm/StateMachine.c: 15: uint8_t vPotmeter;
+[v _vPotmeter `uc ~T0 @X0 1 e ]
+"21
+[; ;sm/StateMachine.c: 21: static void _trace(event_t event, state_t state){
+[v __trace `(v ~T0 @X0 1 sf2`E355`E380 ]
+{
+[e :U __trace ]
+[v _event `E355 ~T0 @X0 1 r1 ]
+[v _state `E380 ~T0 @X0 1 r2 ]
+[f ]
+"22
+[; ;sm/StateMachine.c: 22:  static event_t e = evNone;
+[v F399 `E355 ~T0 @X0 1 s e ]
+[i F399
+. `E355 0
+]
+"23
+[; ;sm/StateMachine.c: 23:  static state_t s = _init;
+[v F400 `E380 ~T0 @X0 1 s s ]
+[i F400
+. `E380 0
+]
+"24
+[; ;sm/StateMachine.c: 24:  if(event != e || state != s){
+[e $ ! || != -> _event `ui -> F399 `ui != -> _state `ui -> F400 `ui 4  ]
+{
+"26
+[; ;sm/StateMachine.c: 26:         if(!(event==evNone && state == s)){
+[e $ ! ! && == -> _event `ui -> . `E355 0 `ui == -> _state `ui -> F400 `ui 5  ]
+{
+"27
+[; ;sm/StateMachine.c: 27:          printf("$e:%s,s:%s\n", (event == evNone) ? "" : trace_event_labels[event], trace_state_labels[state]);
+[e ( _printf , , (. :s 13C ? == -> _event `ui -> . `E355 0 `ui : :s 14C *U + &U _trace_event_labels * -> _event `ux -> -> # *U &U _trace_event_labels `ui `ux *U + &U _trace_state_labels * -> _state `ux -> -> # *U &U _trace_state_labels `ui `ux ]
+"28
+[; ;sm/StateMachine.c: 28:   }
+}
+[e :U 5 ]
+"29
+[; ;sm/StateMachine.c: 29:   s = state;
+[e = F400 _state ]
+"30
+[; ;sm/StateMachine.c: 30:   e = event;
+[e = F399 _event ]
+"31
+[; ;sm/StateMachine.c: 31:  }
+}
+[e :U 4 ]
+"32
+[; ;sm/StateMachine.c: 32: }
+[e :UE 3 ]
+}
+"35
+[; ;sm/StateMachine.c: 35: static state_t vStateMachine = _init;
+[v _vStateMachine `E380 ~T0 @X0 1 s ]
+[i _vStateMachine
+. `E380 0
+]
+"41
+[; ;sm/StateMachine.c: 41: void StateMachine_SM(event_t event){
+[v _StateMachine_SM `(v ~T0 @X0 1 ef1`E355 ]
+{
+[e :U _StateMachine_SM ]
+[v _event `E355 ~T0 @X0 1 r1 ]
+[f ]
+"42
+[; ;sm/StateMachine.c: 42:     __asm("nop");
+[; <" nop ;# ">
+"43
+[; ;sm/StateMachine.c: 43:  switch(vStateMachine){
+[e $U 8  ]
+{
+"44
+[; ;sm/StateMachine.c: 44:   case _init:
+[e :U 9 ]
+"45
+[; ;sm/StateMachine.c: 45:    vStateMachine = State0;
+[e = _vStateMachine . `E380 6 ]
+"46
+[; ;sm/StateMachine.c: 46:   break;
+[e $U 7  ]
+"47
+[; ;sm/StateMachine.c: 47:   case Red:
+[e :U 10 ]
+"49
+[; ;sm/StateMachine.c: 49:    LED1_Off();
+[e ( _LED1_Off ..  ]
+"50
+[; ;sm/StateMachine.c: 50:    LED2_Off();
+[e ( _LED2_Off ..  ]
+"51
+[; ;sm/StateMachine.c: 51:    LED3_On();
+[e ( _LED3_On ..  ]
+"53
+[; ;sm/StateMachine.c: 53:    if((vPotmeter >= 50) && evTimeout==event){
+[e $ ! && >= -> _vPotmeter `i -> 50 `i == -> . `E355 4 `ui -> _event `ui 11  ]
+{
+"54
+[; ;sm/StateMachine.c: 54:     UserVariable = 1;
+[e = _UserVariable -> -> 1 `i `uc ]
+"55
+[; ;sm/StateMachine.c: 55:     vStateMachine = RedYellow;
+[e = _vStateMachine . `E380 5 ]
+"56
+[; ;sm/StateMachine.c: 56:    }
+}
+[e :U 11 ]
+"57
+[; ;sm/StateMachine.c: 57:    if((vPotmeter<50) && evTimeout==event){
+[e $ ! && < -> _vPotmeter `i -> 50 `i == -> . `E355 4 `ui -> _event `ui 12  ]
+{
+"58
+[; ;sm/StateMachine.c: 58:     vStateMachine = PotDelay;
+[e = _vStateMachine . `E380 3 ]
+"59
+[; ;sm/StateMachine.c: 59:    }
+}
+[e :U 12 ]
+"60
+[; ;sm/StateMachine.c: 60:    break;
+[e $U 7  ]
+"61
+[; ;sm/StateMachine.c: 61:   case Yellow:
+[e :U 13 ]
+"63
+[; ;sm/StateMachine.c: 63:    LED1_Off();
+[e ( _LED1_Off ..  ]
+"64
+[; ;sm/StateMachine.c: 64:    LED2_On();
+[e ( _LED2_On ..  ]
+"65
+[; ;sm/StateMachine.c: 65:    LED3_Off();
+[e ( _LED3_Off ..  ]
+"67
+[; ;sm/StateMachine.c: 67:    if(evTimeout==event){
+[e $ ! == -> . `E355 4 `ui -> _event `ui 14  ]
+{
+"68
+[; ;sm/StateMachine.c: 68:     setTimeout(8000);
+[e ( _setTimeout (1 -> -> -> 8000 `i `l `ul ]
+"69
+[; ;sm/StateMachine.c: 69:     vStateMachine = Red;
+[e = _vStateMachine . `E380 1 ]
+"70
+[; ;sm/StateMachine.c: 70:    }
+}
+[e :U 14 ]
+"71
+[; ;sm/StateMachine.c: 71:    break;
+[e $U 7  ]
+"72
+[; ;sm/StateMachine.c: 72:   case PotDelay:
+[e :U 15 ]
+"73
+[; ;sm/StateMachine.c: 73:    if(evS1Pressed==event){
+[e $ ! == -> . `E355 2 `ui -> _event `ui 16  ]
+{
+"74
+[; ;sm/StateMachine.c: 74:     setTimeout(1000);
+[e ( _setTimeout (1 -> -> -> 1000 `i `l `ul ]
+"75
+[; ;sm/StateMachine.c: 75:     vStateMachine = RedYellow;
+[e = _vStateMachine . `E380 5 ]
+"76
+[; ;sm/StateMachine.c: 76:    }
+}
+[e :U 16 ]
+"77
+[; ;sm/StateMachine.c: 77:    break;
+[e $U 7  ]
+"78
+[; ;sm/StateMachine.c: 78:   case Green:
+[e :U 17 ]
+"80
+[; ;sm/StateMachine.c: 80:    LED1_On();
+[e ( _LED1_On ..  ]
+"81
+[; ;sm/StateMachine.c: 81:    LED2_Off();
+[e ( _LED2_Off ..  ]
+"82
+[; ;sm/StateMachine.c: 82:    LED3_Off();
+[e ( _LED3_Off ..  ]
+"84
+[; ;sm/StateMachine.c: 84:    if(evTimeout==event){
+[e $ ! == -> . `E355 4 `ui -> _event `ui 18  ]
+{
+"85
+[; ;sm/StateMachine.c: 85:     setTimeout(1000);
+[e ( _setTimeout (1 -> -> -> 1000 `i `l `ul ]
+"86
+[; ;sm/StateMachine.c: 86:     vStateMachine = Yellow;
+[e = _vStateMachine . `E380 2 ]
+"87
+[; ;sm/StateMachine.c: 87:    }
+}
+[e :U 18 ]
+"88
+[; ;sm/StateMachine.c: 88:    break;
+[e $U 7  ]
+"89
+[; ;sm/StateMachine.c: 89:   case RedYellow:
+[e :U 19 ]
+"91
+[; ;sm/StateMachine.c: 91:    LED1_Off();
+[e ( _LED1_Off ..  ]
+"92
+[; ;sm/StateMachine.c: 92:    LED2_On();
+[e ( _LED2_On ..  ]
+"93
+[; ;sm/StateMachine.c: 93:    LED3_On();
+[e ( _LED3_On ..  ]
+"95
+[; ;sm/StateMachine.c: 95:    if(evTimeout==event){
+[e $ ! == -> . `E355 4 `ui -> _event `ui 20  ]
+{
+"96
+[; ;sm/StateMachine.c: 96:     setTimeout(5000);
+[e ( _setTimeout (1 -> -> -> 5000 `i `l `ul ]
+"97
+[; ;sm/StateMachine.c: 97:     vStateMachine = Green;
+[e = _vStateMachine . `E380 4 ]
+"98
+[; ;sm/StateMachine.c: 98:    }
+}
+[e :U 20 ]
+"99
+[; ;sm/StateMachine.c: 99:    break;
+[e $U 7  ]
+"100
+[; ;sm/StateMachine.c: 100:   case State0:
+[e :U 21 ]
+"101
+[; ;sm/StateMachine.c: 101:                 __asm("nop");
+[; <" nop ;# ">
+"102
+[; ;sm/StateMachine.c: 102:     setTimeout(8000);
+[e ( _setTimeout (1 -> -> -> 8000 `i `l `ul ]
+"103
+[; ;sm/StateMachine.c: 103:     vStateMachine = Red;
+[e = _vStateMachine . `E380 1 ]
+"104
+[; ;sm/StateMachine.c: 104:    break;
+[e $U 7  ]
+"105
+[; ;sm/StateMachine.c: 105:   default:
+[e :U 22 ]
+"106
+[; ;sm/StateMachine.c: 106:    break;
+[e $U 7  ]
+"107
+[; ;sm/StateMachine.c: 107:  }
+}
+[e $U 7  ]
+[e :U 8 ]
+[e [\ -> _vStateMachine `ui , $ -> . `E380 0 `ui 9
+ , $ -> . `E380 1 `ui 10
+ , $ -> . `E380 2 `ui 13
+ , $ -> . `E380 3 `ui 15
+ , $ -> . `E380 4 `ui 17
+ , $ -> . `E380 5 `ui 19
+ , $ -> . `E380 6 `ui 21
+ 22 ]
+[e :U 7 ]
+"110
+[; ;sm/StateMachine.c: 110:  _trace(event, vStateMachine);
+[e ( __trace (2 , _event _vStateMachine ]
+"112
+[; ;sm/StateMachine.c: 112: }
+[e :UE 6 ]
+}
+[p f _printf 8650752 ]
+[a 9C 80 111 116 68 101 108 97 121 0 ]
+[a 11C 82 101 100 89 101 108 108 111 119 0 ]
+[a 8C 89 101 108 108 111 119 0 ]
+[a 5C 101 118 84 105 109 101 111 117 116 0 ]
+[a 6C 95 105 110 105 116 0 ]
+[a 10C 71 114 101 101 110 0 ]
+[a 2C 101 118 84 105 99 107 0 ]
+[a 1C 101 118 78 111 110 101 0 ]
+[a 4C 101 118 83 50 80 114 101 115 115 101 100 0 ]
+[a 3C 101 118 83 49 80 114 101 115 115 101 100 0 ]
+[a 7C 82 101 100 0 ]
+[a 12C 83 116 97 116 101 48 0 ]
+[a 13C 36 101 58 37 115 44 115 58 37 115 10 0 ]
+[a 14C 0 ]

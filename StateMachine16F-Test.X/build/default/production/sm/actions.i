@@ -20137,7 +20137,51 @@ void LED4_Off();
 void setTimeout(uint32_t val);
 # 4 "sm/actions.c" 2
 
+# 1 "sm/StateMachine.h" 1
+# 15 "sm/StateMachine.h"
+extern uint8_t UserVariable;
 
+
+
+extern uint8_t vPotmeter;
+
+
+
+typedef enum {
+
+ _init
+
+ ,Red
+ ,Yellow
+ ,PotDelay
+ ,Green
+ ,RedYellow
+ ,State0
+}state_t;
+
+
+const char* const trace_state_labels [] = {
+
+ "_init"
+
+ ,"Red"
+ ,"Yellow"
+ ,"PotDelay"
+ ,"Green"
+ ,"RedYellow"
+ ,"State0"
+};
+
+
+
+
+void StateMachine_SM (event_t event);
+# 5 "sm/actions.c" 2
+
+
+void setTimeout(uint32_t val){
+    UserVariable = val/1000;
+}
 
 void LED1_On()
 {

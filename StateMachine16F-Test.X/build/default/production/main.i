@@ -20160,14 +20160,12 @@ typedef enum {
 
  _init
 
- ,Working
-
- ,Working_ShallowHistoryPseudostate1
  ,Red
- ,PotDelay
- ,RedYellow
- ,Green
  ,Yellow
+ ,PotDelay
+ ,Green
+ ,RedYellow
+ ,State0
 }state_t;
 
 
@@ -20175,14 +20173,12 @@ const char* const trace_state_labels [] = {
 
  "_init"
 
- ,"Working"
-
- ,"Working_ShallowHistoryPseudostate1"
  ,"Red"
- ,"PotDelay"
- ,"RedYellow"
- ,"Green"
  ,"Yellow"
+ ,"PotDelay"
+ ,"Green"
+ ,"RedYellow"
+ ,"State0"
 };
 
 
@@ -20212,12 +20208,12 @@ void timerCallback()
 
     static uint32_t sec = 0;
     if(Timer-sec > 1000){
-        sec = Timer;
         Event = evTick;
-        if(!--UserVariable)
+        if((Timer-sec) > UserVariable){
             Event = evTimeout;
+        }
+        sec = Timer;
     }
-
 
 }
 

@@ -330,14 +330,12 @@ typedef enum {
 
  _init
 
- ,Working
-
- ,Working_ShallowHistoryPseudostate1
  ,Red
- ,PotDelay
- ,RedYellow
- ,Green
  ,Yellow
+ ,PotDelay
+ ,Green
+ ,RedYellow
+ ,State0
 }state_t;
 
 
@@ -345,14 +343,12 @@ const char* const trace_state_labels [] = {
 
  "_init"
 
- ,"Working"
-
- ,"Working_ShallowHistoryPseudostate1"
  ,"Red"
- ,"PotDelay"
- ,"RedYellow"
- ,"Green"
  ,"Yellow"
+ ,"PotDelay"
+ ,"Green"
+ ,"RedYellow"
+ ,"State0"
 };
 
 
@@ -389,103 +385,27 @@ static void _trace(event_t event, state_t state){
 
 static state_t vStateMachine = _init;
 
-static state_t vStateMachine_Working_ShallowHistoryPseudostate1;
-
 
 
 
 
 void StateMachine_SM(event_t event){
-
+    __asm("nop");
  switch(vStateMachine){
   case _init:
-   vStateMachine = Red;
-   LED1_Off();
-   LED2_Off();
-   LED3_On();
-            UserVariable = 8;
+   vStateMachine = State0;
   break;
-
-  case Working_ShallowHistoryPseudostate1:
-   vStateMachine = vStateMachine_Working_ShallowHistoryPseudostate1;
-   break;
-  case Working:
-   if(evTick==event){
-    vStateMachine = Working_ShallowHistoryPseudostate1;
-   }
-   break;
   case Red:
 
    LED1_Off();
    LED2_Off();
    LED3_On();
 
-
-   if(evTick==event){
-
-    vStateMachine = Working_ShallowHistoryPseudostate1;
-
-
-    vStateMachine_Working_ShallowHistoryPseudostate1 = Red;
-   }
    if((vPotmeter >= 50) && evTimeout==event){
-    UserVariable = 1;
     vStateMachine = RedYellow;
    }
    if((vPotmeter<50) && evTimeout==event){
     vStateMachine = PotDelay;
-   }
-   break;
-  case PotDelay:
-
-   if(evTick==event){
-
-    vStateMachine = Working_ShallowHistoryPseudostate1;
-
-
-    vStateMachine_Working_ShallowHistoryPseudostate1 = PotDelay;
-   }
-   if(evS1Pressed==event){
-    UserVariable = 1;
-    vStateMachine = RedYellow;
-   }
-   break;
-  case RedYellow:
-
-   LED1_Off();
-   LED2_On();
-   LED3_On();
-
-
-   if(evTick==event){
-
-    vStateMachine = Working_ShallowHistoryPseudostate1;
-
-
-    vStateMachine_Working_ShallowHistoryPseudostate1 = RedYellow;
-   }
-   if(evTimeout==event){
-    UserVariable = 5;
-    vStateMachine = Green;
-   }
-   break;
-  case Green:
-
-   LED1_On();
-   LED2_Off();
-   LED3_Off();
-
-
-   if(evTick==event){
-
-    vStateMachine = Working_ShallowHistoryPseudostate1;
-
-
-    vStateMachine_Working_ShallowHistoryPseudostate1 = Green;
-   }
-   if(evTimeout==event){
-    UserVariable = 1;
-    vStateMachine = Yellow;
    }
    break;
   case Yellow:
@@ -494,18 +414,43 @@ void StateMachine_SM(event_t event){
    LED2_On();
    LED3_Off();
 
-
-   if(evTick==event){
-
-    vStateMachine = Working_ShallowHistoryPseudostate1;
-
-
-    vStateMachine_Working_ShallowHistoryPseudostate1 = Yellow;
-   }
    if(evTimeout==event){
-    UserVariable = 8;
+    setTimeout(8000);
     vStateMachine = Red;
    }
+   break;
+  case PotDelay:
+   if(evS1Pressed==event){
+    setTimeout(1000);
+    vStateMachine = RedYellow;
+   }
+   break;
+  case Green:
+
+   LED1_On();
+   LED2_Off();
+   LED3_Off();
+
+   if(evTimeout==event){
+    setTimeout(1000);
+    vStateMachine = Yellow;
+   }
+   break;
+  case RedYellow:
+
+   LED1_Off();
+   LED2_On();
+   LED3_On();
+
+   if(evTimeout==event){
+    setTimeout(5000);
+    vStateMachine = Green;
+   }
+   break;
+  case State0:
+                __asm("nop");
+    setTimeout(8000);
+    vStateMachine = Red;
    break;
   default:
    break;

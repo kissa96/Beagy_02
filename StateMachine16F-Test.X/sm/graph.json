@@ -2,7 +2,7 @@
 	"graph":{
 		"name": "StateMachine",
 		"size":{
-			"width": 1039.0,
+			"width": 1075.0,
 			"height": 1198.0
 		}
 	},
@@ -17,39 +17,8 @@
 	            "height": 20
 	        },
 	        "position":{
-				"x": 78.55062702350733,
-				"y": 154.1718775273494
-	        }
-		}
-	}
-	,{
-		"state": "Working",
-		"type":"state",
-		"properties":{
-			"name":"Working",
-			"position": {
-				"x": 97.97682415615373,
-				"y": 90.42187752734941
-			},
-			"size":{
-				"width": 869.9488028673541,
-				"height": 465.9523809523809
-			},
-			"events": []
-		}
-	}
-	,{
-		"state": "Working_ShallowHistoryPseudostate1",
-		"type":"history",
-		"properties":{
-			"name":"ShallowHistoryPseudostate1",
-			"size": {
-	            "width": 20,
-	            "height": 20
-	        },
-	        "position":{
-				"x": 937.9256270235078,
-				"y": 526.3742584797303
+				"x": 122.94901303842926,
+				"y": 97.00000252734935
 	        }
 		}
 	}
@@ -59,8 +28,8 @@
 		"properties":{
 			"name":"Red",
 			"position": {
-				"x": 108.55062702350733,
-				"y": 184.1718775273494
+				"x": 209.83334186725733,
+				"y": 285.1718775273494
 			},
 			"size":{
 				"width": 136.25,
@@ -70,13 +39,29 @@
 		}
 	}
 	,{
+		"state": "Yellow",
+		"type":"state",
+		"properties":{
+			"name":"Yellow",
+			"position": {
+				"x": 245.29167520059173,
+				"y": 515.7254489559209
+			},
+			"size":{
+				"width": 161.72619047618946,
+				"height": 127.31101190476181
+			},
+			"events": [, "do/LED1_Off()\nLED2_On()\nLED3_Off()"]
+		}
+	}
+	,{
 		"state": "PotDelay",
 		"type":"state",
 		"properties":{
 			"name":"PotDelay",
 			"position": {
-				"x": 435.63396035684127,
-				"y": 184.1718775273494
+				"x": 441.91667520059127,
+				"y": 175.1718775273494
 			},
 			"size":{
 				"width": 86.45833333333348,
@@ -86,29 +71,13 @@
 		}
 	}
 	,{
-		"state": "RedYellow",
-		"type":"state",
-		"properties":{
-			"name":"RedYellow",
-			"position": {
-				"x": 789.8006270235078,
-				"y": 182.46503228925417
-			},
-			"size":{
-				"width": 153.39285714285643,
-				"height": 113.26934523809524
-			},
-			"events": [, "do/LED1_Off()\nLED2_On()\nLED3_On()"]
-		}
-	}
-	,{
 		"state": "Green",
 		"type":"state",
 		"properties":{
 			"name":"Green",
 			"position": {
-				"x": 692.9256270235073,
-				"y": 357.47544895592085
+				"x": 774.2083418672573,
+				"y": 376.47544895592085
 			},
 			"size":{
 				"width": 205.47619047619037,
@@ -118,34 +87,39 @@
 		}
 	}
 	,{
-		"state": "Yellow",
+		"state": "RedYellow",
 		"type":"state",
 		"properties":{
-			"name":"Yellow",
+			"name":"RedYellow",
 			"position": {
-				"x": 167.00896035684173,
-				"y": 364.7254489559209
+				"x": 765.0833418672578,
+				"y": 160.46503228925417
 			},
 			"size":{
-				"width": 161.72619047618946,
-				"height": 127.31101190476181
+				"width": 153.39285714285643,
+				"height": 113.26934523809524
 			},
-			"events": [, "do/LED1_Off()\nLED2_On()\nLED3_Off()"]
+			"events": [, "do/LED1_Off()\nLED2_On()\nLED3_On()"]
+		}
+	}
+	,{
+		"state": "State0",
+		"type":"state",
+		"properties":{
+			"name":"State0",
+			"position": {
+				"x": 152.94901303842926,
+				"y": 127.00000252734935
+			},
+			"size":{
+				"width": 55.0,
+				"height": 36.09375
+			},
+			"events": []
 		}
 	}
 	],
 	"tree":[
-		{
-			"state":"Working",
-			"substates":[			
-				"Red"
-				,"PotDelay"
-				,"RedYellow"
-				,"Green"
-				,"Yellow"
-				,"Working_ShallowHistoryPseudostate1"
-			]
-		}
 	],
 	"transitions":[
 		{
@@ -164,37 +138,37 @@
             "source": "PotDelay",
             "target": "RedYellow",
             "event": "evS1Pressed",
-            "label": "evS1Pressed / UserVariable = 1"
+            "label": "evS1Pressed / setTimeout(1000)"
         }
 		,{
             "source": "RedYellow",
             "target": "Green",
             "event": "evTimeout",
-            "label": "evTimeout / UserVariable = 5"
+            "label": "evTimeout / setTimeout(5000)"
         }
 		,{
             "source": "Green",
             "target": "Yellow",
             "event": "evTimeout",
-            "label": "evTimeout / UserVariable = 1"
+            "label": "evTimeout / setTimeout(1000)"
         }
 		,{
             "source": "Yellow",
             "target": "Red",
             "event": "evTimeout",
-            "label": "evTimeout / UserVariable = 8"
+            "label": "evTimeout / setTimeout(8000)"
         }
 		,{
             "source": "root_InitialPseudostate1",
-            "target": "Red",
+            "target": "State0",
             "event": "",
-            "label": "/ UserVariable = 8"
+            "label": ""
         }
 		,{
-            "source": "Working",
-            "target": "Working_ShallowHistoryPseudostate1",
-            "event": "evTick",
-            "label": "evTick"
+            "source": "State0",
+            "target": "Red",
+            "event": "",
+            "label": "/ setTimeout(8000)"
         }
 	]
 }
