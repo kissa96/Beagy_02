@@ -25,16 +25,13 @@ typedef enum {
 	_init
 	/* states */
 	,Working
-	,Service
+	/* history pseudostate */
+	,Working_ShallowHistoryPseudostate1
 	,Red
 	,PotDelay
 	,RedYellow
 	,Green
 	,Yellow
-	,YellowOn
-	,Dummy1
-	,YellowOff
-	,Dummy2
 }state_t;
 
 /* trace state names */
@@ -43,16 +40,13 @@ const char* const trace_state_labels [] = {
 	"_init"
 	/* states */
 	,"Working"
-	,"Service"
+	/* history pseudostate */
+	,"Working_ShallowHistoryPseudostate1"
 	,"Red"
 	,"PotDelay"
 	,"RedYellow"
 	,"Green"
 	,"Yellow"
-	,"YellowOn"
-	,"Dummy1"
-	,"YellowOff"
-	,"Dummy2"
 };
 
 

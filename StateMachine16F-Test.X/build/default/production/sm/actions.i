@@ -9,7 +9,8 @@
 # 1 "sm/actions.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdbool.h" 1 3
-# 3 "sm/actions.c" 2
+# 2 "sm/actions.c" 2
+
 # 1 "sm/../mcc_generated_files/mcc.h" 1
 # 49 "sm/../mcc_generated_files/mcc.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\xc.h" 1 3
@@ -20084,7 +20085,8 @@ void SYSTEM_Initialize(void);
 void OSCILLATOR_Initialize(void);
 # 99 "sm/../mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
-# 4 "sm/actions.c" 2
+# 3 "sm/actions.c" 2
+
 # 1 "sm/actions.h" 1
 
 
@@ -20112,7 +20114,8 @@ const char* const trace_event_labels [] = {
  ,"evTimeout"
 
 };
-# 5 "sm/actions.h" 2
+# 4 "sm/actions.h" 2
+
 
 extern event_t Event;
 
@@ -20132,7 +20135,8 @@ void LED4_Off();
 
 
 void setTimeout(uint32_t val);
-# 5 "sm/actions.c" 2
+# 4 "sm/actions.c" 2
+
 
 
 void LED1_On()

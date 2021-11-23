@@ -20161,16 +20161,13 @@ typedef enum {
  _init
 
  ,Working
- ,Service
+
+ ,Working_ShallowHistoryPseudostate1
  ,Red
  ,PotDelay
  ,RedYellow
  ,Green
  ,Yellow
- ,YellowOn
- ,Dummy1
- ,YellowOff
- ,Dummy2
 }state_t;
 
 
@@ -20179,16 +20176,13 @@ const char* const trace_state_labels [] = {
  "_init"
 
  ,"Working"
- ,"Service"
+
+ ,"Working_ShallowHistoryPseudostate1"
  ,"Red"
  ,"PotDelay"
  ,"RedYellow"
  ,"Green"
  ,"Yellow"
- ,"YellowOn"
- ,"Dummy1"
- ,"YellowOff"
- ,"Dummy2"
 };
 
 
@@ -20220,6 +20214,8 @@ void timerCallback()
     if(Timer-sec > 1000){
         sec = Timer;
         Event = evTick;
+        if(!--UserVariable)
+            Event = evTimeout;
     }
 
 
@@ -20250,7 +20246,7 @@ uint8_t getPotValue()
 {
     return ((uint32_t)(ADCC_GetSingleConversion(1) + 1)*100)>>10;
 }
-# 111 "main.c"
+# 113 "main.c"
 void main(void)
 {
 
@@ -20269,7 +20265,7 @@ void main(void)
 
 
     (INTCONbits.PEIE = 1);
-# 138 "main.c"
+# 140 "main.c"
     puts("$");
 
     puts("$init");

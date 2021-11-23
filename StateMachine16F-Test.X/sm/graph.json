@@ -17,8 +17,8 @@
 	            "height": 20
 	        },
 	        "position":{
-				"x": 67.97682415615373,
-				"y": 60.42187752734941
+				"x": 78.55062702350733,
+				"y": 154.1718775273494
 	        }
 		}
 	}
@@ -39,48 +39,17 @@
 		}
 	}
 	,{
-		"state": "Working_InitialPseudostate2",
-		"type":"initial",
+		"state": "Working_ShallowHistoryPseudostate1",
+		"type":"history",
 		"properties":{
-			"name":"InitialPseudostate2",
+			"name":"ShallowHistoryPseudostate1",
 			"size": {
 	            "width": 20,
 	            "height": 20
 	        },
 	        "position":{
-				"x": 78.55062702350733,
-				"y": 154.1718775273494
-	        }
-		}
-	}
-	,{
-		"state": "Service",
-		"type":"state",
-		"properties":{
-			"name":"Service",
-			"position": {
-				"x": 205.50658606091702,
-				"y": 734.1718775273495
-			},
-			"size":{
-				"width": 634.2940409625908,
-				"height": 423.95833333333337
-			},
-			"events": []
-		}
-	}
-	,{
-		"state": "Service_InitialPseudostate0",
-		"type":"initial",
-		"properties":{
-			"name":"InitialPseudostate0",
-			"size": {
-	            "width": 20,
-	            "height": 20
-	        },
-	        "position":{
-				"x": 308.75896035684127,
-				"y": 833.3385441940161
+				"x": 937.9256270235078,
+				"y": 526.3742584797303
 	        }
 		}
 	}
@@ -154,78 +123,14 @@
 		"properties":{
 			"name":"Yellow",
 			"position": {
-				"x": 170.00896035684173,
-				"y": 363.7254489559209
+				"x": 167.00896035684173,
+				"y": 364.7254489559209
 			},
 			"size":{
 				"width": 161.72619047618946,
 				"height": 127.31101190476181
 			},
 			"events": [, "do/LED1_Off()\nLED2_On()\nLED3_Off()"]
-		}
-	}
-	,{
-		"state": "YellowOn",
-		"type":"state",
-		"properties":{
-			"name":"YellowOn",
-			"position": {
-				"x": 338.75896035684127,
-				"y": 863.3385441940161
-			},
-			"size":{
-				"width": 137.5,
-				"height": 81.375
-			},
-			"events": [, "do/LED1_Off()\nLED2_On()\nLED3_Off()"]
-		}
-	}
-	,{
-		"state": "Dummy1",
-		"type":"state",
-		"properties":{
-			"name":"Dummy1",
-			"position": {
-				"x": 651.2589603568413,
-				"y": 863.3385441940161
-			},
-			"size":{
-				"width": 122.91666666666652,
-				"height": 75.0
-			},
-			"events": []
-		}
-	}
-	,{
-		"state": "YellowOff",
-		"type":"state",
-		"properties":{
-			"name":"YellowOff",
-			"position": {
-				"x": 647.0922936901748,
-				"y": 1047.3489608606828
-			},
-			"size":{
-				"width": 130.375,
-				"height": 81.375
-			},
-			"events": [, "do/LED1_Off()\nLED2_Off()\nLED3_Off()"]
-		}
-	}
-	,{
-		"state": "Dummy2",
-		"type":"state",
-		"properties":{
-			"name":"Dummy2",
-			"position": {
-				"x": 338.75896035684127,
-				"y": 1047.713544194016
-			},
-			"size":{
-				"width": 137.5,
-				"height": 81.375
-			},
-			"events": []
 		}
 	}
 	],
@@ -238,17 +143,7 @@
 				,"RedYellow"
 				,"Green"
 				,"Yellow"
-				,"Working_InitialPseudostate2"
-			]
-		}
-		,{
-			"state":"Service",
-			"substates":[			
-				"YellowOn"
-				,"Dummy1"
-				,"YellowOff"
-				,"Dummy2"
-				,"Service_InitialPseudostate0"
+				,"Working_ShallowHistoryPseudostate1"
 			]
 		}
 	],
@@ -256,92 +151,50 @@
 		{
             "source": "Red",
             "target": "PotDelay",
-            "event": "evTick",
-            "label": " evTick [vPotmeter<50]"
+            "event": "evTimeout",
+            "label": "evTimeout [vPotmeter<50]"
         }
 		,{
             "source": "Red",
             "target": "RedYellow",
-            "event": "evTick",
-            "label": "  evTick [vPotmeter >= 50]"
+            "event": "evTimeout",
+            "label": "evTimeout [vPotmeter >= 50] / UserVariable = 1"
         }
 		,{
             "source": "PotDelay",
             "target": "RedYellow",
             "event": "evS1Pressed",
-            "label": "evS1Pressed"
+            "label": "evS1Pressed / UserVariable = 1"
         }
 		,{
             "source": "RedYellow",
             "target": "Green",
-            "event": "evTick",
-            "label": "evTick"
+            "event": "evTimeout",
+            "label": "evTimeout / UserVariable = 5"
         }
 		,{
             "source": "Green",
             "target": "Yellow",
-            "event": "evTick",
-            "label": "evTick"
+            "event": "evTimeout",
+            "label": "evTimeout / UserVariable = 1"
         }
 		,{
             "source": "Yellow",
             "target": "Red",
-            "event": "evTick",
-            "label": "evTick"
-        }
-		,{
-            "source": "YellowOn",
-            "target": "Dummy1",
-            "event": "evTick",
-            "label": "evTick"
-        }
-		,{
-            "source": "Dummy1",
-            "target": "YellowOff",
-            "event": "evTick",
-            "label": "evTick"
-        }
-		,{
-            "source": "YellowOff",
-            "target": "Dummy2",
-            "event": "evTick",
-            "label": "evTick"
-        }
-		,{
-            "source": "Dummy2",
-            "target": "YellowOn",
-            "event": "evTick",
-            "label": "evTick"
-        }
-		,{
-            "source": "Service_InitialPseudostate0",
-            "target": "YellowOn",
-            "event": "",
-            "label": ""
+            "event": "evTimeout",
+            "label": "evTimeout / UserVariable = 8"
         }
 		,{
             "source": "root_InitialPseudostate1",
-            "target": "Working",
+            "target": "Red",
             "event": "",
-            "label": ""
+            "label": "/ UserVariable = 8"
         }
 		,{
             "source": "Working",
-            "target": "Service",
-            "event": "evS2Pressed",
-            "label": "evS2Pressed"
-        }
-		,{
-            "source": "Working_InitialPseudostate2",
-            "target": "Red",
-            "event": "",
-            "label": ""
-        }
-		,{
-            "source": "Service",
-            "target": "Working",
-            "event": "evS2Pressed",
-            "label": "evS2Pressed"
+            "target": "Working_ShallowHistoryPseudostate1",
+            "event": "evTick",
+            "label": "evTick"
         }
 	]
 }

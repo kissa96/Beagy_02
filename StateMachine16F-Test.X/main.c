@@ -68,6 +68,8 @@ void timerCallback()
     if(Timer-sec > 1000){
         sec = Timer;
         Event = evTick;
+        if(!--UserVariable)
+            Event = evTimeout;
     }
 #endif
     // user defined events..

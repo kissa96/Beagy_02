@@ -33,6 +33,8 @@ static void _trace(event_t event, state_t state){
 
 // States
 static state_t vStateMachine = _init;
+// history
+static state_t vStateMachine_Working_ShallowHistoryPseudostate1;
 
 
 /**
@@ -42,20 +44,19 @@ void StateMachine_SM(event_t event){
 				
 	switch(vStateMachine){
 		case _init:
-			vStateMachine = Working;
-		break;
-		case Working:
-			// has substates
 			vStateMachine = Red;
-			if(evS2Pressed==event){ 
-				vStateMachine = Service; // set new state
-			}
+			LED1_Off();	// initial do action
+			LED2_Off();	// initial do action
+			LED3_On();	// initial do action
+            UserVariable = 8;
+		break;
+		//ShallowHistoryPseudostate
+		case Working_ShallowHistoryPseudostate1:
+			vStateMachine = vStateMachine_Working_ShallowHistoryPseudostate1;
 			break;
-		case Service:
-			// has substates
-			vStateMachine = YellowOn;
-			if(evS2Pressed==event){ 
-				vStateMachine = Working; // set new state
+		case Working:
+			if(evTick==event){ 
+				vStateMachine = Working_ShallowHistoryPseudostate1; // set new state
 			}
 			break;
 		case Red:
@@ -65,26 +66,32 @@ void StateMachine_SM(event_t event){
 			LED3_On();
 
 			// Container
-			if(evS2Pressed==event){
-				vStateMachine = Service;
+			if(evTick==event){
 
+				vStateMachine = Working_ShallowHistoryPseudostate1;
 
+				// save state into ShallowHistoryPseudostate
+				vStateMachine_Working_ShallowHistoryPseudostate1 = Red;
 			}
-			if((vPotmeter >= 50) && evTick==event){ 
+			if((vPotmeter >= 50) && evTimeout==event){ 
+				UserVariable = 1;	// transition action Red to RedYellow
 				vStateMachine = RedYellow; // set new state
 			}
-			if((vPotmeter<50) && evTick==event){ 
+			if((vPotmeter<50) && evTimeout==event){ 
 				vStateMachine = PotDelay; // set new state
 			}
 			break;
 		case PotDelay:
 			// Container
-			if(evS2Pressed==event){
-				vStateMachine = Service;
+			if(evTick==event){
 
+				vStateMachine = Working_ShallowHistoryPseudostate1;
 
+				// save state into ShallowHistoryPseudostate
+				vStateMachine_Working_ShallowHistoryPseudostate1 = PotDelay;
 			}
 			if(evS1Pressed==event){ 
+				UserVariable = 1;	// transition action PotDelay to RedYellow
 				vStateMachine = RedYellow; // set new state
 			}
 			break;
@@ -95,12 +102,15 @@ void StateMachine_SM(event_t event){
 			LED3_On();
 
 			// Container
-			if(evS2Pressed==event){
-				vStateMachine = Service;
+			if(evTick==event){
 
+				vStateMachine = Working_ShallowHistoryPseudostate1;
 
+				// save state into ShallowHistoryPseudostate
+				vStateMachine_Working_ShallowHistoryPseudostate1 = RedYellow;
 			}
-			if(evTick==event){ 
+			if(evTimeout==event){ 
+				UserVariable = 5;	// transition action RedYellow to Green
 				vStateMachine = Green; // set new state
 			}
 			break;
@@ -111,12 +121,15 @@ void StateMachine_SM(event_t event){
 			LED3_Off();
 
 			// Container
-			if(evS2Pressed==event){
-				vStateMachine = Service;
+			if(evTick==event){
 
+				vStateMachine = Working_ShallowHistoryPseudostate1;
 
+				// save state into ShallowHistoryPseudostate
+				vStateMachine_Working_ShallowHistoryPseudostate1 = Green;
 			}
-			if(evTick==event){ 
+			if(evTimeout==event){ 
+				UserVariable = 1;	// transition action Green to Yellow
 				vStateMachine = Yellow; // set new state
 			}
 			break;
@@ -127,67 +140,16 @@ void StateMachine_SM(event_t event){
 			LED3_Off();
 
 			// Container
-			if(evS2Pressed==event){
-				vStateMachine = Service;
+			if(evTick==event){
 
+				vStateMachine = Working_ShallowHistoryPseudostate1;
 
+				// save state into ShallowHistoryPseudostate
+				vStateMachine_Working_ShallowHistoryPseudostate1 = Yellow;
 			}
-			if(evTick==event){ 
+			if(evTimeout==event){ 
+				UserVariable = 8;	// transition action Yellow to Red
 				vStateMachine = Red; // set new state
-			}
-			break;
-		case YellowOn:
-			// do actions of YellowOn
-			LED1_Off();
-			LED2_On();
-			LED3_Off();
-
-			// Container
-			if(evS2Pressed==event){
-				vStateMachine = Working;
-
-
-			}
-			if(evTick==event){ 
-				vStateMachine = Dummy1; // set new state
-			}
-			break;
-		case Dummy1:
-			// Container
-			if(evS2Pressed==event){
-				vStateMachine = Working;
-
-
-			}
-			if(evTick==event){ 
-				vStateMachine = YellowOff; // set new state
-			}
-			break;
-		case YellowOff:
-			// do actions of YellowOff
-			LED1_Off();
-			LED2_Off();
-			LED3_Off();
-
-			// Container
-			if(evS2Pressed==event){
-				vStateMachine = Working;
-
-
-			}
-			if(evTick==event){ 
-				vStateMachine = Dummy2; // set new state
-			}
-			break;
-		case Dummy2:
-			// Container
-			if(evS2Pressed==event){
-				vStateMachine = Working;
-
-
-			}
-			if(evTick==event){ 
-				vStateMachine = YellowOn; // set new state
 			}
 			break;
 		default:
