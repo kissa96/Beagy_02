@@ -3,11 +3,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 55: event_t Event = evNone;
 [c E12087 0 1 2 3 4 .. ]
 [n E12087 . evNone evTick evS1Pressed evS2Pressed evTimeout  ]
-"15 ./sm/StateMachine.h
-[; ;./sm/StateMachine.h: 15: extern uint8_t UserVariable;
-[v _UserVariable `uc ~T0 @X0 0 e ]
-"101 main.c
-[; ;main.c: 101:     return ((uint32_t)(ADCC_GetSingleConversion(1) + 1)*100)>>10;
+"98
+[; ;main.c: 98:     return ((uint32_t)(ADCC_GetSingleConversion(1) + 1)*100)>>10;
 [c E11662 1 60 61 62 63 .. ]
 [n E11662 . POT channel_VSS channel_Temp channel_DAC1 channel_FVR_buf1  ]
 "249 ./mcc_generated_files/adcc.h
@@ -21,17 +18,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "310 ./mcc_generated_files/tmr0.h
 [; ;./mcc_generated_files/tmr0.h: 310:  void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _TMR0_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F11714 ]
-[v F12136 `(v ~T0 @X0 0 tf ]
+[v F12133 `(v ~T0 @X0 0 tf ]
 [v F11642 `(v ~T0 @X0 0 tf ]
 "374 ./mcc_generated_files/pin_manager.h
 [; ;./mcc_generated_files/pin_manager.h: 374: void IOCAF7_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _IOCAF7_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F11642 ]
-[v F12138 `(v ~T0 @X0 0 tf ]
+[v F12135 `(v ~T0 @X0 0 tf ]
 [v F11634 `(v ~T0 @X0 0 tf ]
 "290
 [; ;./mcc_generated_files/pin_manager.h: 290: void IOCAF6_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _IOCAF6_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F11634 ]
-[v F12140 `(v ~T0 @X0 0 tf ]
+[v F12137 `(v ~T0 @X0 0 tf ]
 "364 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f18857.h
 [; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f18857.h: 364:     struct {
 [s S31 :1 `uc 1 :5 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -49,8 +46,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "19 ./sm/StateMachine.h
 [; ;./sm/StateMachine.h: 19: extern uint8_t vPotmeter;
 [v _vPotmeter `uc ~T0 @X0 0 e ]
-"51
-[; ;./sm/StateMachine.h: 51: void StateMachine_SM (event_t event);
+"45
+[; ;./sm/StateMachine.h: 45: void StateMachine_SM (event_t event);
 [v _StateMachine_SM `(v ~T0 @X0 0 ef1`E12087 ]
 "55 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f18857.h
 [; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f18857.h: 55: __asm("INDF0 equ 00h");
@@ -1616,19 +1613,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 :s 5C
 ..
 ]
-[v F12123 `*Cuc ~T0 @X0 1 t ]
-"36 ./sm/StateMachine.h
-[; ;./sm/StateMachine.h: 36: const char* const trace_state_labels [] = {
-[v _trace_state_labels `C*Cuc ~T0 @X0 -> 7 `i e ]
+[v F12120 `*Cuc ~T0 @X0 1 t ]
+"33 ./sm/StateMachine.h
+[; ;./sm/StateMachine.h: 33: const char* const trace_state_labels [] = {
+[v _trace_state_labels `C*Cuc ~T0 @X0 -> 4 `i e ]
 [i _trace_state_labels
 :U ..
 :s 6C
 :s 7C
 :s 8C
 :s 9C
-:s 10C
-:s 11C
-:s 12C
 ..
 ]
 "55 main.c
@@ -1656,200 +1650,186 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ++ _Timer -> -> -> 1 `i `l `ul ]
 "67
 [; ;main.c: 67:     static uint32_t sec = 0;
-[v F12129 `ul ~T0 @X0 1 s sec ]
-[i F12129
+[v F12126 `ul ~T0 @X0 1 s sec ]
+[i F12126
 -> -> -> 0 `i `l `ul
 ]
 "68
 [; ;main.c: 68:     if(Timer-sec > 1000){
-[e $ ! > - _Timer F12129 -> -> -> 1000 `i `l `ul 1562  ]
+[e $ ! > - _Timer F12126 -> -> -> 1000 `i `l `ul 1562  ]
 {
 "69
 [; ;main.c: 69:         Event = evTick;
 [e = _Event . `E12087 1 ]
 "70
-[; ;main.c: 70:         if((Timer-sec) > UserVariable){
-[e $ ! > - _Timer F12129 -> _UserVariable `ul 1563  ]
-{
+[; ;main.c: 70:         sec = Timer;
+[e = F12126 _Timer ]
 "71
-[; ;main.c: 71:             Event = evTimeout;
-[e = _Event . `E12087 4 ]
-"72
-[; ;main.c: 72:         }
-}
-[e :U 1563 ]
-"73
-[; ;main.c: 73:         sec = Timer;
-[e = F12129 _Timer ]
-"74
-[; ;main.c: 74:     }
+[; ;main.c: 71:     }
 }
 [e :U 1562 ]
-"76
-[; ;main.c: 76: }
+"73
+[; ;main.c: 73: }
 [e :UE 1561 ]
 }
-"79
-[; ;main.c: 79: void S1EventCallback()
+"76
+[; ;main.c: 76: void S1EventCallback()
 [v _S1EventCallback `(v ~T0 @X0 1 ef ]
-"80
-[; ;main.c: 80: {
+"77
+[; ;main.c: 77: {
 {
 [e :U _S1EventCallback ]
 [f ]
-"81
-[; ;main.c: 81:     static uint32_t t = 0;
-[v F12131 `ul ~T0 @X0 1 s t ]
-[i F12131
+"78
+[; ;main.c: 78:     static uint32_t t = 0;
+[v F12128 `ul ~T0 @X0 1 s t ]
+[i F12128
 -> -> -> 0 `i `l `ul
 ]
-"82
-[; ;main.c: 82:     if(Timer - t > 150)
-[e $ ! > - _Timer F12131 -> -> -> 150 `i `l `ul 1565  ]
-"83
-[; ;main.c: 83:     {
+"79
+[; ;main.c: 79:     if(Timer - t > 150)
+[e $ ! > - _Timer F12128 -> -> -> 150 `i `l `ul 1564  ]
+"80
+[; ;main.c: 80:     {
 {
-"84
-[; ;main.c: 84:         t = Timer;
-[e = F12131 _Timer ]
-"85
-[; ;main.c: 85:         Event = evS1Pressed;
+"81
+[; ;main.c: 81:         t = Timer;
+[e = F12128 _Timer ]
+"82
+[; ;main.c: 82:         Event = evS1Pressed;
 [e = _Event . `E12087 2 ]
+"83
+[; ;main.c: 83:     }
+}
+[e :U 1564 ]
+"84
+[; ;main.c: 84: }
+[e :UE 1563 ]
+}
 "86
-[; ;main.c: 86:     }
-}
-[e :U 1565 ]
-"87
-[; ;main.c: 87: }
-[e :UE 1564 ]
-}
-"89
-[; ;main.c: 89: void S2EventCallback(){
+[; ;main.c: 86: void S2EventCallback(){
 [v _S2EventCallback `(v ~T0 @X0 1 ef ]
 {
 [e :U _S2EventCallback ]
 [f ]
-"90
-[; ;main.c: 90:     static uint32_t t = 0;
-[v F12133 `ul ~T0 @X0 1 s t ]
-[i F12133
+"87
+[; ;main.c: 87:     static uint32_t t = 0;
+[v F12130 `ul ~T0 @X0 1 s t ]
+[i F12130
 -> -> -> 0 `i `l `ul
 ]
-"91
-[; ;main.c: 91:     if(Timer - t > 150)
-[e $ ! > - _Timer F12133 -> -> -> 150 `i `l `ul 1567  ]
-"92
-[; ;main.c: 92:     {
+"88
+[; ;main.c: 88:     if(Timer - t > 150)
+[e $ ! > - _Timer F12130 -> -> -> 150 `i `l `ul 1566  ]
+"89
+[; ;main.c: 89:     {
 {
-"93
-[; ;main.c: 93:         t = Timer;
-[e = F12133 _Timer ]
-"94
-[; ;main.c: 94:         Event = evS2Pressed;
+"90
+[; ;main.c: 90:         t = Timer;
+[e = F12130 _Timer ]
+"91
+[; ;main.c: 91:         Event = evS2Pressed;
 [e = _Event . `E12087 3 ]
-"95
-[; ;main.c: 95:     }
+"92
+[; ;main.c: 92:     }
 }
-[e :U 1567 ]
+[e :U 1566 ]
+"93
+[; ;main.c: 93: }
+[e :UE 1565 ]
+}
 "96
-[; ;main.c: 96: }
-[e :UE 1566 ]
-}
-"99
-[; ;main.c: 99: uint8_t getPotValue()
+[; ;main.c: 96: uint8_t getPotValue()
 [v _getPotValue `(uc ~T0 @X0 1 ef ]
-"100
-[; ;main.c: 100: {
+"97
+[; ;main.c: 97: {
 {
 [e :U _getPotValue ]
 [f ]
-"101
-[; ;main.c: 101:     return ((uint32_t)(ADCC_GetSingleConversion(1) + 1)*100)>>10;
+"98
+[; ;main.c: 98:     return ((uint32_t)(ADCC_GetSingleConversion(1) + 1)*100)>>10;
 [e ) -> >> * -> + -> ( _ADCC_GetSingleConversion (1 -> -> 1 `i `E11662 `ui -> -> 1 `i `ui `ul -> -> -> 100 `i `l `ul -> 10 `i `uc ]
-[e $UE 1568  ]
-"102
-[; ;main.c: 102: }
-[e :UE 1568 ]
+[e $UE 1567  ]
+"99
+[; ;main.c: 99: }
+[e :UE 1567 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"113
-[; ;main.c: 113: void main(void)
+"110
+[; ;main.c: 110: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"114
-[; ;main.c: 114: {
+"111
+[; ;main.c: 111: {
 {
 [e :U _main ]
 [f ]
-"116
-[; ;main.c: 116:     SYSTEM_Initialize();
+"113
+[; ;main.c: 113:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"122
-[; ;main.c: 122:     TMR0_SetInterruptHandler(timerCallback);
-[e ( _TMR0_SetInterruptHandler (1 -> &U _timerCallback `*F12136 ]
-"123
-[; ;main.c: 123:     IOCAF7_SetInterruptHandler(S1EventCallback);
-[e ( _IOCAF7_SetInterruptHandler (1 -> &U _S1EventCallback `*F12138 ]
+"119
+[; ;main.c: 119:     TMR0_SetInterruptHandler(timerCallback);
+[e ( _TMR0_SetInterruptHandler (1 -> &U _timerCallback `*F12133 ]
+"120
+[; ;main.c: 120:     IOCAF7_SetInterruptHandler(S1EventCallback);
+[e ( _IOCAF7_SetInterruptHandler (1 -> &U _S1EventCallback `*F12135 ]
+"121
+[; ;main.c: 121:     IOCAF6_SetInterruptHandler(S2EventCallback);
+[e ( _IOCAF6_SetInterruptHandler (1 -> &U _S2EventCallback `*F12137 ]
 "124
-[; ;main.c: 124:     IOCAF6_SetInterruptHandler(S2EventCallback);
-[e ( _IOCAF6_SetInterruptHandler (1 -> &U _S2EventCallback `*F12140 ]
-"127
-[; ;main.c: 127:     (INTCONbits.GIE = 1);
+[; ;main.c: 124:     (INTCONbits.GIE = 1);
 [e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
-"130
-[; ;main.c: 130:     (INTCONbits.PEIE = 1);
+"127
+[; ;main.c: 127:     (INTCONbits.PEIE = 1);
 [e = . . _INTCONbits 0 2 -> -> 1 `i `uc ]
-"140
-[; ;main.c: 140:     puts("$");
-[e ( _puts (1 :s 13C ]
+"137
+[; ;main.c: 137:     puts("$");
+[e ( _puts (1 :s 10C ]
+"139
+[; ;main.c: 139:     puts("$init");
+[e ( _puts (1 :s 11C ]
 "142
-[; ;main.c: 142:     puts("$init");
-[e ( _puts (1 :s 14C ]
-"145
-[; ;main.c: 145:     event_t e = evNone;
+[; ;main.c: 142:     event_t e = evNone;
 [v _e `E12087 ~T0 @X0 1 a ]
 [e = _e . `E12087 0 ]
-"146
-[; ;main.c: 146:     while (1)
-[e :U 1571 ]
-"147
-[; ;main.c: 147:     {
-{
-"150
-[; ;main.c: 150:         vPotmeter = getPotValue();
-[e = _vPotmeter ( _getPotValue ..  ]
-"153
-[; ;main.c: 153:         e = Event;
-[e = _e _Event ]
-"154
-[; ;main.c: 154:         Event = evNone;
-[e = _Event . `E12087 0 ]
-"155
-[; ;main.c: 155:         StateMachine_SM(e);
-[e ( _StateMachine_SM (1 _e ]
-"156
-[; ;main.c: 156:         e = evNone;
-[e = _e . `E12087 0 ]
-"157
-[; ;main.c: 157:     }
-}
+"143
+[; ;main.c: 143:     while (1)
 [e :U 1570 ]
-[e $U 1571  ]
-[e :U 1572 ]
-"158
-[; ;main.c: 158: }
-[e :UE 1569 ]
+"144
+[; ;main.c: 144:     {
+{
+"147
+[; ;main.c: 147:         vPotmeter = getPotValue();
+[e = _vPotmeter ( _getPotValue ..  ]
+"150
+[; ;main.c: 150:         e = Event;
+[e = _e _Event ]
+"151
+[; ;main.c: 151:         Event = evNone;
+[e = _Event . `E12087 0 ]
+"152
+[; ;main.c: 152:         StateMachine_SM(e);
+[e ( _StateMachine_SM (1 _e ]
+"153
+[; ;main.c: 153:         e = evNone;
+[e = _e . `E12087 0 ]
+"154
+[; ;main.c: 154:     }
 }
-[a 9C 80 111 116 68 101 108 97 121 0 ]
-[a 11C 82 101 100 89 101 108 108 111 119 0 ]
+[e :U 1569 ]
+[e $U 1570  ]
+[e :U 1571 ]
+"155
+[; ;main.c: 155: }
+[e :UE 1568 ]
+}
 [a 8C 89 101 108 108 111 119 0 ]
 [a 5C 101 118 84 105 109 101 111 117 116 0 ]
 [a 6C 95 105 110 105 116 0 ]
-[a 14C 36 105 110 105 116 0 ]
-[a 10C 71 114 101 101 110 0 ]
+[a 11C 36 105 110 105 116 0 ]
+[a 9C 71 114 101 101 110 0 ]
 [a 2C 101 118 84 105 99 107 0 ]
 [a 1C 101 118 78 111 110 101 0 ]
 [a 4C 101 118 83 50 80 114 101 115 115 101 100 0 ]
 [a 3C 101 118 83 49 80 114 101 115 115 101 100 0 ]
 [a 7C 82 101 100 0 ]
-[a 12C 83 116 97 116 101 48 0 ]
-[a 13C 36 0 ]
+[a 10C 36 0 ]

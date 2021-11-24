@@ -332,10 +332,7 @@ typedef enum {
 
  ,Red
  ,Yellow
- ,PotDelay
  ,Green
- ,RedYellow
- ,State0
 }state_t;
 
 
@@ -345,10 +342,7 @@ const char* const trace_state_labels [] = {
 
  ,"Red"
  ,"Yellow"
- ,"PotDelay"
  ,"Green"
- ,"RedYellow"
- ,"State0"
 };
 
 
@@ -390,10 +384,13 @@ static state_t vStateMachine = _init;
 
 
 void StateMachine_SM(event_t event){
-    __asm("nop");
+
  switch(vStateMachine){
   case _init:
-   vStateMachine = State0;
+   vStateMachine = Red;
+   LED1_Off();
+   LED2_Off();
+   LED3_On();
   break;
   case Red:
 
@@ -401,28 +398,20 @@ void StateMachine_SM(event_t event){
    LED2_Off();
    LED3_On();
 
-   if((vPotmeter >= 50) && evTimeout==event){
-    vStateMachine = RedYellow;
-   }
-   if((vPotmeter<50) && evTimeout==event){
-    vStateMachine = PotDelay;
+   if(evTick==event){
+    LED1_Off();
+    LED2_On();
+    LED3_On();
+    UserVariable = 1;
+    vStateMachine = Yellow;
    }
    break;
   case Yellow:
-
-   LED1_Off();
-   LED2_On();
-   LED3_Off();
-
-   if(evTimeout==event){
-    setTimeout(8000);
-    vStateMachine = Red;
+   if((UserVariable == 1) && evTick==event){
+    vStateMachine = Green;
    }
-   break;
-  case PotDelay:
-   if(evS1Pressed==event){
-    setTimeout(1000);
-    vStateMachine = RedYellow;
+   if((UserVariable == 0) && evTick==event){
+    vStateMachine = Red;
    }
    break;
   case Green:
@@ -431,26 +420,13 @@ void StateMachine_SM(event_t event){
    LED2_Off();
    LED3_Off();
 
-   if(evTimeout==event){
-    setTimeout(1000);
+   if(evTick==event){
+    LED1_Off();
+    LED2_On();
+    LED3_Off();
+    UserVariable = 0;
     vStateMachine = Yellow;
    }
-   break;
-  case RedYellow:
-
-   LED1_Off();
-   LED2_On();
-   LED3_On();
-
-   if(evTimeout==event){
-    setTimeout(5000);
-    vStateMachine = Green;
-   }
-   break;
-  case State0:
-                __asm("nop");
-    setTimeout(8000);
-    vStateMachine = Red;
    break;
   default:
    break;

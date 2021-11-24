@@ -1577,19 +1577,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 :s 5C
 ..
 ]
-[v F12123 `*Cuc ~T0 @X0 1 t ]
-"36 sm/StateMachine.h
-[; ;sm/StateMachine.h: 36: const char* const trace_state_labels [] = {
-[v _trace_state_labels `C*Cuc ~T0 @X0 -> 7 `i e ]
+[v F12120 `*Cuc ~T0 @X0 1 t ]
+"33 sm/StateMachine.h
+[; ;sm/StateMachine.h: 33: const char* const trace_state_labels [] = {
+[v _trace_state_labels `C*Cuc ~T0 @X0 -> 4 `i e ]
 [i _trace_state_labels
 :U ..
 :s 6C
 :s 7C
 :s 8C
 :s 9C
-:s 10C
-:s 11C
-:s 12C
 ..
 ]
 "7 sm/actions.c
@@ -1758,15 +1755,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;sm/actions.c: 49: }
 [e :UE 1590 ]
 }
-[a 9C 80 111 116 68 101 108 97 121 0 ]
-[a 11C 82 101 100 89 101 108 108 111 119 0 ]
 [a 8C 89 101 108 108 111 119 0 ]
 [a 5C 101 118 84 105 109 101 111 117 116 0 ]
 [a 6C 95 105 110 105 116 0 ]
-[a 10C 71 114 101 101 110 0 ]
+[a 9C 71 114 101 101 110 0 ]
 [a 2C 101 118 84 105 99 107 0 ]
 [a 1C 101 118 78 111 110 101 0 ]
 [a 4C 101 118 83 50 80 114 101 115 115 101 100 0 ]
 [a 3C 101 118 83 49 80 114 101 115 115 101 100 0 ]
 [a 7C 82 101 100 0 ]
-[a 12C 83 116 97 116 101 48 0 ]

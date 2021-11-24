@@ -2,23 +2,23 @@
 	"graph":{
 		"name": "StateMachine",
 		"size":{
-			"width": 1075.0,
+			"width": 1039.0,
 			"height": 1198.0
 		}
 	},
 	"states": [
 	{
-		"state": "root_InitialPseudostate1",
+		"state": "root_InitialPseudostate0",
 		"type":"initial",
 		"properties":{
-			"name":"InitialPseudostate1",
+			"name":"InitialPseudostate0",
 			"size": {
 	            "width": 20,
 	            "height": 20
 	        },
 	        "position":{
-				"x": 122.94901303842926,
-				"y": 97.00000252734935
+				"x": 228.55062702350733,
+				"y": 640.1718775273494
 	        }
 		}
 	}
@@ -28,12 +28,12 @@
 		"properties":{
 			"name":"Red",
 			"position": {
-				"x": 209.83334186725733,
-				"y": 285.1718775273494
+				"x": 258.55062702350733,
+				"y": 670.1718775273494
 			},
 			"size":{
-				"width": 136.25,
-				"height": 141.75
+				"width": 122.06441891891973,
+				"height": 141.36309523809524
 			},
 			"events": [ "do/LED1_Off()\nLED2_Off()\nLED3_On()"]
 		}
@@ -44,28 +44,12 @@
 		"properties":{
 			"name":"Yellow",
 			"position": {
-				"x": 245.29167520059173,
-				"y": 515.7254489559209
+				"x": 696.0089603568417,
+				"y": 814.7254489559209
 			},
 			"size":{
 				"width": 161.72619047618946,
 				"height": 127.31101190476181
-			},
-			"events": [, "do/LED1_Off()\nLED2_On()\nLED3_Off()"]
-		}
-	}
-	,{
-		"state": "PotDelay",
-		"type":"state",
-		"properties":{
-			"name":"PotDelay",
-			"position": {
-				"x": 441.91667520059127,
-				"y": 175.1718775273494
-			},
-			"size":{
-				"width": 86.45833333333348,
-				"height": 53.125
 			},
 			"events": []
 		}
@@ -76,8 +60,8 @@
 		"properties":{
 			"name":"Green",
 			"position": {
-				"x": 774.2083418672573,
-				"y": 376.47544895592085
+				"x": 57.92562702350733,
+				"y": 932.4754489559209
 			},
 			"size":{
 				"width": 205.47619047619037,
@@ -86,89 +70,39 @@
 			"events": [, "do/LED1_On()\nLED2_Off()\nLED3_Off()"]
 		}
 	}
-	,{
-		"state": "RedYellow",
-		"type":"state",
-		"properties":{
-			"name":"RedYellow",
-			"position": {
-				"x": 765.0833418672578,
-				"y": 160.46503228925417
-			},
-			"size":{
-				"width": 153.39285714285643,
-				"height": 113.26934523809524
-			},
-			"events": [, "do/LED1_Off()\nLED2_On()\nLED3_On()"]
-		}
-	}
-	,{
-		"state": "State0",
-		"type":"state",
-		"properties":{
-			"name":"State0",
-			"position": {
-				"x": 152.94901303842926,
-				"y": 127.00000252734935
-			},
-			"size":{
-				"width": 55.0,
-				"height": 36.09375
-			},
-			"events": []
-		}
-	}
 	],
 	"tree":[
 	],
 	"transitions":[
 		{
             "source": "Red",
-            "target": "PotDelay",
-            "event": "evTimeout",
-            "label": "evTimeout [vPotmeter<50]"
+            "target": "Yellow",
+            "event": "evTick",
+            "label": "evTick / LED1_Off()\nLED2_On()\nLED3_On()\nUserVariable = 1"
         }
 		,{
-            "source": "Red",
-            "target": "RedYellow",
-            "event": "evTimeout",
-            "label": "evTimeout [vPotmeter >= 50] / UserVariable = 1"
-        }
-		,{
-            "source": "PotDelay",
-            "target": "RedYellow",
-            "event": "evS1Pressed",
-            "label": "evS1Pressed / setTimeout(1000)"
-        }
-		,{
-            "source": "RedYellow",
+            "source": "Yellow",
             "target": "Green",
-            "event": "evTimeout",
-            "label": "evTimeout / setTimeout(5000)"
+            "event": "evTick",
+            "label": "evTick [UserVariable == 1]"
         }
 		,{
             "source": "Green",
             "target": "Yellow",
-            "event": "evTimeout",
-            "label": "evTimeout / setTimeout(1000)"
+            "event": "evTick",
+            "label": "evTick / LED1_Off()\nLED2_On()\nLED3_Off()\nUserVariable = 0"
         }
 		,{
             "source": "Yellow",
             "target": "Red",
-            "event": "evTimeout",
-            "label": "evTimeout / setTimeout(8000)"
+            "event": "evTick",
+            "label": "evTick [UserVariable == 0]"
         }
 		,{
-            "source": "root_InitialPseudostate1",
-            "target": "State0",
-            "event": "",
-            "label": ""
-        }
-		,{
-            "source": "State0",
+            "source": "root_InitialPseudostate0",
             "target": "Red",
             "event": "",
-            "label": "/ setTimeout(8000)"
+            "label": ""
         }
 	]
 }

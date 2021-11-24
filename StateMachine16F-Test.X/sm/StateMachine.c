@@ -39,10 +39,13 @@ static state_t vStateMachine = _init;
 * @brief State Machine
 */	
 void StateMachine_SM(event_t event){
-    asm("nop");
+				
 	switch(vStateMachine){
 		case _init:
-			vStateMachine = State0;
+			vStateMachine = Red;
+			LED1_Off();	// initial do action
+			LED2_Off();	// initial do action
+			LED3_On();	// initial do action
 		break;
 		case Red:
 			// do actions of Red
@@ -50,28 +53,20 @@ void StateMachine_SM(event_t event){
 			LED2_Off();
 			LED3_On();
 
-			if((vPotmeter >= 50) && evTimeout==event){ 
-				vStateMachine = RedYellow; // set new state
-			}
-			if((vPotmeter<50) && evTimeout==event){ 
-				vStateMachine = PotDelay; // set new state
+			if(evTick==event){ 
+				LED1_Off();	// transition action Red to Yellow
+				LED2_On();	// transition action Red to Yellow
+				LED3_On();	// transition action Red to Yellow
+				UserVariable = 1;	// transition action Red to Yellow
+				vStateMachine = Yellow; // set new state
 			}
 			break;
 		case Yellow:
-			// do actions of Yellow
-			LED1_Off();
-			LED2_On();
-			LED3_Off();
-
-			if(evTimeout==event){ 
-				setTimeout(8000);	// transition action Yellow to Red
-				vStateMachine = Red; // set new state
+			if((UserVariable == 1) && evTick==event){ 
+				vStateMachine = Green; // set new state
 			}
-			break;
-		case PotDelay:
-			if(evS1Pressed==event){ 
-				setTimeout(1000);	// transition action PotDelay to RedYellow
-				vStateMachine = RedYellow; // set new state
+			if((UserVariable == 0) && evTick==event){ 
+				vStateMachine = Red; // set new state
 			}
 			break;
 		case Green:
@@ -80,26 +75,13 @@ void StateMachine_SM(event_t event){
 			LED2_Off();
 			LED3_Off();
 
-			if(evTimeout==event){ 
-				setTimeout(1000);	// transition action Green to Yellow
+			if(evTick==event){ 
+				LED1_Off();	// transition action Green to Yellow
+				LED2_On();	// transition action Green to Yellow
+				LED3_Off();	// transition action Green to Yellow
+				UserVariable = 0;	// transition action Green to Yellow
 				vStateMachine = Yellow; // set new state
 			}
-			break;
-		case RedYellow:
-			// do actions of RedYellow
-			LED1_Off();
-			LED2_On();
-			LED3_On();
-
-			if(evTimeout==event){ 
-				setTimeout(5000);	// transition action RedYellow to Green
-				vStateMachine = Green; // set new state
-			}
-			break;
-		case State0:
-                asm("nop");
-				setTimeout(8000);	// transition action State0 to Red
-				vStateMachine = Red; // set new state
 			break;
 		default:
 			break;

@@ -26,10 +26,7 @@ typedef enum {
 	/* states */
 	,Red
 	,Yellow
-	,PotDelay
 	,Green
-	,RedYellow
-	,State0
 }state_t;
 
 /* trace state names */
@@ -39,10 +36,7 @@ const char* const trace_state_labels [] = {
 	/* states */
 	,"Red"
 	,"Yellow"
-	,"PotDelay"
 	,"Green"
-	,"RedYellow"
-	,"State0"
 };
 
 

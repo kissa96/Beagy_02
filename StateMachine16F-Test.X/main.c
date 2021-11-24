@@ -67,9 +67,6 @@ void timerCallback()
     static uint32_t sec = 0;
     if(Timer-sec > 1000){
         Event = evTick;
-        if((Timer-sec) > UserVariable){
-            Event = evTimeout;
-        }
         sec = Timer;
     }
 #endif
